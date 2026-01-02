@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Helmy Legal Consultancy | أحمد حلمي للاستشارات القانونية – الإمارات</title>
-    <meta name="description" content="مكتب أحمد حلمي للاستشارات القانونية – خدمات قانونية في جميع إمارات الدولة (فرع العين). استشارات، إعداد مذكرات، صياغة عقود، وتحكيم.">
-    <meta name="keywords" content="محامي العين, استشارات قانونية أبوظبي, محامي إماراتي, قضايا جنائية, أحوال شخصية, محامي تجاري">
+    <meta name="robots" content="index, follow">
+    <title>أحمد حلمي للاستشارات القانونية | الإمارات العربية المتحدة</title>
+    <meta name="description" content="مكتب أحمد حلمي للاستشارات القانونية - خدمات قانونية متكاملة في دولة الإمارات العربية المتحدة، مع فرع في دولة الإمارات العربية المتحدة، مع فرع في مدينة العين - أبوظبي. استشارات قانونية، قضايا جنائية، أحوال شخصية، قضايا تجارية وعمالية.">
+    <meta name="keywords" content="استشارات قانونية الإمارات, مستشار قانوني, محامي الإمارات, قضايا جنائية, أحوال شخصية, قضايا تجارية, قضايا عمالية, أبوظبي, دبي, الشارقة, عجمان, رأس الخيمة, الفجيرة, العين">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap"></noscript>
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    <!-- (محفوظ للتوافق) -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -161,7 +169,7 @@
         .hero {
             min-height: 100vh;
             background: linear-gradient(135deg, rgba(26, 26, 46, 0.95), rgba(22, 33, 62, 0.9)), 
-                        url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1920') center/cover fixed;
+                        url('assets/img/hero.webp') center/cover fixed;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1358,38 +1366,18 @@
         }
     </style>
 
-<style>
-/* Language toggle */
-body.lang-en [data-lang="ar"]{display:none!important;}
-body:not(.lang-en) [data-lang="en"]{display:none!important;}
-.lang-toggle{
-  background:transparent;border:1px solid rgba(255,255,255,.35);color:#fff;
-  padding:8px 12px;border-radius:10px;cursor:pointer;font-weight:700;
-  margin-inline-start:12px;
-}
-body.lang-en{direction:ltr;}
-body.lang-en .nav-links{direction:ltr;}
-</style>
-<script>
-(function(){
-  function setLang(lang){
-    var isEn = (lang==='en');
-    document.body.classList.toggle('lang-en', isEn);
-    document.documentElement.setAttribute('lang', isEn?'en':'ar');
-    document.documentElement.setAttribute('dir', isEn?'ltr':'rtl');
-    try{ localStorage.setItem('site_lang', isEn?'en':'ar'); }catch(e){}
-    var btn=document.getElementById('langToggle');
-    if(btn){ btn.textContent = isEn?'AR':'EN'; btn.setAttribute('aria-label', isEn?'Switch to Arabic':'Switch to English'); }
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": "Ahmed Helmy Legal Consultancy",
+  "email": "AHMEDHELMY200@GMAIL.COM",
+  "areaServed": ["Abu Dhabi","Dubai","Sharjah","Ajman","Ras Al Khaimah","Fujairah","Umm Al Quwain","Al Ain"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "AE"
   }
-  window.__setLang=setLang;
-  window.addEventListener('DOMContentLoaded', function(){
-    var saved='ar';
-    try{ saved=localStorage.getItem('site_lang')||'ar'; }catch(e){}
-    setLang(saved);
-    var btn=document.getElementById('langToggle');
-    if(btn){ btn.addEventListener('click', function(){ setLang(document.body.classList.contains('lang-en')?'ar':'en'); }); }
-  });
-})();
+}
 </script>
 
 </head>
@@ -1411,22 +1399,21 @@ body.lang-en .nav-links{direction:ltr;}
                 <i class="fas fa-balance-scale"></i>
             </div>
             <div class="logo-text">
-                <h1><span data-lang="ar">أحمد حلمي</span><span data-lang="en">Ahmed Helmy</span></h1>
-                <span><span data-lang="ar">للاستشارات القانونية</span><span data-lang="en">Legal Consultancy</span></span>
+                <h1>أحمد حلمي</h1>
+                <span>للاستشارات القانونية</span>
             </div>
         </div>
         <ul class="nav-links" id="navLinks">
-            <li><a href="#home"><span data-lang="ar">الرئيسية</span><span data-lang="en">Home</span></a></li>
-            <li><a href="#about"><span data-lang="ar">من نحن</span><span data-lang="en">About</span></a></li>
-            <li><a href="#services"><span data-lang="ar">خدماتنا</span><span data-lang="en">Services</span></a></li>
-            <li><a href="#knowledge"><span data-lang="ar">المعرفة</span><span data-lang="en">Knowledge</span></a></li>
-          <li><a href="#why-us"><span data-lang="ar">لماذا نحن</span><span data-lang="en">Why Us</span></a></li>
-            <li><a href="#process"><span data-lang="ar">آلية العمل</span><span data-lang="en">Process</span></a></li>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#about">من نحن</a></li>
+            <li><a href="#services">خدماتنا</a></li>
+            <li><a href="#coverage">نطاق الخدمة</a></li>
+            <li><a href="#why-us">لماذا نحن</a></li>
+            <li><a href="#process">آلية العمل</a></li>
             <li><a href="#testimonials">آراء العملاء</a></li>
-            <li><a href="#faq"><span data-lang="ar">الأسئلة الشائعة</span><span data-lang="en">FAQ</span></a></li>
-            <li><a href="#contact"><span data-lang="ar">تواصل معنا</span><span data-lang="en">Contact</span></a></li>
+            <li><a href="#faq">الأسئلة الشائعة</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
         </ul>
-        <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">EN</button>
         <div class="menu-toggle" onclick="toggleMenu()">
             <i class="fas fa-bars"></i>
         </div>
@@ -1437,10 +1424,10 @@ body.lang-en .nav-links{direction:ltr;}
         <div class="hero-content">
             <div class="hero-badge">
                 <i class="fas fa-certificate"></i>
-                <span data-lang="ar">مكتب استشارات قانونية معتمد ومرخص</span><span data-lang="en">Licensed Legal Consultancy Office</span>
+                مكتب استشارات قانونية معتمد ومرخص
             </div>
             <h1>المستشار القانوني<br><span>أحمد حلمي</span></h1>
-            <p>نقدم لكم خدمات قانونية متكاملة بأعلى معايير الجودة والمهنية والسرية التامة في مدينة العين - أبوظبي. خبرة تمتد لأكثر من 15 عاماً في مختلف المجالات القانونية.</p>
+            <p>نقدم لكم خدمات قانونية متكاملة بأعلى معايير الجودة والمهنية والسرية التامة في دولة الإمارات العربية المتحدة، مع فرع في مدينة العين - أبوظبي. خبرة تمتد لأكثر من 15 عاماً في مختلف المجالات القانونية.</p>
             <div class="hero-features">
                 <div class="hero-feature">
                     <i class="fas fa-check-circle"></i>
@@ -1473,9 +1460,73 @@ body.lang-en .nav-links{direction:ltr;}
         </div>
     </section>
 
-</div>
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <i class="fas fa-gavel"></i>
+                <h3 data-count="500">0</h3>
+                <p>قضية ناجحة</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-users"></i>
+                <h3 data-count="1000">0</h3>
+                <p>عميل سعيد</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-calendar-alt"></i>
+                <h3 data-count="15">0</h3>
+                <p>سنة خبرة</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-award"></i>
+                <h3>سجل قوي</h3>
+                <p>نتائج إيجابية</p>
+            </div>
+        </div>
+    </div>
 
-    <!-- About Section -->
+    
+    <!-- Coverage Section (Added) -->
+    <section class="coverage" id="coverage" style="background: var(--white); padding: 80px 5%;">
+        <div class="section-header">
+            <h2>نطاق <span>الخدمة</span></h2>
+            <div class="underline"></div>
+            <p>نخدم عملاءنا في جميع إمارات الدولة، مع توافر فرع في مدينة العين - أبوظبي، وإمكانية تقديم الاستشارات عن بُعد.</p>
+        </div>
+        <div style="max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:20px;">
+            <div class="about-feature">
+                <i class="fas fa-map-marked-alt"></i>
+                <div>
+                    <h4>تغطية اتحادية</h4>
+                    <p>أبوظبي، دبي، الشارقة، عجمان، رأس الخيمة، الفجيرة، أم القيوين، والعين.</p>
+                </div>
+            </div>
+            <div class="about-feature">
+                <i class="fas fa-video"></i>
+                <div>
+                    <h4>استشارات عن بُعد</h4>
+                    <p>عبر الهاتف والواتساب والبريد الإلكتروني مع سرية تامة.</p>
+                </div>
+            </div>
+            <div class="about-feature">
+                <i class="fas fa-file-signature"></i>
+                <div>
+                    <h4>عقود ومذكرات</h4>
+                    <p>صياغة ومراجعة العقود والمذكرات والإنذارات القانونية بدقة.</p>
+                </div>
+            </div>
+            <div class="about-feature">
+                <i class="fas fa-handshake"></i>
+                <div>
+                    <h4>حلول تفاوضية</h4>
+                    <p>إدارة النزاعات والصلح والتسويات بصورة تحفظ الحقوق وتقلل المخاطر.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- About Section -->
     <section class="about" id="about">
         <div class="section-header">
             <h2>من <span>نحن</span></h2>
@@ -1484,7 +1535,10 @@ body.lang-en .nav-links{direction:ltr;}
         </div>
         <div class="about-container">
             <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600" alt="مكتب أحمد حلمي للمحاماة">
+                <picture>
+                    <source srcset="assets/img/about.webp" type="image/webp">
+                    <img src="assets/img/about.jpg" loading="lazy" decoding="async" alt="مكتب أحمد حلمي للاستشارات القانونية">
+                </picture>
                 <div class="experience-badge">
                     <h3>+15</h3>
                     <p>سنة خبرة</p>
@@ -1493,7 +1547,7 @@ body.lang-en .nav-links{direction:ltr;}
             <div class="about-content">
                 <h3><i class="fas fa-balance-scale"></i> مكتب أحمد حلمي للاستشارات القانونية</h3>
                 <h2>شريكك القانوني الموثوق في الإمارات</h2>
-                <p>مرحباً بكم في مكتب المستشار أحمد حلمي للاستشارات القانونية، أحد المكاتب القانونية الرائدة في مدينة العين - أبوظبي. نفخر بتقديم خدمات قانونية شاملة ومتميزة تلبي احتياجات عملائنا من الأفراد والشركات على حد سواء.</p>
+                <p>مرحباً بكم في مكتب المستشار أحمد حلمي للاستشارات القانونية، أحد المكاتب القانونية الرائدة في دولة الإمارات العربية المتحدة، مع فرع في مدينة العين - أبوظبي. نفخر بتقديم خدمات قانونية شاملة ومتميزة تلبي احتياجات عملائنا من الأفراد والشركات على حد سواء.</p>
                 <p>يتميز مكتبنا بفريق من المستشارين القانونيين المتخصصين ذوي الخبرة الواسعة في مختلف فروع القانون الإماراتي والدولي. نحرص على تقديم حلول قانونية مبتكرة وفعالة مع الحفاظ على أعلى معايير السرية والمهنية.</p>
                 <p>منذ تأسيسنا، نجحنا في التعامل مع مئات القضايا بنجاح تام، وبنينا سمعة طيبة قائمة على الثقة والنزاهة والالتزام بتحقيق أفضل النتائج لعملائنا.</p>
                 <div class="about-features">
@@ -1540,53 +1594,6 @@ body.lang-en .nav-links{direction:ltr;}
             </div>
         </div>
     </section>
-<section class="profile" id="profile" style="padding:90px 5%; background:#0f172a;">
-  <div style="max-width:1200px; margin:auto; display:grid; grid-template-columns: 340px 1fr; gap:32px; align-items:start;">
-    <div style="background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.10); border-radius:18px; padding:18px; text-align:center;">
-      <picture>
-        <source srcset="assets/img/ahmed-helmy.webp" type="image/webp">
-        <img src="assets/img/ahmed-helmy.png" alt="Ahmed Helmy / أحمد حلمي" style="width:100%; border-radius:14px; display:block;">
-      </picture>
-      <div style="margin-top:14px; font-weight:800; font-size:18px; color:#fff;"><span data-lang="ar">المستشار أحمد حلمي</span><span data-lang="en">Legal Consultant Ahmed Helmy</span></div>
-      <div style="margin-top:6px; color:rgba(255,255,255,.75); line-height:1.7;">
-        <span data-lang="ar">مكتب مرخص: أحمد حلمي للاستشارات القانونية – الإمارات</span><span data-lang="en">Licensed Office: Ahmed Helmy Legal Consultancy – UAE</span>
-      </div>
-    </div>
-
-    <div style="background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.10); border-radius:18px; padding:28px;">
-      <h3 style="color:#fff; font-size:28px; margin:0 0 14px;"><span data-lang="ar">السيرة المهنية المختصرة</span><span data-lang="en">Professional Profile</span></h3>
-      <p style="color:rgba(255,255,255,.82); line-height:1.9; margin:0 0 14px;">
-        <span data-lang="ar">مستشار قانوني يعمل وفق القوانين واللوائح المنظمة لمهنة الاستشارات القانونية بدولة الإمارات، مع خبرة عملية واسعة في الاستشارات، وصياغة العقود، وإعداد المذكرات والدفوع، وإدارة المخاطر القانونية، والمتابعة والتنسيق مع محامين مرخصين عند الاقتضاء.</span><span data-lang="en">Legal consultant operating under the UAE legal consultancy regulations, with extensive practical experience in legal advice, contract drafting, legal memoranda and submissions, risk management, and case follow‑up/coordination with licensed advocates where required.</span>
-      </p>
-
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:18px;">
-        <div style="padding:16px; border-radius:14px; background:rgba(0,0,0,.18); border:1px solid rgba(255,255,255,.08);">
-          <div style="font-weight:800; color:#fff; margin-bottom:8px;"><span data-lang="ar">المؤهلات الأكاديمية</span><span data-lang="en">Academic Qualifications</span></div>
-          <ul style="margin:0; padding-inline-start:18px; color:rgba(255,255,255,.80); line-height:1.9;">
-            <li><span data-lang="ar">دبلومة القانون الدولي</span><span data-lang="en">Diploma in International Law</span></li>
-            <li><span data-lang="ar">دبلومة القانون المدني</span><span data-lang="en">Diploma in Civil Law</span></li>
-            <li><span data-lang="ar">ماجستير قانون – جامعة عين شمس</span><span data-lang="en">LL.M. – Ain Shams University</span></li>
-          </ul>
-        </div>
-
-        <div style="padding:16px; border-radius:14px; background:rgba(0,0,0,.18); border:1px solid rgba(255,255,255,.08);">
-          <div style="font-weight:800; color:#fff; margin-bottom:8px;"><span data-lang="ar">التحكيم والاعتمادات</span><span data-lang="en">Arbitration & Credentials</span></div>
-          <ul style="margin:0; padding-inline-start:18px; color:rgba(255,255,255,.80); line-height:1.9;">
-            <li><span data-lang="ar">مستشار تحكيم دولي – مركز جامعة عين شمس للتحكيم الدولي</span><span data-lang="en">International Arbitration Consultant – Ain Shams University Arbitration Center</span></li>
-            <li><span data-lang="ar">محكم دولي معتمد – الأكاديمية الدولية للتحكيم</span><span data-lang="en">Certified International Arbitrator – International Academy of Arbitration</span></li>
-            <li><span data-lang="ar">دورات علم نفس جنائي ومحاكم تدريبية</span><span data-lang="en">Courses in Criminal Psychology & Mock Court Training</span></li>
-          </ul>
-        </div>
-      </div>
-
-      <div style="margin-top:18px; padding:16px; border-radius:14px; background:rgba(245,158,11,.08); border:1px solid rgba(245,158,11,.25); color:rgba(255,255,255,.85); line-height:1.9;">
-        <strong style="color:#fff;"><span data-lang="ar">تنبيه ترخيص مهني:</span><span data-lang="en">Professional Licensing Note:</span></strong>
-        <span data-lang="ar">لا يُنشئ هذا الموقع علاقة مهنية أو التزامًا قانونيًا إلا بعد التواصل المباشر وتوقيع اتفاق خدمات مكتوب. وعند اللزوم يتم التنسيق والمتابعة عبر محامين مرخصين وفق الأنظمة المعمول بها.</span><span data-lang="en">This website does not create a professional relationship or legal obligation unless confirmed through direct engagement and a written service agreement. Where necessary, matters are coordinated with licensed advocates in accordance with applicable regulations.</span>
-      </div>
-    </div>
-  </div>
-</section>
-
 
     <!-- Services Section -->
     <section class="services" id="services">
@@ -1742,55 +1749,6 @@ body.lang-en .nav-links{direction:ltr;}
             </div>
         </div>
     </section>
-<section class="knowledge" id="knowledge" style="padding:90px 5%; background:#0b1220;">
-  <div style="max-width:1200px; margin:auto;">
-    <div style="text-align:center; margin-bottom:28px;">
-      <h2 style="color:#fff; font-size:34px; margin:0 0 10px;"><span data-lang="ar">قاعدة المعرفة القانونية</span><span data-lang="en">Legal Knowledge Base</span></h2>
-      <p style="color:rgba(255,255,255,.78); line-height:1.9; margin:0;">
-        <span data-lang="ar">محتوى توعوي ومراجع عملية مُنظمة حسب التخصص. (يُحدَّث دوريًا).</span><span data-lang="en">Educational content and practical references organized by practice area (updated periodically).</span>
-      </p>
-    </div>
-
-    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px;">
-      <div style="padding:18px; border-radius:16px; background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.10);">
-        <div style="font-weight:800; color:#fff; margin-bottom:10px;"><span data-lang="ar">شركات وتجاري</span><span data-lang="en">Corporate & Commercial</span></div>
-        <ul style="margin:0; padding-inline-start:18px; color:rgba(255,255,255,.80); line-height:1.9;">
-          <li><span data-lang="ar">نماذج وصيغ عقود (NDA / شراكة / توريد)</span><span data-lang="en">Contract templates (NDA / Partnership / Supply)</span></li>
-          <li><span data-lang="ar">مبادئ مسؤولية المديرين والحوكمة</span><span data-lang="en">Directors' duties & governance basics</span></li>
-        </ul>
-      </div>
-
-      <div style="padding:18px; border-radius:16px; background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.10);">
-        <div style="font-weight:800; color:#fff; margin-bottom:10px;"><span data-lang="ar">عمالي</span><span data-lang="en">Labour</span></div>
-        <ul style="margin:0; padding-inline-start:18px; color:rgba(255,255,255,.80); line-height:1.9;">
-          <li><span data-lang="ar">حقوق العامل وصاحب العمل بإيجاز</span><span data-lang="en">Employer/employee rights – quick guide</span></li>
-          <li><span data-lang="ar">ملاحظات عملية قبل تقديم شكوى</span><span data-lang="en">Practical notes before filing a complaint</span></li>
-        </ul>
-      </div>
-
-      <div style="padding:18px; border-radius:16px; background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.10);">
-        <div style="font-weight:800; color:#fff; margin-bottom:10px;"><span data-lang="ar">مدني وعقاري</span><span data-lang="en">Civil & Real Estate</span></div>
-        <ul style="margin:0; padding-inline-start:18px; color:rgba(255,255,255,.80); line-height:1.9;">
-          <li><span data-lang="ar">إرشادات نزاعات الإيجارات والإخلاء</span><span data-lang="en">Rental disputes & eviction guidance</span></li>
-          <li><span data-lang="ar">مبادئ الإثبات والإنذارات</span><span data-lang="en">Evidence & legal notices basics</span></li>
-        </ul>
-      </div>
-
-      <div style="padding:18px; border-radius:16px; background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.10);">
-        <div style="font-weight:800; color:#fff; margin-bottom:10px;"><span data-lang="ar">تحكيم وتسوية</span><span data-lang="en">Arbitration & ADR</span></div>
-        <ul style="margin:0; padding-inline-start:18px; color:rgba(255,255,255,.80); line-height:1.9;">
-          <li><span data-lang="ar">بنود التحكيم وصياغتها السليمة</span><span data-lang="en">Arbitration clauses – drafting</span></li>
-          <li><span data-lang="ar">مسار التسوية والتفاوض</span><span data-lang="en">Settlement & negotiation pathway</span></li>
-        </ul>
-      </div>
-    </div>
-
-    <div style="margin-top:20px; text-align:center; color:rgba(255,255,255,.70); line-height:1.9;">
-      <span data-lang="ar">لإضافة مراجع أو نماذج بعينها داخل الموقع، يُفضّل حفظها كملفات PDF داخل مجلد assets ثم ربطها من هنا.</span><span data-lang="en">To publish specific references or templates, place them as PDF files inside the assets folder and link them here.</span>
-    </div>
-  </div>
-</section>
-
 
     <!-- Why Choose Us Section -->
     <section class="why-us" id="why-us">
@@ -1816,9 +1774,9 @@ body.lang-en .nav-links{direction:ltr;}
                 <p>سنة خبرة</p>
             </div>
             <div class="why-stat">
-                <i class="fas fa-percentage"></i>
-                <h3>95%</h3>
-                <p>نسبة النجاح</p>
+                <i class="fas fa-award"></i>
+                <h3>سجل قوي</h3>
+                <p>نتائج إيجابية</p>
             </div>
         </div>
         <div class="features-grid">
@@ -2142,7 +2100,7 @@ body.lang-en .nav-links{direction:ltr;}
                     <i class="fas fa-envelope"></i>
                     <div>
                         <h4>البريد الإلكتروني</h4>
-                        <p><a href="mailto:info@ahmedhelmy-law.ae">info@ahmedhelmy-law.ae</a></p>
+                        <p><a href="mailto:AHMEDHELMY200@GMAIL.COM">AHMEDHELMY200@GMAIL.COM</a></p>
                     </div>
                 </div>
                 
@@ -2180,7 +2138,7 @@ body.lang-en .nav-links{direction:ltr;}
                     <div class="form-row">
                         <div class="form-group">
                             <label for="email"><i class="fas fa-envelope"></i> البريد الإلكتروني</label>
-                            <input type="email" id="email" name="email" placeholder="example@email.com">
+                            <input type="email" id="email" name="email" placeholder="AHMEDHELMY200@GMAIL.COM">
                         </div>
                         <div class="form-group">
                             <label for="service"><i class="fas fa-briefcase"></i> نوع الخدمة *</label>
@@ -2203,6 +2161,14 @@ body.lang-en .nav-links{direction:ltr;}
                         <label for="message"><i class="fas fa-comment-alt"></i> تفاصيل الاستفسار *</label>
                         <textarea id="message" name="message" placeholder="اكتب تفاصيل قضيتك أو استفسارك هنا..." required></textarea>
                     </div>
+
+                    <div class="form-group">
+                        <label style="display:flex; gap:10px; align-items:flex-start; line-height:1.7;">
+                            <input type="checkbox" required style="margin-top:4px;">
+                            <span>أقرّ بأن المعلومات المرسلة لا تُعد استشارة قانونية ملزمة، وأن أي إجراء قانوني يتم بعد مراجعة المكتب وتحديد نطاق الخدمة وتوقيع اتفاق رسمي.</span>
+                        </label>
+                    </div>
+
                     <button type="submit" class="submit-btn">
                         <i class="fas fa-paper-plane"></i> إرسال الرسالة
                     </button>
@@ -2215,6 +2181,25 @@ body.lang-en .nav-links{direction:ltr;}
     <div class="map-section">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116799.97505765498!2d55.65168085!3d24.2075169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8ab145ae4b5b33%3A0xc4b8b5e0d9fa8c53!2sAl%20Ain%20-%20Abu%20Dhabi%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1699999999999!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+
+
+    <!-- Legal Disclaimer -->
+    <section class="legal-disclaimer" style="padding:60px 5%; background:#f5f5f5;">
+        <div style="max-width:1100px; margin:auto;">
+            <h3 style="color:#1a1a2e; margin-bottom:15px;">إخلاء المسؤولية القانونية</h3>
+            <p style="color:#666; line-height:1.9; margin-bottom:10px;">
+                المعلومات الواردة في هذا الموقع هي لأغراض تعريفية عامة فقط، ولا تُعد بأي حال من الأحوال استشارة قانونية ملزمة
+                أو بديلاً عن استشارة قانونية رسمية مكتوبة.
+            </p>
+            <p style="color:#666; line-height:1.9; margin-bottom:10px;">
+                لا تنشأ أي علاقة قانونية أو مهنية بين المكتب وزائر الموقع إلا بعد التواصل المباشر وتحديد نطاق الخدمة
+                وتوقيع اتفاقية خدمات قانونية مكتوبة وفقًا للقوانين واللوائح المعمول بها في دولة الإمارات العربية المتحدة.
+            </p>
+            <p style="color:#666; line-height:1.9; margin:0;">
+                النتائج السابقة لا تشكل ضمانًا لتحقيق نفس النتائج مستقبلاً، حيث تختلف كل قضية بحسب ظروفها ووقائعها والأدلة المقدمة.
+            </p>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -2254,7 +2239,7 @@ body.lang-en .nav-links{direction:ltr;}
                 </ul>
             </div>
             <div class="footer-contact">
-                <h4><span data-lang="ar">تواصل معنا</span><span data-lang="en">Contact</span></h4>
+                <h4>تواصل معنا</h4>
                 <div class="footer-contact-item">
                     <i class="fas fa-map-marker-alt"></i>
                     <p>مدينة العين - إمارة أبوظبي<br>الإمارات العربية المتحدة</p>
@@ -2269,7 +2254,7 @@ body.lang-en .nav-links{direction:ltr;}
                 </div>
                 <div class="footer-contact-item">
                     <i class="fas fa-envelope"></i>
-                    <a href="mailto:info@ahmedhelmy-law.ae">info@ahmedhelmy-law.ae</a>
+                    <a href="mailto:AHMEDHELMY200@GMAIL.COM">AHMEDHELMY200@GMAIL.COM</a>
                 </div>
                 <div class="footer-contact-item">
                     <i class="fas fa-clock"></i>
