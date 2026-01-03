@@ -1,2408 +1,799 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <title>أحمد حلمي للاستشارات القانونية | الإمارات العربية المتحدة</title>
-    <meta name="description" content="مكتب أحمد حلمي للاستشارات القانونية - خدمات قانونية متكاملة في دولة الإمارات العربية المتحدة، مع فرع في دولة الإمارات العربية المتحدة، مع فرع في مدينة العين - أبوظبي. استشارات قانونية، قضايا جنائية، أحوال شخصية، قضايا تجارية وعمالية.">
-    <meta name="keywords" content="استشارات قانونية الإمارات, مستشار قانوني, محامي الإمارات, قضايا جنائية, أحوال شخصية, قضايا تجارية, قضايا عمالية, أبوظبي, دبي, الشارقة, عجمان, رأس الخيمة, الفجيرة, العين">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap"></noscript>
-    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
-    <!-- (محفوظ للتوافق) -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        :root {
-            --primary: #1a1a2e;
-            --secondary: #16213e;
-            --gold: #d4af37;
-            --gold-light: #f4e4bc;
-            --gold-dark: #b8960c;
-            --white: #ffffff;
-            --gray: #f5f5f5;
-            --gray-dark: #e0e0e0;
-            --text: #333333;
-            --text-light: #666666;
-        }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="أحمد حلمي للاستشارات القانونية – خدمات استشارية احترافية داخل دولة الإمارات." />
+  <meta name="theme-color" content="#0b0f17" />
+  <title>أحمد حلمي للاستشارات القانونية</title>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 
-        html {
-            scroll-behavior: smooth;
-        }
+  <style>
+    :root{
+      --bg:#0b0f17;
+      --panel: rgba(255,255,255,.06);
+      --panel2: rgba(255,255,255,.09);
+      --text:#e8edf7;
+      --muted: rgba(232,237,247,.72);
+      --line: rgba(255,255,255,.12);
+      --gold:#d4af37;
+      --gold2:#f1d277;
+      --shadow: 0 12px 40px rgba(0,0,0,.35);
+      --radius: 18px;
+      --radius2: 24px;
+      --container: 1120px;
+    }
 
-        body {
-            font-family: 'Cairo', sans-serif;
-            line-height: 1.8;
-            color: var(--text);
-            overflow-x: hidden;
-            background: var(--white);
-        }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:"Cairo", system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background:
+        radial-gradient(900px 450px at 85% -10%, rgba(212,175,55,.18), transparent 60%),
+        radial-gradient(700px 350px at 10% 0%, rgba(120,160,255,.14), transparent 60%),
+        radial-gradient(650px 350px at 50% 110%, rgba(212,175,55,.10), transparent 60%),
+        var(--bg);
+      color:var(--text);
+      overflow-x:hidden;
+    }
 
-        /* Scrollbar */
-        ::-webkit-scrollbar {
-            width: 10px;
-        }
-        ::-webkit-scrollbar-track {
-            background: var(--gray);
-        }
-        ::-webkit-scrollbar-thumb {
-            background: var(--gold);
-            border-radius: 5px;
-        }
+    a{color:inherit; text-decoration:none}
+    .container{max-width:var(--container); margin:0 auto; padding:0 18px}
+    .topbar{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(12px);
+      background: rgba(11,15,23,.62);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:12px 0;
+      gap:10px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      min-width:220px;
+    }
+    .logo{
+      width:42px; height:42px; border-radius:14px;
+      background: linear-gradient(135deg, rgba(212,175,55,.95), rgba(241,210,119,.55));
+      box-shadow: 0 12px 30px rgba(212,175,55,.18);
+      display:grid; place-items:center;
+      color:#0b0f17; font-weight:800;
+    }
+    .brand h1{margin:0; font-size:16px; line-height:1.2}
+    .brand small{display:block; color:var(--muted); font-size:12px; margin-top:2px}
+    .navlinks{
+      display:flex; align-items:center; gap:14px;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+    .navlinks a{
+      padding:10px 10px; border-radius:14px;
+      color:var(--muted);
+      transition:.2s;
+    }
+    .navlinks a:hover{background:var(--panel); color:var(--text)}
+    .navlinks a.active{background:var(--panel2); color:var(--text); border:1px solid var(--line)}
+    .actions{display:flex; align-items:center; gap:10px; min-width:220px; justify-content:flex-end}
+    .btn{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color:var(--text);
+      border-radius:16px;
+      padding:10px 12px;
+      font-weight:700;
+      cursor:pointer;
+      transition:.2s;
+      display:inline-flex; align-items:center; gap:8px;
+      box-shadow:none;
+    }
+    .btn:hover{transform: translateY(-1px); background:rgba(255,255,255,.07)}
+    .btn.primary{
+      border-color: rgba(212,175,55,.45);
+      background: linear-gradient(135deg, rgba(212,175,55,.22), rgba(241,210,119,.10));
+    }
+    .btn.primary:hover{border-color: rgba(212,175,55,.7)}
+    .btn.ghost{background:transparent}
+    .pill{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius:999px;
+      padding:8px 10px;
+      color:var(--muted);
+      font-size:12px;
+      display:inline-flex; gap:8px; align-items:center;
+    }
 
-        /* Preloader */
-        .preloader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: var(--primary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-            transition: 0.5s;
-        }
-        .preloader.hidden {
-            opacity: 0;
-            visibility: hidden;
-        }
-        .preloader-content {
-            text-align: center;
-        }
-        .preloader-icon {
-            font-size: 4rem;
-            color: var(--gold);
-            animation: pulse 1s infinite;
-        }
-        .preloader-text {
-            color: var(--white);
-            margin-top: 20px;
-            font-size: 1.2rem;
-        }
+    /* Hero */
+    header.hero{padding:56px 0 22px}
+    .heroGrid{
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap:22px;
+      align-items:stretch;
+    }
+    .heroCard{
+      border:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border-radius: var(--radius2);
+      box-shadow: var(--shadow);
+      padding:22px;
+      overflow:hidden;
+      position:relative;
+    }
+    .heroCard:before{
+      content:"";
+      position:absolute; inset:-2px;
+      background: radial-gradient(400px 220px at 20% 10%, rgba(212,175,55,.18), transparent 60%),
+                  radial-gradient(380px 200px at 90% 30%, rgba(120,160,255,.16), transparent 60%);
+      pointer-events:none;
+      opacity:.9;
+    }
+    .heroCard > *{position:relative}
+    .heroTitle{margin:10px 0 10px; font-size:34px; line-height:1.25}
+    .heroSub{margin:0 0 16px; color:var(--muted); font-size:15px; line-height:1.8}
+    .heroCtas{display:flex; flex-wrap:wrap; gap:10px; margin-top:14px}
+    .heroNotes{
+      margin-top:16px; display:flex; gap:10px; flex-wrap:wrap;
+    }
 
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-        }
+    .sideCard{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      border-radius: var(--radius2);
+      padding:18px;
+      box-shadow: var(--shadow);
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+    .sideCard h3{margin:0; font-size:16px}
+    .kv{display:grid; gap:10px}
+    .kvRow{
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+      padding:10px 12px; border-radius:16px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+    }
+    .kvRow b{font-size:13px}
+    .kvRow span{color:var(--muted); font-size:13px; direction:ltr; text-align:left}
 
-        /* Navbar */
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: var(--primary);
-            padding: 15px 5%;
-            z-index: 1000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.3);
-            transition: 0.3s;
-        }
-        .navbar.scrolled {
-            padding: 10px 5%;
-            background: rgba(26, 26, 46, 0.98);
-        }
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        .logo-icon {
-            width: 50px;
-            height: 50px;
-            background: var(--gold);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .logo-icon i {
-            font-size: 24px;
-            color: var(--primary);
-        }
-        .logo-text h1 {
-            color: var(--gold);
-            font-size: 1.3rem;
-            font-weight: 700;
-        }
-        .logo-text span {
-            color: var(--white);
-            font-size: 0.8rem;
-        }
-        .nav-links {
-            display: flex;
-            gap: 25px;
-            list-style: none;
-        }
-        .nav-links a {
-            color: var(--white);
-            text-decoration: none;
-            font-weight: 600;
-            transition: 0.3s;
-            padding: 5px 10px;
-            font-size: 0.95rem;
-        }
-        .nav-links a:hover {
-            color: var(--gold);
-        }
-        .menu-toggle {
-            display: none;
-            color: var(--gold);
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
+    /* Sections */
+    section{padding:34px 0}
+    .sectionHead{
+      display:flex; align-items:flex-end; justify-content:space-between; gap:14px;
+      margin-bottom:14px;
+    }
+    .sectionHead h2{margin:0; font-size:22px}
+    .sectionHead p{margin:0; color:var(--muted); font-size:13px; max-width:560px; line-height:1.8}
+    .grid3{display:grid; grid-template-columns:repeat(3,1fr); gap:12px}
+    .grid2{display:grid; grid-template-columns:repeat(2,1fr); gap:12px}
+    .card{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      border-radius: var(--radius);
+      padding:16px;
+      box-shadow: 0 10px 24px rgba(0,0,0,.18);
+    }
+    .card h3{margin:0 0 8px; font-size:16px}
+    .card p{margin:0; color:var(--muted); line-height:1.8; font-size:13px}
+    .badge{display:inline-flex; gap:6px; align-items:center; font-size:12px; color:var(--muted)}
+    .dot{width:8px; height:8px; border-radius:99px; background:rgba(212,175,55,.9)}
+    ul.clean{margin:10px 0 0; padding:0 18px 0 0; color:var(--muted); line-height:1.9; font-size:13px}
+    ul.clean li{margin:4px 0}
 
-        /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            background: linear-gradient(135deg, rgba(26, 26, 46, 0.95), rgba(22, 33, 62, 0.9)), 
-                        url('assets/img/hero.webp') center/cover fixed;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 120px 20px 80px;
-        }
-        .hero-content {
-            max-width: 900px;
-            animation: fadeInUp 1s ease;
-        }
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(50px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background: rgba(212, 175, 55, 0.2);
-            border: 1px solid var(--gold);
-            color: var(--gold);
-            padding: 10px 25px;
-            border-radius: 50px;
-            font-weight: 600;
-            margin-bottom: 25px;
-        }
-        .hero h1 {
-            color: var(--white);
-            font-size: 3rem;
-            margin-bottom: 20px;
-            line-height: 1.3;
-        }
-        .hero h1 span {
-            color: var(--gold);
-        }
-        .hero > .hero-content > p {
-            color: rgba(255,255,255,0.85);
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .hero-features {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-bottom: 40px;
-            flex-wrap: wrap;
-        }
-        .hero-feature {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            color: rgba(255,255,255,0.9);
-        }
-        .hero-feature i {
-            color: var(--gold);
-        }
-        .hero-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .btn {
-            padding: 15px 35px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 700;
-            transition: 0.3s;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-        .btn-primary {
-            background: var(--gold);
-            color: var(--primary);
-        }
-        .btn-primary:hover {
-            background: var(--gold-light);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
-        }
-        .btn-secondary {
-            background: transparent;
-            color: var(--white);
-            border: 2px solid var(--white);
-        }
-        .btn-secondary:hover {
-            background: var(--white);
-            color: var(--primary);
-        }
-        .btn-whatsapp {
-            background: #25d366;
-            color: white;
-        }
-        .btn-whatsapp:hover {
-            background: #128c7e;
-            transform: translateY(-3px);
-        }
+    /* Services */
+    .serviceCard{
+      padding:0;
+      overflow:hidden;
+    }
+    .serviceHead{
+      display:flex; gap:10px; align-items:flex-start;
+      padding:16px;
+      border-bottom:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+    }
+    .icon{
+      width:42px; height:42px; border-radius:16px;
+      border:1px solid rgba(212,175,55,.35);
+      background: linear-gradient(135deg, rgba(212,175,55,.18), rgba(255,255,255,.02));
+      display:grid; place-items:center;
+      font-weight:800; color:var(--gold2);
+    }
+    .serviceBody{padding:14px 16px}
+    .serviceBody .btn{margin-top:10px}
+    .collapse{display:none}
+    .collapse.open{display:block}
 
-        /* Stats Bar */
-        .stats-bar {
-            background: var(--white);
-            padding: 50px 5%;
-            margin-top: -50px;
-            position: relative;
-            z-index: 10;
-            border-radius: 20px 20px 0 0;
-            box-shadow: 0 -10px 40px rgba(0,0,0,0.1);
-        }
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        .stat-item {
-            text-align: center;
-            padding: 20px;
-        }
-        .stat-item i {
-            font-size: 2.5rem;
-            color: var(--gold);
-            margin-bottom: 15px;
-        }
-        .stat-item h3 {
-            font-size: 2.5rem;
-            color: var(--primary);
-            font-weight: 800;
-        }
-        .stat-item p {
-            color: var(--text-light);
-        }
+    /* Timeline */
+    .timeline{display:grid; gap:10px}
+    .step{
+      display:flex; gap:12px; align-items:flex-start;
+      padding:14px 14px;
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.03);
+    }
+    .stepNum{
+      width:34px; height:34px; border-radius:14px;
+      display:grid; place-items:center;
+      border:1px solid rgba(212,175,55,.4);
+      color:var(--gold2);
+      font-weight:900;
+    }
 
-        /* Section Styles */
-        section {
-            padding: 100px 5%;
-        }
-        .section-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-        .section-header h2 {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 15px;
-        }
-        .section-header h2 span {
-            color: var(--gold);
-        }
-        .section-header p {
-            color: var(--text-light);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .underline {
-            width: 80px;
-            height: 4px;
-            background: var(--gold);
-            margin: 20px auto;
-            border-radius: 2px;
-        }
+    /* Knowledge */
+    .kbTools{
+      display:flex; gap:10px; flex-wrap:wrap; align-items:center;
+      margin-bottom:12px;
+    }
+    .chips{display:flex; gap:8px; flex-wrap:wrap}
+    .chip{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      color:var(--muted);
+      padding:8px 10px;
+      border-radius:999px;
+      cursor:pointer;
+      font-weight:800;
+      font-size:12px;
+      transition:.2s;
+    }
+    .chip.active{border-color:rgba(212,175,55,.5); color:var(--text); background:rgba(212,175,55,.10)}
+    .search{
+      flex:1;
+      min-width:200px;
+      display:flex; align-items:center; gap:8px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius: 16px;
+      padding:10px 12px;
+    }
+    .search input{
+      width:100%;
+      border:0;
+      outline:0;
+      background:transparent;
+      color:var(--text);
+      font-family:inherit;
+      font-size:13px;
+    }
+    .kbList{display:grid; grid-template-columns:repeat(2,1fr); gap:12px}
+    .kbItem h4{margin:0 0 8px; font-size:14px}
+    .kbMeta{display:flex; gap:10px; flex-wrap:wrap; color:var(--muted); font-size:12px}
+    .kbItem .btn{margin-top:10px}
+    .note{
+      border:1px dashed rgba(255,255,255,.22);
+      background: rgba(255,255,255,.03);
+      border-radius: var(--radius);
+      padding:12px 14px;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.8;
+    }
 
-        /* About Section */
-        .about {
-            background: var(--gray);
-        }
-        .about-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .about-image {
-            position: relative;
-        }
-        .about-image img {
-            width: 100%;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
-        }
-        .experience-badge {
-            position: absolute;
-            bottom: -30px;
-            right: -30px;
-            background: var(--gold);
-            color: var(--primary);
-            padding: 30px;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 10px 40px rgba(212, 175, 55, 0.3);
-        }
-        .experience-badge h3 {
-            font-size: 2.5rem;
-            line-height: 1;
-        }
-        .experience-badge p {
-            font-weight: 600;
-        }
-        .about-content h3 {
-            color: var(--gold);
-            font-size: 1.1rem;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .about-content h2 {
-            color: var(--primary);
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-        .about-content > p {
-            color: var(--text-light);
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-        .about-features {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-top: 30px;
-        }
-        .about-feature {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            background: var(--white);
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-        }
-        .about-feature i {
-            width: 50px;
-            height: 50px;
-            background: var(--gold);
-            color: var(--primary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            flex-shrink: 0;
-        }
-        .about-feature div h4 {
-            color: var(--primary);
-            font-size: 1rem;
-            margin-bottom: 2px;
-        }
-        .about-feature div p {
-            color: var(--text-light);
-            font-size: 0.85rem;
-            margin: 0;
-        }
+    /* FAQ */
+    .faq{display:grid; gap:10px}
+    details{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius: var(--radius);
+      padding:12px 14px;
+    }
+    summary{
+      cursor:pointer;
+      list-style:none;
+      font-weight:900;
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+    }
+    summary::-webkit-details-marker{display:none}
+    details p{margin:10px 0 0; color:var(--muted); line-height:1.9; font-size:13px}
 
-        /* Vision & Mission */
-        .vision-mission {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            max-width: 1200px;
-            margin: 60px auto 0;
-        }
-        .vision-box, .mission-box {
-            background: var(--white);
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
-            border-right: 5px solid var(--gold);
-        }
-        .vision-box h4, .mission-box h4 {
-            color: var(--primary);
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .vision-box h4 i, .mission-box h4 i {
-            color: var(--gold);
-        }
-        .vision-box p, .mission-box p {
-            color: var(--text-light);
-            line-height: 1.8;
-        }
+    /* Footer + Floating CTA */
+    footer{
+      padding:22px 0 40px;
+      border-top:1px solid var(--line);
+      background: rgba(0,0,0,.12);
+      margin-top:14px;
+    }
+    .footGrid{display:grid; grid-template-columns:1.1fr .9fr; gap:14px}
+    .fine{color:var(--muted); font-size:12px; line-height:1.9}
+    .copy{display:flex; gap:8px; flex-wrap:wrap; margin-top:10px}
+    .floatCta{
+      position:fixed;
+      left:14px;
+      bottom:14px;
+      z-index:60;
+      display:flex;
+      gap:10px;
+      align-items:center;
+    }
+    .floatCta .btn{border-radius:999px; padding:12px 14px}
 
-        /* Services Section */
-        .services {
-            background: var(--white);
-        }
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-        .service-card {
-            background: var(--white);
-            padding: 35px 30px;
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
-            transition: 0.3s;
-            border: 1px solid #eee;
-        }
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
-            border-color: var(--gold);
-        }
-        .service-header {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-        .service-icon {
-            width: 70px;
-            height: 70px;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.8rem;
-            color: var(--gold);
-            flex-shrink: 0;
-            transition: 0.3s;
-        }
-        .service-card:hover .service-icon {
-            background: var(--gold);
-            color: var(--primary);
-        }
-        .service-header h3 {
-            color: var(--primary);
-            font-size: 1.25rem;
-        }
-        .service-card > p {
-            color: var(--text-light);
-            font-size: 0.95rem;
-            margin-bottom: 20px;
-            line-height: 1.7;
-        }
-        .service-features {
-            list-style: none;
-        }
-        .service-features li {
-            padding: 8px 0;
-            color: var(--text);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            border-bottom: 1px dashed #eee;
-            font-size: 0.9rem;
-        }
-        .service-features li:last-child {
-            border-bottom: none;
-        }
-        .service-features li i {
-            color: var(--gold);
-            font-size: 0.8rem;
-        }
-
-        /* Why Choose Us */
-        .why-us {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: var(--white);
-        }
-        .why-us .section-header h2 {
-            color: var(--white);
-        }
-        .why-us .section-header p {
-            color: rgba(255,255,255,0.7);
-        }
-        .why-stats {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
-            max-width: 1000px;
-            margin: 0 auto 60px;
-        }
-        .why-stat {
-            text-align: center;
-            padding: 30px;
-            background: rgba(255,255,255,0.05);
-            border-radius: 15px;
-            border: 1px solid rgba(212, 175, 55, 0.2);
-        }
-        .why-stat i {
-            font-size: 2.5rem;
-            color: var(--gold);
-            margin-bottom: 15px;
-        }
-        .why-stat h3 {
-            font-size: 2.5rem;
-            color: var(--gold);
-            margin-bottom: 5px;
-        }
-        .why-stat p {
-            color: rgba(255,255,255,0.8);
-        }
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .feature-card {
-            background: rgba(255,255,255,0.05);
-            padding: 35px;
-            border-radius: 15px;
-            border: 1px solid rgba(212, 175, 55, 0.2);
-            transition: 0.3s;
-            text-align: center;
-        }
-        .feature-card:hover {
-            background: rgba(255,255,255,0.1);
-            border-color: var(--gold);
-            transform: translateY(-5px);
-        }
-        .feature-card i {
-            font-size: 2.5rem;
-            color: var(--gold);
-            margin-bottom: 20px;
-        }
-        .feature-card h4 {
-            font-size: 1.2rem;
-            margin-bottom: 15px;
-        }
-        .feature-card p {
-            color: rgba(255,255,255,0.7);
-            font-size: 0.95rem;
-            line-height: 1.8;
-        }
-
-        /* Process Section */
-        .process {
-            background: var(--gray);
-        }
-        .process-timeline {
-            max-width: 900px;
-            margin: 0 auto;
-            position: relative;
-        }
-        .process-timeline::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 29px;
-            width: 4px;
-            height: 100%;
-            background: var(--gold);
-            border-radius: 2px;
-        }
-        .process-step {
-            display: flex;
-            gap: 30px;
-            margin-bottom: 40px;
-            position: relative;
-        }
-        .process-step:last-child {
-            margin-bottom: 0;
-        }
-        .step-number {
-            width: 60px;
-            height: 60px;
-            background: var(--gold);
-            color: var(--primary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            font-weight: 700;
-            flex-shrink: 0;
-            z-index: 1;
-        }
-        .step-content {
-            background: var(--white);
-            padding: 25px 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
-            flex: 1;
-        }
-        .step-content h4 {
-            color: var(--primary);
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .step-content h4 i {
-            color: var(--gold);
-        }
-        .step-content p {
-            color: var(--text-light);
-            margin: 0;
-            line-height: 1.7;
-        }
-
-        /* Testimonials */
-        .testimonials {
-            background: var(--white);
-        }
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .testimonial-card {
-            background: var(--gray);
-            padding: 35px;
-            border-radius: 20px;
-            position: relative;
-            transition: 0.3s;
-        }
-        .testimonial-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
-        }
-        .testimonial-card::before {
-            content: '"';
-            position: absolute;
-            top: 15px;
-            right: 25px;
-            font-size: 5rem;
-            color: var(--gold);
-            opacity: 0.3;
-            font-family: serif;
-            line-height: 1;
-        }
-        .testimonial-stars {
-            color: var(--gold);
-            margin-bottom: 15px;
-        }
-        .testimonial-text {
-            font-size: 1rem;
-            color: var(--text);
-            line-height: 1.8;
-            margin-bottom: 25px;
-            font-style: italic;
-        }
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        .author-avatar {
-            width: 55px;
-            height: 55px;
-            background: var(--gold);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            color: var(--primary);
-            font-weight: 700;
-        }
-        .author-info h4 {
-            color: var(--primary);
-            font-size: 1.1rem;
-            margin-bottom: 2px;
-        }
-        .author-info p {
-            color: var(--text-light);
-            font-size: 0.9rem;
-            margin: 0;
-        }
-
-        /* FAQ Section */
-        .faq {
-            background: var(--gray);
-        }
-        .faq-container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        .faq-item {
-            background: var(--white);
-            margin-bottom: 15px;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-            border: 1px solid transparent;
-            transition: 0.3s;
-        }
-        .faq-item:hover, .faq-item.active {
-            border-color: var(--gold);
-        }
-        .faq-question {
-            padding: 25px 30px;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-weight: 600;
-            color: var(--primary);
-            transition: 0.3s;
-        }
-        .faq-question:hover {
-            background: rgba(212, 175, 55, 0.1);
-        }
-        .faq-question span {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        .faq-question span i:first-child {
-            color: var(--gold);
-        }
-        .faq-question .toggle-icon {
-            width: 30px;
-            height: 30px;
-            background: var(--gold);
-            color: var(--primary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: 0.3s;
-        }
-        .faq-item.active .toggle-icon {
-            transform: rotate(180deg);
-        }
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: 0.3s;
-        }
-        .faq-item.active .faq-answer {
-            max-height: 500px;
-        }
-        .faq-answer-content {
-            padding: 0 30px 25px;
-            color: var(--text-light);
-            line-height: 1.8;
-        }
-
-        /* CTA Section */
-        .cta-section {
-            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
-            padding: 80px 5%;
-            text-align: center;
-        }
-        .cta-content h2 {
-            color: var(--primary);
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        .cta-content p {
-            color: var(--primary);
-            opacity: 0.8;
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .cta-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .cta-btn {
-            padding: 15px 40px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 700;
-            transition: 0.3s;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .cta-btn-primary {
-            background: var(--primary);
-            color: var(--gold);
-        }
-        .cta-btn-secondary {
-            background: transparent;
-            color: var(--primary);
-            border: 2px solid var(--primary);
-        }
-        .cta-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-
-        /* Contact Section */
-        .contact {
-            background: var(--white);
-        }
-        .contact-container {
-            display: grid;
-            grid-template-columns: 1fr 1.2fr;
-            gap: 60px;
-            max-width: 1300px;
-            margin: 0 auto;
-        }
-        .contact-info h3 {
-            color: var(--primary);
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-        }
-        .contact-info > p {
-            color: var(--text-light);
-            margin-bottom: 30px;
-        }
-        .info-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 20px;
-            margin-bottom: 20px;
-            padding: 20px;
-            background: var(--gray);
-            border-radius: 15px;
-            transition: 0.3s;
-        }
-        .info-item:hover {
-            transform: translateX(-10px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        .info-item i {
-            width: 55px;
-            height: 55px;
-            background: var(--gold);
-            color: var(--primary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.3rem;
-            flex-shrink: 0;
-        }
-        .info-item h4 {
-            color: var(--primary);
-            margin-bottom: 5px;
-            font-size: 1rem;
-        }
-        .info-item p {
-            margin: 0;
-            color: var(--text-light);
-            font-size: 0.95rem;
-        }
-        .info-item a {
-            color: var(--gold);
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .info-item a:hover {
-            text-decoration: underline;
-        }
-        .working-hours {
-            background: var(--primary);
-            padding: 25px;
-            border-radius: 15px;
-            margin-top: 25px;
-        }
-        .working-hours h4 {
-            color: var(--gold);
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .working-hours ul {
-            list-style: none;
-        }
-        .working-hours li {
-            color: rgba(255,255,255,0.8);
-            padding: 10px 0;
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
-        .working-hours li:last-child {
-            border-bottom: none;
-        }
-        .social-links {
-            display: flex;
-            gap: 12px;
-            margin-top: 25px;
-        }
-        .social-links a {
-            width: 50px;
-            height: 50px;
-            background: var(--primary);
-            color: var(--gold);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.3rem;
-            transition: 0.3s;
-        }
-        .social-links a:hover {
-            background: var(--gold);
-            color: var(--primary);
-            transform: translateY(-5px);
-        }
-        .contact-form {
-            background: var(--gray);
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
-        }
-        .contact-form h3 {
-            color: var(--primary);
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-        .contact-form > p {
-            text-align: center;
-            color: var(--text-light);
-            margin-bottom: 30px;
-        }
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            color: var(--primary);
-            font-weight: 600;
-            font-size: 0.95rem;
-        }
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 15px 20px;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            font-family: 'Cairo', sans-serif;
-            font-size: 1rem;
-            transition: 0.3s;
-            background: var(--white);
-        }
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            border-color: var(--gold);
-            outline: none;
-        }
-        .form-group textarea {
-            height: 130px;
-            resize: none;
-        }
-        .submit-btn {
-            width: 100%;
-            padding: 16px;
-            background: var(--gold);
-            color: var(--primary);
-            border: none;
-            border-radius: 10px;
-            font-family: 'Cairo', sans-serif;
-            font-size: 1.1rem;
-            font-weight: 700;
-            cursor: pointer;
-            transition: 0.3s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-        .submit-btn:hover {
-            background: var(--primary);
-            color: var(--gold);
-        }
-
-        /* Map Section */
-        .map-section {
-            height: 400px;
-            background: #ddd;
-        }
-        .map-section iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        /* Footer */
-        footer {
-            background: var(--primary);
-            color: var(--white);
-            padding: 60px 5% 20px;
-        }
-        .footer-content {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1.5fr;
-            gap: 40px;
-            max-width: 1300px;
-            margin: 0 auto 40px;
-        }
-        .footer-about h3 {
-            color: var(--gold);
-            font-size: 1.4rem;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .footer-about p {
-            color: rgba(255,255,255,0.7);
-            line-height: 1.8;
-            margin-bottom: 15px;
-        }
-        .footer-social {
-            display: flex;
-            gap: 10px;
-            margin-top: 15px;
-        }
-        .footer-social a {
-            width: 40px;
-            height: 40px;
-            background: rgba(255,255,255,0.1);
-            color: var(--gold);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: 0.3s;
-        }
-        .footer-social a:hover {
-            background: var(--gold);
-            color: var(--primary);
-        }
-        .footer-links h4 {
-            color: var(--gold);
-            margin-bottom: 20px;
-            font-size: 1.1rem;
-        }
-        .footer-links ul {
-            list-style: none;
-        }
-        .footer-links li {
-            margin-bottom: 10px;
-        }
-        .footer-links a {
-            color: rgba(255,255,255,0.7);
-            text-decoration: none;
-            transition: 0.3s;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 0.95rem;
-        }
-        .footer-links a:hover {
-            color: var(--gold);
-            padding-right: 10px;
-        }
-        .footer-links a i {
-            font-size: 0.7rem;
-        }
-        .footer-contact h4 {
-            color: var(--gold);
-            margin-bottom: 20px;
-            font-size: 1.1rem;
-        }
-        .footer-contact-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            margin-bottom: 15px;
-        }
-        .footer-contact-item i {
-            color: var(--gold);
-            margin-top: 5px;
-        }
-        .footer-contact-item p,
-        .footer-contact-item a {
-            color: rgba(255,255,255,0.7);
-            text-decoration: none;
-            font-size: 0.95rem;
-        }
-        .footer-contact-item a:hover {
-            color: var(--gold);
-        }
-        .footer-bottom {
-            text-align: center;
-            padding-top: 30px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-        }
-        .footer-bottom p {
-            color: rgba(255,255,255,0.5);
-            font-size: 0.9rem;
-        }
-        .footer-bottom a {
-            color: var(--gold);
-            text-decoration: none;
-        }
-
-        /* Float Buttons */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 30px;
-            left: 30px;
-            width: 60px;
-            height: 60px;
-            background: #25d366;
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            box-shadow: 0 5px 30px rgba(37, 211, 102, 0.4);
-            z-index: 999;
-            animation: bounce 2s infinite;
-            text-decoration: none;
-        }
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-        .phone-float {
-            position: fixed;
-            bottom: 100px;
-            left: 30px;
-            width: 50px;
-            height: 50px;
-            background: var(--gold);
-            color: var(--primary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.3rem;
-            box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
-            z-index: 999;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-        .phone-float:hover {
-            transform: scale(1.1);
-        }
-        .back-to-top {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 50px;
-            height: 50px;
-            background: var(--primary);
-            color: var(--gold);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            text-decoration: none;
-            opacity: 0;
-            visibility: hidden;
-            transition: 0.3s;
-            z-index: 998;
-        }
-        .back-to-top.visible {
-            opacity: 1;
-            visibility: visible;
-        }
-        .back-to-top:hover {
-            background: var(--gold);
-            color: var(--primary);
-        }
-
-        /* Responsive */
-        @media (max-width: 1200px) {
-            .footer-content {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        @media (max-width: 992px) {
-            .nav-links {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background: var(--primary);
-                flex-direction: column;
-                padding: 20px;
-                text-align: center;
-                gap: 15px;
-            }
-            .nav-links.active {
-                display: flex;
-            }
-            .menu-toggle {
-                display: block;
-            }
-            .hero h1 {
-                font-size: 2.3rem;
-            }
-            .about-container,
-            .contact-container {
-                grid-template-columns: 1fr;
-            }
-            .experience-badge {
-                position: relative;
-                bottom: 0;
-                right: 0;
-                display: inline-block;
-                margin-top: 20px;
-            }
-            .stats-grid, .why-stats {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .vision-mission {
-                grid-template-columns: 1fr;
-            }
-            .process-timeline::before {
-                right: 29px;
-            }
-        }
-        @media (max-width: 768px) {
-            section {
-                padding: 70px 5%;
-            }
-            .section-header h2 {
-                font-size: 2rem;
-            }
-            .hero h1 {
-                font-size: 1.9rem;
-            }
-            .hero-features {
-                flex-direction: column;
-                gap: 10px;
-            }
-            .stats-grid, .why-stats {
-                grid-template-columns: 1fr;
-            }
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-            .testimonials-grid {
-                grid-template-columns: 1fr;
-            }
-            .about-features {
-                grid-template-columns: 1fr;
-            }
-            .form-row {
-                grid-template-columns: 1fr;
-            }
-            .footer-content {
-                grid-template-columns: 1fr;
-            }
-            .process-step {
-                flex-direction: column;
-                text-align: center;
-            }
-            .step-number {
-                margin: 0 auto 15px;
-            }
-            .process-timeline::before {
-                display: none;
-            }
-        }
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 1.6rem;
-            }
-            .hero-buttons {
-                flex-direction: column;
-            }
-            .btn {
-                width: 100%;
-                justify-content: center;
-            }
-            .cta-buttons {
-                flex-direction: column;
-            }
-            .cta-btn {
-                width: 100%;
-                justify-content: center;
-            }
-        }
-    </style>
-
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LegalService",
-  "name": "Ahmed Helmy Legal Consultancy",
-  "email": "AHMEDHELMY200@GMAIL.COM",
-  "areaServed": ["Abu Dhabi","Dubai","Sharjah","Ajman","Ras Al Khaimah","Fujairah","Umm Al Quwain","Al Ain"],
-  "address": {
-    "@type": "PostalAddress",
-    "addressCountry": "AE"
-  }
-}
-</script>
-
+    /* Responsive */
+    @media (max-width: 980px){
+      .heroGrid{grid-template-columns:1fr}
+      .actions{min-width:auto}
+      .brand{min-width:auto}
+      .grid3{grid-template-columns:1fr}
+      .grid2{grid-template-columns:1fr}
+      .kbList{grid-template-columns:1fr}
+      .footGrid{grid-template-columns:1fr}
+      .navlinks{display:none}
+    }
+  </style>
 </head>
+
 <body>
-    <!-- Preloader -->
-    <div class="preloader" id="preloader">
-        <div class="preloader-content">
-            <div class="preloader-icon">
-                <i class="fas fa-balance-scale"></i>
-            </div>
-            <p class="preloader-text">أحمد حلمي للاستشارات القانونية</p>
+
+  <div class="topbar">
+    <div class="container">
+      <div class="nav">
+        <div class="brand">
+          <div class="logo">AH</div>
+          <div>
+            <h1 id="brandName">أحمد حلمي للاستشارات القانونية</h1>
+            <small id="brandTag">استشارات قانونية داخل دولة الإمارات</small>
+          </div>
         </div>
+
+        <nav class="navlinks" aria-label="التنقل">
+          <a href="#services">الخدمات</a>
+          <a href="#process">آلية العمل</a>
+          <a href="#knowledge">قاعدة المعرفة</a>
+          <a href="#faq">الأسئلة الشائعة</a>
+          <a href="#contact">التواصل</a>
+        </nav>
+
+        <div class="actions">
+          <span class="pill" id="licensePill">مرخّص — بيانات الترخيص بالفوتر</span>
+          <a class="btn primary" id="whatsBtnTop" href="#" rel="noopener">واتساب الآن</a>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <div class="logo">
-            <div class="logo-icon">
-                <i class="fas fa-balance-scale"></i>
-            </div>
-            <div class="logo-text">
-                <h1>أحمد حلمي</h1>
-                <span>للاستشارات القانونية</span>
-            </div>
-        </div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#home">الرئيسية</a></li>
-            <li><a href="#about">من نحن</a></li>
-            <li><a href="#services">خدماتنا</a></li>
-            <li><a href="#coverage">نطاق الخدمة</a></li>
-            <li><a href="#why-us">لماذا نحن</a></li>
-            <li><a href="#process">آلية العمل</a></li>
-            <li><a href="#testimonials">آراء العملاء</a></li>
-            <li><a href="#faq">الأسئلة الشائعة</a></li>
-            <li><a href="#contact">تواصل معنا</a></li>
-        </ul>
-        <div class="menu-toggle" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
-        </div>
-    </nav>
+  <header class="hero">
+    <div class="container">
+      <div class="heroGrid">
+        <div class="heroCard">
+          <span class="pill">سرّية • وضوح • متابعة</span>
+          <h2 class="heroTitle" id="heroTitle">استشارة قانونية دقيقة—بأسلوب عملي، دون وعود وهمية</h2>
+          <p class="heroSub" id="heroSub">
+            نساعدك على فهم موقفك القانوني وتحديد الخيارات المتاحة وخطوات التنفيذ، مع الحفاظ على الخصوصية والالتزام بالنطاق المهني.
+          </p>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="hero-badge">
-                <i class="fas fa-certificate"></i>
-                مكتب استشارات قانونية معتمد ومرخص
-            </div>
-            <h1>المستشار القانوني<br><span>أحمد حلمي</span></h1>
-            <p>نقدم لكم خدمات قانونية متكاملة بأعلى معايير الجودة والمهنية والسرية التامة في دولة الإمارات العربية المتحدة، مع فرع في مدينة العين - أبوظبي. خبرة تمتد لأكثر من 15 عاماً في مختلف المجالات القانونية.</p>
-            <div class="hero-features">
-                <div class="hero-feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>استشارة أولية مجانية</span>
-                </div>
-                <div class="hero-feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>سرية تامة مضمونة</span>
-                </div>
-                <div class="hero-feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>متابعة على مدار الساعة</span>
-                </div>
-                <div class="hero-feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>أسعار منافسة</span>
-                </div>
-            </div>
-            <div class="hero-buttons">
-                <a href="https://wa.me/9710542190900" class="btn btn-whatsapp" target="_blank">
-                    <i class="fab fa-whatsapp"></i> تواصل عبر الواتساب
-                </a>
-                <a href="tel:+9710544144149" class="btn btn-primary">
-                    <i class="fas fa-phone-alt"></i> اتصل الآن
-                </a>
-                <a href="#services" class="btn btn-secondary">
-                    <i class="fas fa-briefcase"></i> تعرف على خدماتنا
-                </a>
-            </div>
-        </div>
-    </section>
+          <div class="heroCtas">
+            <a class="btn primary" id="whatsBtnHero" href="#" rel="noopener">تواصل عبر واتساب</a>
+            <a class="btn" href="#services">استعرض الخدمات</a>
+            <a class="btn ghost" id="callBtnHero" href="#">اتصال مباشر</a>
+          </div>
 
-    <!-- Stats Bar -->
-    <div class="stats-bar">
-        <div class="stats-grid">
-            <div class="stat-item">
-                <i class="fas fa-gavel"></i>
-                <h3 data-count="500">0</h3>
-                <p>قضية ناجحة</p>
-            </div>
-            <div class="stat-item">
-                <i class="fas fa-users"></i>
-                <h3 data-count="1000">0</h3>
-                <p>عميل سعيد</p>
-            </div>
-            <div class="stat-item">
-                <i class="fas fa-calendar-alt"></i>
-                <h3 data-count="15">0</h3>
-                <p>سنة خبرة</p>
-            </div>
-            <div class="stat-item">
-                <i class="fas fa-award"></i>
-                <h3>سجل قوي</h3>
-                <p>نتائج إيجابية</p>
-            </div>
+          <div class="heroNotes">
+            <span class="pill">رد خلال ساعات العمل</span>
+            <span class="pill">متابعة مكتوبة عند الطلب</span>
+            <span class="pill">مواد معرفية مجانية</span>
+          </div>
         </div>
+
+        <aside class="sideCard">
+          <h3>بيانات التواصل السريعة</h3>
+          <div class="kv">
+            <div class="kvRow"><b>الهاتف</b><span id="phoneText">—</span></div>
+            <div class="kvRow"><b>واتساب</b><span id="waText">—</span></div>
+            <div class="kvRow"><b>البريد</b><span id="emailText">—</span></div>
+            <div class="kvRow"><b>المدينة</b><span id="cityText">—</span></div>
+          </div>
+          <div class="note" id="disclaimerTop">
+            تنبيه: هذا الموقع للتعريف بالخدمات والمحتوى التوعوي، ولا يُعد بديلاً عن استشارة مكتوبة بعد الاطلاع على المستندات والوقائع.
+          </div>
+        </aside>
+      </div>
     </div>
+  </header>
 
-    
-    <!-- Coverage Section (Added) -->
-    <section class="coverage" id="coverage" style="background: var(--white); padding: 80px 5%;">
-        <div class="section-header">
-            <h2>نطاق <span>الخدمة</span></h2>
-            <div class="underline"></div>
-            <p>نخدم عملاءنا في جميع إمارات الدولة، مع توافر فرع في مدينة العين - أبوظبي، وإمكانية تقديم الاستشارات عن بُعد.</p>
+  <main>
+    <!-- Benefits -->
+    <section>
+      <div class="container">
+        <div class="sectionHead">
+          <h2>ما الذي نلتزم به معك؟</h2>
+          <p>معايير عملية تُحافظ على ثقة العميل: وضوح في الخطوات، سرية، وتوثيق لما يلزم دون تضخيم.</p>
         </div>
-        <div style="max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:20px;">
-            <div class="about-feature">
-                <i class="fas fa-map-marked-alt"></i>
-                <div>
-                    <h4>تغطية اتحادية</h4>
-                    <p>أبوظبي، دبي، الشارقة، عجمان، رأس الخيمة، الفجيرة، أم القيوين، والعين.</p>
-                </div>
-            </div>
-            <div class="about-feature">
-                <i class="fas fa-video"></i>
-                <div>
-                    <h4>استشارات عن بُعد</h4>
-                    <p>عبر الهاتف والواتساب والبريد الإلكتروني مع سرية تامة.</p>
-                </div>
-            </div>
-            <div class="about-feature">
-                <i class="fas fa-file-signature"></i>
-                <div>
-                    <h4>عقود ومذكرات</h4>
-                    <p>صياغة ومراجعة العقود والمذكرات والإنذارات القانونية بدقة.</p>
-                </div>
-            </div>
-            <div class="about-feature">
-                <i class="fas fa-handshake"></i>
-                <div>
-                    <h4>حلول تفاوضية</h4>
-                    <p>إدارة النزاعات والصلح والتسويات بصورة تحفظ الحقوق وتقلل المخاطر.</p>
-                </div>
-            </div>
+
+        <div class="grid3">
+          <div class="card">
+            <div class="badge"><span class="dot"></span>سرّية المعلومات</div>
+            <p>نتعامل مع الوقائع والمستندات بأعلى قدر من الخصوصية، ونطلب الحد الأدنى اللازم للفهم القانوني.</p>
+          </div>
+          <div class="card">
+            <div class="badge"><span class="dot"></span>خطة خطوات واضحة</div>
+            <p>نحوّل المشكلة إلى خطوات: ما المطلوب؟ ما الخيارات؟ ما المخاطر؟ وما الإجراء الأقرب للنتيجة.</p>
+          </div>
+          <div class="card">
+            <div class="badge"><span class="dot"></span>صياغات منضبطة</div>
+            <p>نستخدم عبارات مهنية دقيقة دون وعود بنتائج، ودون نسبة نجاح أو ادّعاءات غير قابلة للإثبات.</p>
+          </div>
         </div>
+      </div>
     </section>
 
-<!-- About Section -->
-    <section class="about" id="about">
-        <div class="section-header">
-            <h2>من <span>نحن</span></h2>
-            <div class="underline"></div>
-            <p>تعرف على مكتب أحمد حلمي للاستشارات القانونية</p>
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>الخدمات</h2>
+          <p>اختر الخدمة الأقرب لاحتياجك. التفاصيل تُفتح داخل البطاقة لتقليل الإطالة وتحسين القراءة.</p>
         </div>
-        <div class="about-container">
-            <div class="about-image">
-                <picture>
-                    <source srcset="assets/img/about.webp" type="image/webp">
-                    <img src="assets/img/about.jpg" loading="lazy" decoding="async" alt="مكتب أحمد حلمي للاستشارات القانونية">
-                </picture>
-                <div class="experience-badge">
-                    <h3>+15</h3>
-                    <p>سنة خبرة</p>
-                </div>
-            </div>
-            <div class="about-content">
-                <h3><i class="fas fa-balance-scale"></i> مكتب أحمد حلمي للاستشارات القانونية</h3>
-                <h2>شريكك القانوني الموثوق في الإمارات</h2>
-                <p>مرحباً بكم في مكتب المستشار أحمد حلمي للاستشارات القانونية، أحد المكاتب القانونية الرائدة في دولة الإمارات العربية المتحدة، مع فرع في مدينة العين - أبوظبي. نفخر بتقديم خدمات قانونية شاملة ومتميزة تلبي احتياجات عملائنا من الأفراد والشركات على حد سواء.</p>
-                <p>يتميز مكتبنا بفريق من المستشارين القانونيين المتخصصين ذوي الخبرة الواسعة في مختلف فروع القانون الإماراتي والدولي. نحرص على تقديم حلول قانونية مبتكرة وفعالة مع الحفاظ على أعلى معايير السرية والمهنية.</p>
-                <p>منذ تأسيسنا، نجحنا في التعامل مع مئات القضايا بنجاح تام، وبنينا سمعة طيبة قائمة على الثقة والنزاهة والالتزام بتحقيق أفضل النتائج لعملائنا.</p>
-                <div class="about-features">
-                    <div class="about-feature">
-                        <i class="fas fa-certificate"></i>
-                        <div>
-                            <h4>مكتب معتمد</h4>
-                            <p>مرخص من وزارة العدل</p>
-                        </div>
-                    </div>
-                    <div class="about-feature">
-                        <i class="fas fa-user-shield"></i>
-                        <div>
-                            <h4>سرية تامة</h4>
-                            <p>حماية معلومات العملاء</p>
-                        </div>
-                    </div>
-                    <div class="about-feature">
-                        <i class="fas fa-hand-holding-usd"></i>
-                        <div>
-                            <h4>أسعار عادلة</h4>
-                            <p>تناسب جميع الميزانيات</p>
-                        </div>
-                    </div>
-                    <div class="about-feature">
-                        <i class="fas fa-headset"></i>
-                        <div>
-                            <h4>دعم متواصل</h4>
-                            <p>متاحون على مدار الساعة</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Vision & Mission -->
-        <div class="vision-mission">
-            <div class="vision-box">
-                <h4><i class="fas fa-eye"></i> رؤيتنا</h4>
-                <p>أن نكون المكتب القانوني الأول في دولة الإمارات العربية المتحدة، المعروف بتقديم خدمات قانونية استثنائية تتسم بالابتكار والمهنية، وأن نكون الخيار الأول للأفراد والشركات الباحثين عن حلول قانونية موثوقة وفعالة.</p>
-            </div>
-            <div class="mission-box">
-                <h4><i class="fas fa-bullseye"></i> رسالتنا</h4>
-                <p>تقديم خدمات قانونية متميزة تحقق أعلى مستويات رضا العملاء، من خلال فريق من المستشارين المؤهلين الذين يلتزمون بأخلاقيات المهنة وقيم العدالة والنزاهة، مع الحرص على التطوير المستمر لمواكبة أحدث التطورات القانونية.</p>
-            </div>
-        </div>
+
+        <div class="grid2" id="servicesGrid"></div>
+      </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="section-header">
-            <h2>خدماتنا <span>القانونية</span></h2>
-            <div class="underline"></div>
-            <p>نقدم مجموعة شاملة من الخدمات القانونية المتخصصة لتلبية جميع احتياجاتكم</p>
+    <!-- Process -->
+    <section id="process">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>آلية العمل</h2>
+          <p>طريقة عمل ثابتة تُقلل العشوائية وتُظهر لك المسار الإجرائي المتوقع من البداية.</p>
         </div>
-        <div class="services-grid">
-            <!-- الخدمة 1 -->
-            <div class="service-card">
-                <div class="service-header">
-                    <div class="service-icon"><i class="fas fa-gavel"></i></div>
-                    <h3>القضايا الجنائية</h3>
-                </div>
-                <p>نقدم خدمات الدفاع والترافع في جميع القضايا الجنائية بمختلف أنواعها ودرجاتها أمام المحاكم الجزائية، مع الحرص على حماية حقوق موكلينا.</p>
-                <ul class="service-features">
-                    <li><i class="fas fa-check"></i> قضايا الجنح والجنايات</li>
-                    <li><i class="fas fa-check"></i> جرائم الاحتيال والنصب</li>
-                    <li><i class="fas fa-check"></i> قضايا الشيكات بدون رصيد</li>
-                    <li><i class="fas fa-check"></i> جرائم خيانة الأمانة والتزوير</li>
-                    <li><i class="fas fa-check"></i> قضايا السب والقذف</li>
-                    <li><i class="fas fa-check"></i> الحضور في التحقيقات</li>
-                </ul>
-            </div>
-            <!-- الخدمة 2 -->
-            <div class="service-card">
-                <div class="service-header">
-                    <div class="service-icon"><i class="fas fa-users"></i></div>
-                    <h3>قضايا الأحوال الشخصية</h3>
-                </div>
-                <p>نتولى جميع قضايا الأحوال الشخصية والأسرة بمهنية عالية وحساسية تامة، مع الحرص على الحفاظ على مصلحة الأسرة وحماية حقوق جميع الأطراف.</p>
-                <ul class="service-features">
-                    <li><i class="fas fa-check"></i> قضايا الطلاق والخلع</li>
-                    <li><i class="fas fa-check"></i> دعاوى النفقة بأنواعها</li>
-                    <li><i class="fas fa-check"></i> قضايا الحضانة والرؤية</li>
-                    <li><i class="fas fa-check"></i> إثبات النسب والزواج</li>
-                    <li><i class="fas fa-check"></i> قسمة الميراث والتركات</li>
-                    <li><i class="fas fa-check"></i> الوصايا والأوقاف</li>
-                </ul>
-            </div>
-            <!-- الخدمة 3 -->
-            <div class="service-card">
-                <div class="service-header">
-                    <div class="service-icon"><i class="fas fa-briefcase"></i></div>
-                    <h3>القضايا التجارية</h3>
-                </div>
-                <p>نوفر حلولاً قانونية متكاملة للشركات والمؤسسات التجارية، من تأسيس الشركات وصياغة العقود إلى حل النزاعات التجارية والتحكيم.</p>
-                <ul class="service-features">
-                    <li><i class="fas fa-check"></i> تأسيس الشركات والمؤسسات</li>
-                    <li><i class="fas fa-check"></i> النزاعات بين الشركاء</li>
-                    <li><i class="fas fa-check"></i> العقود التجارية والوكالات</li>
-                    <li><i class="fas fa-check"></i> الإفلاس والتصفية</li>
-                    <li><i class="fas fa-check"></i> حماية العلامات التجارية</li>
-                    <li><i class="fas fa-check"></i> التحكيم التجاري</li>
-                </ul>
-            </div>
-            <!-- الخدمة 4 -->
-            <div class="service-card">
-                <div class="service-header">
-                    <div class="service-icon"><i class="fas fa-building"></i></div>
-                    <h3>القضايا العقارية</h3>
-                </div>
-                <p>نقدم استشارات قانونية متخصصة في المجال العقاري تشمل عقود البيع والشراء والإيجار، وحل النزاعات العقارية أمام لجان فض المنازعات.</p>
-                <ul class="service-features">
-                    <li><i class="fas fa-check"></i> عقود البيع والشراء</li>
-                    <li><i class="fas fa-check"></i> عقود الإيجار</li>
-                    <li><i class="fas fa-check"></i> النزاعات العقارية</li>
-                    <li><i class="fas fa-check"></i> إخلاء المستأجرين</li>
-                    <li><i class="fas fa-check"></i> تسجيل العقارات</li>
-                    <li><i class="fas fa-check"></i> الرهن العقاري</li>
-                </ul>
-            </div>
-            <!-- الخدمة 5 -->
-            <div class="service-card">
-                <div class="service-header">
-                    <div class="service-icon"><i class="fas fa-hard-hat"></i></div>
-                    <h3>القضايا العمالية</h3>
-                </div>
-                <p>نمثل كلاً من العمال وأصحاب العمل في النزاعات العمالية، ونقدم استشارات شاملة حول حقوق والتزامات طرفي علاقة العمل.</p>
-                <ul class="service-features">
-                    <li><i class="fas fa-check"></i> مستحقات نهاية الخدمة</li>
-                    <li><i class="fas fa-check"></i> الفصل التعسفي</li>
-                    <li><i class="fas fa-check"></i> الأجور والبدلات المتأخرة</li>
-                    <li><i class="fas fa-check"></i> إصابات العمل</li>
-                    <li><i class="fas fa-check"></i> عقود العمل</li>
-                    <li><i class="fas fa-check"></i> التمثيل أمام وزارة العمل</li>
-                </ul>
-            </div>
-            <!-- الخدمة 6 -->
-            <div class="service-card">
-                <div class="service-header">
-                    <div class="service-icon"><i class="fas fa-file-contract"></i></div>
-                    <h3>صياغة العقود والاتفاقيات</h3>
-                </div>
-                <p>نقدم خدمات صياغة ومراجعة العقود والاتفاقيات بجميع أنواعها بدقة واحترافية عالية، لضمان حماية حقوق عملائنا.</p>
-                <ul class="service-features">
-                    <li><i class="fas fa-check"></i> عقود الشراكة والتأسيس</li>
-                    <li><i class="fas fa-check"></i> عقود البيع والشراء</li>
-                    <li><i class="fas fa-check"></i> عقود الإيجار</li>
-                    <li><i class="fas fa-check"></i> عقود العمل</li>
-                    <li><i class="fas fa-check"></i> عقود المقاولات</li>
-                    <li><i class="fas fa-check"></i> اتفاقيات السرية</li>
-                </ul>
-            </div>
-            <!-- الخدمة 7 -->
-            <div class="service-card">
-                <div class="service-header">
-                    <div class="service-icon"><i class="fas fa-money-bill-wave"></i></div>
-                    <h3>تحصيل الديون والمستحقات</h3>
-                </div>
-                <p>نوفر خدمات تحصيل الديون والمستحقات المالية بطرق قانونية فعالة، سواء بالطرق الودية أو من خلال الإجراءات القضائية.</p>
-                <ul class="service-features">
-                    <li><i class="fas fa-check"></i> التحصيل الودي</li>
-                    <li><i class="fas fa-check"></i> الإنذارات القانونية</li>
-                    <li><i class="fas fa-check"></i> رفع دعاوى التحصيل</li>
-                    <li><i class="fas fa-check"></i> الحجز التحفظي</li>
-                    <li><i class="fas fa-check"></i> تنفيذ الأحكام</li>
-                    <li><i class="fas fa-check"></i> متابعة الشيكات المرتجعة</li>
-                </ul>
-            </div>
-            <!-- الخدمة 8 -->
-            <div class="service-card">
-                <div class="service-header">
-                    <div class="service-icon"><i class="fas fa-car-crash"></i></div>
-                    <h3>قضايا الحوادث والتعويضات</h3>
-                </div>
-                <p>نتولى قضايا التعويضات عن الحوادث المرورية وإصابات العمل والأضرار الجسدية والمادية، ونسعى لتحقيق أعلى تعويض ممكن.</p>
-                <ul class="service-features">
-                    <li><i class="fas fa-check"></i> حوادث السيارات</li>
-                    <li><i class="fas fa-check"></i> إصابات العمل</li>
-                    <li><i class="fas fa-check"></i> الأخطاء الطبية</li>
-                    <li><i class="fas fa-check"></i> التعويض عن الوفاة</li>
-                    <li><i class="fas fa-check"></i> الأضرار المادية والمعنوية</li>
-                    <li><i class="fas fa-check"></i> مطالبات التأمين</li>
-                </ul>
-            </div>
-            <!-- الخدمة 9 -->
-            <div class="service-card">
-                <div class="service-header">
-                    <div class="service-icon"><i class="fas fa-comments"></i></div>
-                    <h3>الاستشارات القانونية</h3>
-                </div>
-                <p>نقدم استشارات قانونية شاملة ومتخصصة في جميع المجالات القانونية، حيث نقوم بدراسة وتحليل موقفك القانوني وتقديم الحلول المناسبة.</p>
-                <ul class="service-features">
-                    <li><i class="fas fa-check"></i> استشارات مجانية أولية</li>
-                    <li><i class="fas fa-check"></i> دراسة القضايا والملفات</li>
-                    <li><i class="fas fa-check"></i> إعداد الرأي القانوني</li>
-                    <li><i class="fas fa-check"></i> استشارات الشركات</li>
-                    <li><i class="fas fa-check"></i> استشارات الأفراد</li>
-                    <li><i class="fas fa-check"></i> استشارات عبر الواتساب</li>
-                </ul>
-            </div>
-        </div>
+
+        <div class="timeline" id="timeline"></div>
+      </div>
     </section>
 
-    <!-- Why Choose Us Section -->
-    <section class="why-us" id="why-us">
-        <div class="section-header">
-            <h2>لماذا <span>تختارنا؟</span></h2>
-            <div class="underline"></div>
-            <p>نلتزم بتقديم أفضل الخدمات القانونية بأعلى معايير الجودة والمهنية</p>
+    <!-- Knowledge -->
+    <section id="knowledge">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>قاعدة المعرفة</h2>
+          <p>مواد توعوية قابلة للبحث والتصنيف. الغرض: فهم عام وتمهيد للاستشارة، لا إصدار رأي مكتوب دون مستندات.</p>
         </div>
-        <div class="why-stats">
-            <div class="why-stat">
-                <i class="fas fa-trophy"></i>
-                <h3>500+</h3>
-                <p>قضية ناجحة</p>
-            </div>
-            <div class="why-stat">
-                <i class="fas fa-users"></i>
-                <h3>1000+</h3>
-                <p>عميل سعيد</p>
-            </div>
-            <div class="why-stat">
-                <i class="fas fa-calendar-check"></i>
-                <h3>15+</h3>
-                <p>سنة خبرة</p>
-            </div>
-            <div class="why-stat">
-                <i class="fas fa-award"></i>
-                <h3>سجل قوي</h3>
-                <p>نتائج إيجابية</p>
-            </div>
+
+        <div class="kbTools">
+          <div class="chips" id="chips"></div>
+          <div class="search" title="بحث">
+            <span style="opacity:.75">⌕</span>
+            <input id="kbSearch" placeholder="ابحث في قاعدة المعرفة…" />
+          </div>
         </div>
-        <div class="features-grid">
-            <div class="feature-card">
-                <i class="fas fa-user-tie"></i>
-                <h4>فريق متخصص ومحترف</h4>
-                <p>نضم فريقاً من المستشارين القانونيين المتخصصين ذوي الخبرة الواسعة في مختلف المجالات القانونية والمؤهلين للتعامل مع أعقد القضايا.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-clock"></i>
-                <h4>متابعة على مدار الساعة</h4>
-                <p>نحرص على التواصل المستمر مع عملائنا وإطلاعهم على مستجدات قضاياهم بشكل دوري، مع توفير قنوات تواصل متعددة.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-lock"></i>
-                <h4>سرية تامة ومطلقة</h4>
-                <p>نلتزم بالحفاظ على سرية جميع معلومات وبيانات عملائنا، ونتعامل مع كل قضية بمنتهى الخصوصية وفقاً لأخلاقيات المهنة.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-tags"></i>
-                <h4>أسعار منافسة وعادلة</h4>
-                <p>نقدم خدماتنا القانونية بأسعار عادلة ومنافسة تناسب جميع الميزانيات، مع الشفافية الكاملة في الأتعاب وعدم وجود رسوم خفية.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-chart-line"></i>
-                <h4>نسبة نجاح عالية</h4>
-                <p>نفخر بتحقيق نسبة نجاح مرتفعة في القضايا التي نتولاها، وذلك بفضل الدراسة المعمقة لكل قضية ووضع استراتيجية قانونية محكمة.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-handshake"></i>
-                <h4>علاقات مبنية على الثقة</h4>
-                <p>نبني علاقات طويلة الأمد مع عملائنا قائمة على الثقة المتبادلة والمصداقية، ونسعى دائماً لتحقيق مصالحهم وحماية حقوقهم.</p>
-            </div>
+
+        <div class="kbList" id="kbList"></div>
+
+        <div class="note" style="margin-top:12px">
+          ملاحظة قانونية: المحتوى المنشور هنا معلومات عامة وقد تختلف النتيجة باختلاف الوقائع والمستندات والإجراءات والمواعيد.
         </div>
+      </div>
     </section>
 
-    <!-- Process Section -->
-    <section class="process" id="process">
-        <div class="section-header">
-            <h2>آلية <span>العمل</span></h2>
-            <div class="underline"></div>
-            <p>خطوات بسيطة للحصول على خدماتنا القانونية</p>
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>الأسئلة الشائعة</h2>
+          <p>إجابات مباشرة على أكثر ما يُسأل. عند وجود مستندات أو مواعيد إجرائية، الأفضل إرسالها لتقييم أدق.</p>
         </div>
-        <div class="process-timeline">
-            <div class="process-step">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h4><i class="fas fa-phone-alt"></i> التواصل الأولي</h4>
-                    <p>تواصل معنا عبر الهاتف أو الواتساب أو البريد الإلكتروني لحجز موعد استشارة مجانية. فريقنا جاهز للرد على استفساراتك على مدار الساعة.</p>
-                </div>
-            </div>
-            <div class="process-step">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h4><i class="fas fa-comments"></i> الاستشارة المجانية</h4>
-                    <p>نقدم لك استشارة مجانية أولية لفهم تفاصيل قضيتك ومتطلباتك القانونية. نستمع إليك بعناية ونجيب على جميع استفساراتك.</p>
-                </div>
-            </div>
-            <div class="process-step">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h4><i class="fas fa-search"></i> دراسة القضية</h4>
-                    <p>يقوم فريقنا القانوني بدراسة قضيتك بشكل معمق وتحليل جميع جوانبها القانونية لوضع أفضل استراتيجية للتعامل معها.</p>
-                </div>
-            </div>
-            <div class="process-step">
-                <div class="step-number">4</div>
-                <div class="step-content">
-                    <h4><i class="fas fa-file-signature"></i> تقديم العرض والتوكيل</h4>
-                    <p>نقدم لك عرضاً واضحاً يتضمن الخطة القانونية والأتعاب المتوقعة. بعد الموافقة، نقوم بإعداد الوكالة القانونية اللازمة.</p>
-                </div>
-            </div>
-            <div class="process-step">
-                <div class="step-number">5</div>
-                <div class="step-content">
-                    <h4><i class="fas fa-gavel"></i> تنفيذ العمل القانوني</h4>
-                    <p>نبدأ في تنفيذ الإجراءات القانونية اللازمة وفقاً للخطة الموضوعة، مع المتابعة المستمرة والتحديث الدوري لك بمستجدات القضية.</p>
-                </div>
-            </div>
-            <div class="process-step">
-                <div class="step-number">6</div>
-                <div class="step-content">
-                    <h4><i class="fas fa-flag-checkered"></i> تحقيق النتائج</h4>
-                    <p>نسعى لتحقيق أفضل النتائج الممكنة في قضيتك، ونظل بجانبك حتى إتمام جميع الإجراءات وتحقيق الأهداف المرجوة.</p>
-                </div>
-            </div>
-        </div>
+
+        <div class="faq" id="faqList"></div>
+      </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
-        <div class="section-header">
-            <h2>آراء <span>عملائنا</span></h2>
-            <div class="underline"></div>
-            <p>ماذا يقول عملاؤنا عن تجربتهم معنا</p>
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>التواصل</h2>
+          <p>رسالة مختصرة + نوع الخدمة + المدينة + ملخص الوقائع. لا تُرسل بيانات حساسة إلا عند الحاجة.</p>
         </div>
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <div class="testimonial-stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-                <p class="testimonial-text">"تعاملت مع المستشار أحمد حلمي في قضية تجارية معقدة، وأبهرني باحترافيته وخبرته الواسعة. تمكن من حل القضية لصالحي في وقت قياسي. أنصح بشدة بالتعامل معه."</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">م.س</div>
-                    <div class="author-info">
-                        <h4>محمد سالم</h4>
-                        <p>رجل أعمال - أبوظبي</p>
-                    </div>
-                </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>أرسل رسالة واتساب جاهزة</h3>
+            <p>سيتم فتح واتساب برسالة منظّمة تُسهل علينا الرد بسرعة.</p>
+            <a class="btn primary" id="whatsBtnContact" href="#" rel="noopener">فتح واتساب</a>
+            <div class="copy">
+              <button class="btn" id="copyPhone">نسخ رقم الهاتف</button>
+              <button class="btn" id="copyEmail">نسخ البريد</button>
             </div>
-            <div class="testimonial-card">
-                <div class="testimonial-stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-                <p class="testimonial-text">"كنت أواجه مشكلة عمالية صعبة مع الشركة التي أعمل بها. المستشار أحمد حلمي ساعدني في الحصول على جميع مستحقاتي كاملة. شكراً جزيلاً على الجهود المبذولة."</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">أ.ع</div>
-                    <div class="author-info">
-                        <h4>أحمد عبدالله</h4>
-                        <p>موظف - العين</p>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-                <p class="testimonial-text">"تعاملت مع المكتب في قضية أحوال شخصية حساسة. تفهموا ظروفي وتعاملوا مع قضيتي بسرية تامة واحترافية عالية. حصلت على حقوقي كاملة بفضل جهودهم."</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">س.م</div>
-                    <div class="author-info">
-                        <h4>سارة محمود</h4>
-                        <p>ربة منزل - العين</p>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-                <p class="testimonial-text">"مكتب ممتاز وفريق عمل محترف. ساعدوني في تأسيس شركتي وصياغة جميع العقود اللازمة. أسعارهم معقولة جداً مقارنة بجودة الخدمة المقدمة."</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">خ.ر</div>
-                    <div class="author-info">
-                        <h4>خالد راشد</h4>
-                        <p>صاحب شركة - دبي</p>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-                <p class="testimonial-text">"بعد حادث مروري تسبب لي في إصابات جسيمة، لجأت للمستشار أحمد حلمي. حصلت على تعويض عادل بفضل متابعته الحثيثة ومهارته في التفاوض."</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">ف.ن</div>
-                    <div class="author-info">
-                        <h4>فاطمة ناصر</h4>
-                        <p>موظفة - أبوظبي</p>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-                <p class="testimonial-text">"تجربة رائعة مع المكتب في قضية تحصيل ديون. كنت قد يئست من استرداد أموالي، لكن بفضل جهودهم القانونية تم تحصيل كامل المبلغ. شكراً لكم."</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">ع.م</div>
-                    <div class="author-info">
-                        <h4>عمر محمد</h4>
-                        <p>تاجر - العين</p>
-                    </div>
-                </div>
-            </div>
+          </div>
+
+          <div class="card">
+            <h3>بيانات الترخيص والتنبيه المهني</h3>
+            <p class="fine" id="licenseText">
+              ضع هنا بيانات الترخيص (الجهة – الرقم – تاريخ الإصدار – نطاق النشاط). يُفضّل ذكرها بصياغة دقيقة دون توسّع.
+            </p>
+            <p class="fine" style="margin-top:10px">
+              لا يوجد التزام بنتيجة، ولا تُبنى الاستشارة على معلومات مبتورة. تُحدَّد الخطوات بعد الاطلاع على الوقائع والمستندات.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
+  </main>
 
-    <!-- FAQ Section -->
-    <section class="faq" id="faq">
-        <div class="section-header">
-            <h2>الأسئلة <span>الشائعة</span></h2>
-            <div class="underline"></div>
-            <p>إجابات على أكثر الأسئلة شيوعاً من عملائنا</p>
+  <footer>
+    <div class="container">
+      <div class="footGrid">
+        <div>
+          <h3 style="margin:0 0 6px">أحمد حلمي للاستشارات القانونية</h3>
+          <div class="fine" id="footerFine">
+            خدمات استشارية قانونية داخل دولة الإمارات وفق الأنظمة المعمول بها ونطاق الترخيص.
+          </div>
         </div>
-        <div class="faq-container">
-            <div class="faq-item active">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span><i class="fas fa-question-circle"></i> ما هي تكلفة الاستشارة الأولية؟</span>
-                    <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-content">نقدم استشارة أولية مجانية لجميع العملاء الجدد. خلال هذه الاستشارة، نستمع إلى تفاصيل قضيتك ونقدم لك تقييماً أولياً للموقف القانوني والخيارات المتاحة. بعد ذلك، نقدم لك عرضاً واضحاً بالأتعاب في حال رغبتك في المتابعة معنا.</div>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span><i class="fas fa-question-circle"></i> كم تستغرق القضية عادةً؟</span>
-                    <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-content">تختلف مدة القضية حسب نوعها وتعقيدها. بعض القضايا قد تُحل خلال أسابيع قليلة، بينما قد تستغرق أخرى عدة أشهر. سنقدم لك تقديراً تقريبياً للمدة المتوقعة بعد دراسة قضيتك.</div>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span><i class="fas fa-question-circle"></i> هل يمكنني التواصل معكم خارج أوقات العمل الرسمية؟</span>
-                    <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-content">نعم، يمكنك التواصل معنا عبر الواتساب على الرقم 0542190900 في أي وقت. نحرص على الرد على رسائل عملائنا في أسرع وقت ممكن. للحالات الطارئة، يمكنك الاتصال مباشرة.</div>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span><i class="fas fa-question-circle"></i> هل تتعاملون مع القضايا خارج مدينة العين؟</span>
-                    <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-content">نعم، نتعامل مع القضايا في جميع أنحاء دولة الإمارات العربية المتحدة. يمكننا تمثيلك أمام المحاكم في أبوظبي ودبي والشارقة وغيرها من الإمارات. كما نقدم استشارات عن بُعد.</div>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span><i class="fas fa-question-circle"></i> ما هي المستندات المطلوبة لبدء القضية؟</span>
-                    <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-content">تختلف المستندات المطلوبة حسب نوع القضية. بشكل عام، ستحتاج إلى صورة من الهوية الإماراتية أو جواز السفر، وأي مستندات متعلقة بالقضية مثل العقود أو المراسلات. خلال الاستشارة الأولى، سنحدد لك بالضبط ما تحتاج إلى تقديمه.</div>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span><i class="fas fa-question-circle"></i> كيف يتم تحديد أتعاب المحاماة؟</span>
-                    <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-content">يتم تحديد الأتعاب بناءً على عدة عوامل منها: نوع القضية وتعقيدها، الوقت والجهد المتوقع، وقيمة النزاع. نقدم لك عرضاً مكتوباً وواضحاً قبل البدء في أي عمل، ولا توجد رسوم خفية.</div>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span><i class="fas fa-question-circle"></i> هل معلوماتي ستظل سرية؟</span>
-                    <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-content">بالتأكيد. السرية المهنية هي أساس عملنا والتزامنا الأخلاقي والقانوني. جميع المعلومات والمستندات التي تشاركها معنا تظل في سرية تامة ولا يتم الإفصاح عنها لأي طرف ثالث دون موافقتك الصريحة.</div>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span><i class="fas fa-question-circle"></i> هل يمكنني الحصول على استشارة عبر الهاتف أو الفيديو؟</span>
-                    <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
-                </div>
-                <div class="faq-answer">
-                    <div class="faq-answer-content">نعم، نوفر خدمة الاستشارات عن بُعد عبر الهاتف أو مكالمات الفيديو (واتساب، زوم) لعملائنا الذين لا يستطيعون الحضور شخصياً. هذه الخدمة متاحة خاصة للعملاء من خارج مدينة العين.</div>
-                </div>
-            </div>
+
+        <div>
+          <div class="fine"><b>الهاتف:</b> <span id="footPhone">—</span></div>
+          <div class="fine"><b>واتساب:</b> <span id="footWA">—</span></div>
+          <div class="fine"><b>البريد:</b> <span id="footEmail">—</span></div>
+          <div class="fine"><b>المدينة:</b> <span id="footCity">—</span></div>
         </div>
-    </section>
+      </div>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="cta-content">
-            <h2><i class="fas fa-phone-alt"></i> هل تحتاج استشارة قانونية؟</h2>
-            <p>لا تتردد في التواصل معنا الآن للحصول على استشارة مجانية. فريقنا جاهز لمساعدتك في جميع قضاياك القانونية.</p>
-            <div class="cta-buttons">
-                <a href="https://wa.me/9710542190900" class="cta-btn cta-btn-primary" target="_blank">
-                    <i class="fab fa-whatsapp"></i> تواصل عبر الواتساب
-                </a>
-                <a href="tel:+9710544144149" class="cta-btn cta-btn-secondary">
-                    <i class="fas fa-phone-alt"></i> اتصل الآن: 0544144149
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="section-header">
-            <h2>تواصل <span>معنا</span></h2>
-            <div class="underline"></div>
-            <p>نحن هنا للإجابة على جميع استفساراتكم القانونية. لا تتردد في التواصل معنا</p>
-        </div>
-        <div class="contact-container">
-            <div class="contact-info">
-                <h3>معلومات التواصل</h3>
-                <p>يسعدنا تواصلكم معنا للحصول على استشارة قانونية مجانية أو لحجز موعد. فريقنا جاهز لخدمتكم.</p>
-                
-                <div class="info-item">
-                    <i class="fas fa-user-tie"></i>
-                    <div>
-                        <h4>المستشار القانوني</h4>
-                        <p>أحمد حلمي</p>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <h4>العنوان</h4>
-                        <p>مدينة العين - إمارة أبوظبي<br>الإمارات العربية المتحدة</p>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <i class="fas 
-                <div class="info-item">
-                    <i class="fas fa-phone-alt"></i>
-                    <div>
-                        <h4>الهاتف</h4>
-                        <p><a href="tel:+9710544144149">0544144149</a></p>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <i class="fab fa-whatsapp"></i>
-                    <div>
-                        <h4>واتساب</h4>
-                        <p><a href="https://wa.me/9710542190900" target="_blank">0542190900</a></p>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                        <h4>البريد الإلكتروني</h4>
-                        <p><a href="mailto:AHMEDHELMY200@GMAIL.COM">AHMEDHELMY200@GMAIL.COM</a></p>
-                    </div>
-                </div>
-                
-                <div class="working-hours">
-                    <h4><i class="fas fa-clock"></i> ساعات العمل</h4>
-                    <ul>
-                        <li><span>السبت - الخميس</span><span>9:00 ص - 9:00 م</span></li>
-                        <li><span>الجمعة</span><span>4:00 م - 9:00 م</span></li>
-                    </ul>
-                </div>
-                
-                <div class="social-links">
-                    <a href="#" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" title="تويتر"><i class="fab fa-twitter"></i></a>
-                    <a href="#" title="انستغرام"><i class="fab fa-instagram"></i></a>
-                    <a href="#" title="لينكد إن"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" title="يوتيوب"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-            
-            <div class="contact-form">
-                <h3>أرسل رسالتك</h3>
-                <p>املأ النموذج التالي وسنتواصل معك في أقرب وقت</p>
-                <form id="contactForm">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name"><i class="fas fa-user"></i> الاسم الكامل *</label>
-                            <input type="text" id="name" name="name" placeholder="أدخل اسمك الكامل" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone"><i class="fas fa-phone"></i> رقم الهاتف *</label>
-                            <input type="tel" id="phone" name="phone" placeholder="05xxxxxxxx" required>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="email"><i class="fas fa-envelope"></i> البريد الإلكتروني</label>
-                            <input type="email" id="email" name="email" placeholder="AHMEDHELMY200@GMAIL.COM">
-                        </div>
-                        <div class="form-group">
-                            <label for="service"><i class="fas fa-briefcase"></i> نوع الخدمة *</label>
-                            <select id="service" name="service" required>
-                                <option value="">اختر نوع الخدمة</option>
-                                <option value="criminal">القضايا الجنائية</option>
-                                <option value="personal">الأحوال الشخصية</option>
-                                <option value="commercial">القضايا التجارية</option>
-                                <option value="realestate">القضايا العقارية</option>
-                                <option value="labor">القضايا العمالية</option>
-                                <option value="contracts">صياغة العقود</option>
-                                <option value="debt">تحصيل الديون</option>
-                                <option value="accidents">الحوادث والتعويضات</option>
-                                <option value="consultation">استشارة قانونية</option>
-                                <option value="other">أخرى</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="message"><i class="fas fa-comment-alt"></i> تفاصيل الاستفسار *</label>
-                        <textarea id="message" name="message" placeholder="اكتب تفاصيل قضيتك أو استفسارك هنا..." required></textarea>
-                    </div>
-
-                    <div class="form-group">
-                        <label style="display:flex; gap:10px; align-items:flex-start; line-height:1.7;">
-                            <input type="checkbox" required style="margin-top:4px;">
-                            <span>أقرّ بأن المعلومات المرسلة لا تُعد استشارة قانونية ملزمة، وأن أي إجراء قانوني يتم بعد مراجعة المكتب وتحديد نطاق الخدمة وتوقيع اتفاق رسمي.</span>
-                        </label>
-                    </div>
-
-                    <button type="submit" class="submit-btn">
-                        <i class="fas fa-paper-plane"></i> إرسال الرسالة
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Map Section -->
-    <div class="map-section">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116799.97505765498!2d55.65168085!3d24.2075169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8ab145ae4b5b33%3A0xc4b8b5e0d9fa8c53!2sAl%20Ain%20-%20Abu%20Dhabi%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1699999999999!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="fine" style="margin-top:14px; border-top:1px solid var(--line); padding-top:12px">
+        © <span id="year"></span> — جميع الحقوق محفوظة. المحتوى معلومات عامة ولا يُعد رأيًا قانونيًا مكتوبًا.
+      </div>
     </div>
+  </footer>
 
+  <!-- Floating CTA -->
+  <div class="floatCta">
+    <a class="btn primary" id="whatsBtnFloat" href="#" rel="noopener">واتساب</a>
+    <a class="btn" id="callBtnFloat" href="#">اتصال</a>
+  </div>
 
-    <!-- Legal Disclaimer -->
-    <section class="legal-disclaimer" style="padding:60px 5%; background:#f5f5f5;">
-        <div style="max-width:1100px; margin:auto;">
-            <h3 style="color:#1a1a2e; margin-bottom:15px;">إخلاء المسؤولية القانونية</h3>
-            <p style="color:#666; line-height:1.9; margin-bottom:10px;">
-                المعلومات الواردة في هذا الموقع هي لأغراض تعريفية عامة فقط، ولا تُعد بأي حال من الأحوال استشارة قانونية ملزمة
-                أو بديلاً عن استشارة قانونية رسمية مكتوبة.
-            </p>
-            <p style="color:#666; line-height:1.9; margin-bottom:10px;">
-                لا تنشأ أي علاقة قانونية أو مهنية بين المكتب وزائر الموقع إلا بعد التواصل المباشر وتحديد نطاق الخدمة
-                وتوقيع اتفاقية خدمات قانونية مكتوبة وفقًا للقوانين واللوائح المعمول بها في دولة الإمارات العربية المتحدة.
-            </p>
-            <p style="color:#666; line-height:1.9; margin:0;">
-                النتائج السابقة لا تشكل ضمانًا لتحقيق نفس النتائج مستقبلاً، حيث تختلف كل قضية بحسب ظروفها ووقائعها والأدلة المقدمة.
-            </p>
+<script>
+  // =========================
+  // 1) عدّل بياناتك هنا فقط
+  // =========================
+  const SITE = {
+    name: "أحمد حلمي للاستشارات القانونية",
+    tagline: "استشارات قانونية داخل دولة الإمارات",
+    phone: "0542190900",        // <-- وحّد الرقم هنا
+    whatsapp: "0542190900",     // <-- نفس الرقم أو رقم واتساب منفصل
+    email: "info@example.com",
+    city: "الإمارات العربية المتحدة",
+    licenseLine: "مكتب استشارات قانونية مرخّص — (الجهة / رقم الترخيص / تاريخ الإصدار / نطاق النشاط).",
+  };
+
+  // =========================
+  // 2) محتوى الخدمات/المعرفة
+  // =========================
+  const SERVICES = [
+    {
+      icon:"§",
+      title:"استشارات قانونية عامة",
+      bullets:["تقييم الموقف القانوني","تحديد الخيارات والمخاطر","خطة خطوات مكتوبة عند الطلب"],
+      details:"تقديم تصور قانوني عملي بناءً على الوقائع والمستندات المتاحة، مع تحديد المسار الإجرائي الأقرب."
+    },
+    {
+      icon:"⌁",
+      title:"صياغة ومراجعة العقود",
+      bullets:["صياغة عقود واضحة","مراجعة الشروط والجزاءات","ضبط البنود الحساسة"],
+      details:"صياغة/مراجعة عقود الشركات، الخدمات، الإيجارات، والملاحق؛ مع التركيز على المخاطر، الإنهاء، والالتزامات."
+    },
+    {
+      icon:"⚖",
+      title:"منازعات مدنية وتجارية",
+      bullets:["تحليل المستندات","صياغة مذكرات/إنذارات","استراتيجية تفاوض"],
+      details:"تحضير المذكرات والردود والإنذارات والتسويات، وتقييم احتمالات النزاع دون ادعاءات بنتائج."
+    },
+    {
+      icon:"↯",
+      title:"عمالي (إرشاد وإجراءات)",
+      bullets:["تقييم مطالبة/رد","مواعيد وإجراءات","صياغة شكوى/رد"],
+      details:"إرشاد قانوني بشأن المنازعات العمالية، المستحقات، الإنهاء، الإجازات، وتسوية النزاع ضمن الأطر النظامية."
+    }
+  ];
+
+  const PROCESS = [
+    {title:"استلام ملخص الوقائع", text:"رسالة مختصرة + ما تريد تحقيقه + ما لديك من مستندات."},
+    {title:"أسئلة تدقيقية", text:"نحدد نقاط الغموض والوقائع المؤثرة قانونيًا قبل أي رأي."},
+    {title:"تقييم وخيارات", text:"نقدم بدائل واضحة: أفضل/أسرع/أقل مخاطرة، مع تنبيه للمواعيد الإجرائية."},
+    {title:"خطة تنفيذ", text:"خطوات عملية، وصياغات/نماذج عند الحاجة، والمتابعة حسب الاتفاق."}
+  ];
+
+  const KB_CATS = ["الكل","شركات","عقود","عمالي","مدني/تجاري"];
+  const KNOWLEDGE = [
+    {cat:"عقود", title:"كيف تراجع عقد خدمات قبل التوقيع؟", text:"أهم البنود: نطاق الخدمة، المقابل، الإنهاء، المسؤولية، السرية، الاختصاص القضائي.", tag:"دليل", link:""},
+    {cat:"شركات", title:"فروق الشريك والمدير وصلاحيات التوقيع", text:"تمييز المسؤوليات والصلاحيات يقلل النزاعات ويمنع بطلان التصرفات.", tag:"معلومة", link:""},
+    {cat:"عمالي", title:"متى تُحسب مكافأة نهاية الخدمة؟", text:"تعتمد على سبب انتهاء العلاقة ومدتها والأجر… لا تُحسم بدقة دون عقد وكشوف.", tag:"مختصر", link:""},
+    {cat:"مدني/تجاري", title:"إنذار قانوني أم تفاوض؟", text:"الإنذار مفيد لحفظ الحقوق وإثبات المطالبة—لكن توقيته وصياغته يحددان أثره.", tag:"إجراء", link:""},
+  ];
+
+  const FAQ = [
+    {q:"هل تضمنون نتيجة؟", a:"لا. أي عمل قانوني مرتبط بالوقائع والمستندات والإجراءات والمواعيد. دورنا تقديم تقييم مهني وخيارات وخطة تنفيذ."},
+    {q:"هل يمكن إعطاء رأي كامل من غير مستندات؟", a:"يمكن إعطاء توجيه عام، لكن الرأي الدقيق يحتاج مستندات ووقائع مكتملة حتى لا يكون مضللًا."},
+    {q:"ما أفضل طريقة لإرسال الطلب؟", a:"واتساب برسالة منظمة: نوع الخدمة + المدينة + ملخص الوقائع + صور المستندات الأساسية إن لزم."},
+    {q:"هل المحتوى في قاعدة المعرفة يُعد فتوى قانونية؟", a:"لا. هو محتوى توعوي عام، ولا يغني عن استشارة مكتوبة بعد الاطلاع على الملف."}
+  ];
+
+  // =========================
+  // 3) Rendering + Behaviors
+  // =========================
+  const $ = (s)=>document.querySelector(s);
+  const $$ = (s)=>document.querySelectorAll(s);
+
+  function waLink(message){
+    const n = (SITE.whatsapp||"").replace(/\D/g,"");
+    const msg = encodeURIComponent(message);
+    return `https://wa.me/971${n.startsWith("0")?n.slice(1):n}?text=${msg}`;
+  }
+  function telLink(){
+    const n = (SITE.phone||"").replace(/\s/g,"");
+    return `tel:${n}`;
+  }
+
+  // Fill top texts
+  $("#brandName").textContent = SITE.name;
+  $("#brandTag").textContent = SITE.tagline;
+  $("#phoneText").textContent = SITE.phone;
+  $("#waText").textContent = SITE.whatsapp;
+  $("#emailText").textContent = SITE.email;
+  $("#cityText").textContent = SITE.city;
+  $("#footPhone").textContent = SITE.phone;
+  $("#footWA").textContent = SITE.whatsapp;
+  $("#footEmail").textContent = SITE.email;
+  $("#footCity").textContent = SITE.city;
+  $("#licenseText").textContent = SITE.licenseLine;
+  $("#year").textContent = new Date().getFullYear();
+
+  // Buttons
+  const msgTemplate = `مرحبًا، أود الحصول على استشارة.\nنوع الخدمة: \nالمدينة: ${SITE.city}\nملخص الوقائع: \nالمستندات المتاحة: `;
+  ["#whatsBtnTop","#whatsBtnHero","#whatsBtnContact","#whatsBtnFloat"].forEach(id=>{
+    $(id).href = waLink(msgTemplate);
+    $(id).target = "_blank";
+  });
+  ["#callBtnHero","#callBtnFloat"].forEach(id=>{
+    $(id).href = telLink();
+  });
+
+  // Copy
+  $("#copyPhone").addEventListener("click", async ()=>{
+    await navigator.clipboard.writeText(SITE.phone);
+    $("#copyPhone").textContent = "تم النسخ";
+    setTimeout(()=>$("#copyPhone").textContent="نسخ رقم الهاتف",1200);
+  });
+  $("#copyEmail").addEventListener("click", async ()=>{
+    await navigator.clipboard.writeText(SITE.email);
+    $("#copyEmail").textContent = "تم النسخ";
+    setTimeout(()=>$("#copyEmail").textContent="نسخ البريد",1200);
+  });
+
+  // Services render
+  const servicesGrid = $("#servicesGrid");
+  SERVICES.forEach((s,i)=>{
+    const el = document.createElement("div");
+    el.className = "card serviceCard";
+    el.innerHTML = `
+      <div class="serviceHead">
+        <div class="icon">${s.icon}</div>
+        <div style="flex:1">
+          <h3 style="margin:0">${s.title}</h3>
+          <div class="badge" style="margin-top:6px"><span class="dot"></span>${(s.bullets||[]).join(" • ")}</div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-about">
-                <h3><i class="fas fa-balance-scale"></i> أحمد حلمي للاستشارات القانونية</h3>
-                <p>مكتب استشارات قانونية معتمد ومرخص في دولة الإمارات العربية المتحدة. نقدم خدمات قانونية متكاملة للأفراد والشركات بأعلى معايير الجودة والمهنية.</p>
-                <p>خبرة تمتد لأكثر من 15 عاماً في مختلف المجالات القانونية.</p>
-                <div class="footer-social">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://wa.me/9710542190900" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                </div>
-            </div>
-            <div class="footer-links">
-                <h4>روابط سريعة</h4>
-                <ul>
-                    <li><a href="#home"><i class="fas fa-chevron-left"></i> الرئيسية</a></li>
-                    <li><a href="#about"><i class="fas fa-chevron-left"></i> من نحن</a></li>
-                    <li><a href="#services"><i class="fas fa-chevron-left"></i> خدماتنا</a></li>
-                    <li><a href="#why-us"><i class="fas fa-chevron-left"></i> لماذا نحن</a></li>
-                    <li><a href="#testimonials"><i class="fas fa-chevron-left"></i> آراء العملاء</a></li>
-                    <li><a href="#contact"><i class="fas fa-chevron-left"></i> تواصل معنا</a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h4>خدماتنا القانونية</h4>
-                <ul>
-                    <li><a href="#services"><i class="fas fa-chevron-left"></i> القضايا الجنائية</a></li>
-                    <li><a href="#services"><i class="fas fa-chevron-left"></i> الأحوال الشخصية</a></li>
-                    <li><a href="#services"><i class="fas fa-chevron-left"></i> القضايا التجارية</a></li>
-                    <li><a href="#services"><i class="fas fa-chevron-left"></i> القضايا العقارية</a></li>
-                    <li><a href="#services"><i class="fas fa-chevron-left"></i> القضايا العمالية</a></li>
-                    <li><a href="#services"><i class="fas fa-chevron-left"></i> صياغة العقود</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <h4>تواصل معنا</h4>
-                <div class="footer-contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>مدينة العين - إمارة أبوظبي<br>الإمارات العربية المتحدة</p>
-                </div>
-                <div class="footer-contact-item">
-                    <i class="fas fa-phone-alt"></i>
-                    <a href="tel:+9710544144149">0544144149</a>
-                </div>
-                <div class="footer-contact-item">
-                    <i class="fab fa-whatsapp"></i>
-                    <a href="https://wa.me/9710542190900" target="_blank">0542190900</a>
-                </div>
-                <div class="footer-contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:AHMEDHELMY200@GMAIL.COM">AHMEDHELMY200@GMAIL.COM</a>
-                </div>
-                <div class="footer-contact-item">
-                    <i class="fas fa-clock"></i>
-                    <p>السبت - الخميس: 9 ص - 9 م<br>الجمعة: 4 م - 9 م</p>
-                </div>
-            </div>
+      </div>
+      <div class="serviceBody">
+        <p>${s.details}</p>
+        <button class="btn" data-toggle="${i}">تفاصيل أكثر</button>
+        <div class="collapse" id="svc-${i}">
+          <ul class="clean">
+            ${(s.bullets||[]).map(x=>`<li>${x}</li>`).join("")}
+          </ul>
+          <a class="btn primary" style="margin-top:10px" target="_blank" rel="noopener"
+             href="${waLink(`مرحبًا، أود خدمة: ${s.title}\nالمدينة: ${SITE.city}\nملخص: `)}">اطلب هذه الخدمة عبر واتساب</a>
         </div>
-        <div class="footer-bottom">
-            <p>© 2024 مكتب أحمد حلمي للاستشارات القانونية. جميع الحقوق محفوظة | تصميم وتطوير <a href="#">فريق التطوير</a></p>
+      </div>
+    `;
+    servicesGrid.appendChild(el);
+  });
+  $$("[data-toggle]").forEach(btn=>{
+    btn.addEventListener("click", ()=>{
+      const id = btn.getAttribute("data-toggle");
+      const box = document.getElementById(`svc-${id}`);
+      const open = box.classList.toggle("open");
+      btn.textContent = open ? "إخفاء التفاصيل" : "تفاصيل أكثر";
+    });
+  });
+
+  // Timeline render
+  const tl = $("#timeline");
+  PROCESS.forEach((s,idx)=>{
+    const el = document.createElement("div");
+    el.className = "step";
+    el.innerHTML = `
+      <div class="stepNum">${idx+1}</div>
+      <div>
+        <b style="display:block; margin-bottom:4px">${s.title}</b>
+        <div style="color:var(--muted); line-height:1.9; font-size:13px">${s.text}</div>
+      </div>
+    `;
+    tl.appendChild(el);
+  });
+
+  // Knowledge chips + list
+  let activeCat = "الكل";
+  let q = "";
+  const chips = $("#chips");
+  KB_CATS.forEach(c=>{
+    const b = document.createElement("button");
+    b.className = "chip" + (c==="الكل" ? " active" : "");
+    b.textContent = c;
+    b.addEventListener("click", ()=>{
+      activeCat = c;
+      $$(".chip").forEach(x=>x.classList.remove("active"));
+      b.classList.add("active");
+      renderKB();
+    });
+    chips.appendChild(b);
+  });
+
+  $("#kbSearch").addEventListener("input",(e)=>{
+    q = (e.target.value||"").trim().toLowerCase();
+    renderKB();
+  });
+
+  function renderKB(){
+    const list = $("#kbList");
+    list.innerHTML = "";
+    const items = KNOWLEDGE.filter(it=>{
+      const okCat = activeCat==="الكل" ? true : it.cat===activeCat;
+      const blob = (it.title+" "+it.text+" "+it.cat+" "+(it.tag||"")).toLowerCase();
+      const okQ = q ? blob.includes(q) : true;
+      return okCat && okQ;
+    });
+
+    items.forEach(it=>{
+      const el = document.createElement("div");
+      el.className = "card kbItem";
+      el.innerHTML = `
+        <div class="kbMeta">
+          <span class="pill">${it.cat}</span>
+          <span class="pill">${it.tag||"مادة"}</span>
         </div>
-    </footer>
+        <h4>${it.title}</h4>
+        <p>${it.text}</p>
+        ${it.link ? `<a class="btn" href="${it.link}" target="_blank" rel="noopener">فتح المرجع</a>` : ""}
+      `;
+      list.appendChild(el);
+    });
 
-    <!-- Float Buttons -->
-    <a href="https://wa.me/9710542190900" class="whatsapp-float" target="_blank" title="تواصل عبر الواتساب">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-    <a href="tel:+9710544144149" class="phone-float" title="اتصل الآن">
-        <i class="fas fa-phone-alt"></i>
-    </a>
-    <a href="#home" class="back-to-top" id="backToTop" title="العودة للأعلى">
-        <i class="fas fa-arrow-up"></i>
-    </a>
+    if(!items.length){
+      const empty = document.createElement("div");
+      empty.className = "note";
+      empty.textContent = "لا توجد نتائج مطابقة الآن. جرّب تغيير التصنيف أو تقليل كلمات البحث.";
+      list.appendChild(empty);
+    }
+  }
+  renderKB();
 
-    <script>
-        // Preloader
-        window.addEventListener('load', function() {
-            setTimeout(function() {
-                document.getElementById('preloader').classList.add('hidden');
-            }, 1000);
-        });
+  // FAQ render
+  const faqList = $("#faqList");
+  FAQ.forEach(it=>{
+    const d = document.createElement("details");
+    d.innerHTML = `<summary>${it.q}<span style="opacity:.7">+</span></summary><p>${it.a}</p>`;
+    faqList.appendChild(d);
+  });
 
-        // Navbar scroll effect
-        window.addEventListener('scroll', function() {
-            const navbar = document.getElementById('navbar');
-            const backToTop = document.getElementById('backToTop');
-            
-            if (window.scrollY > 100) {
-                navbar.classList.add('scrolled');
-                backToTop.classList.add('visible');
-            } else {
-                navbar.classList.remove('scrolled');
-                backToTop.classList.remove('visible');
-            }
-        });
-
-        // Mobile menu toggle
-        function toggleMenu() {
-            document.getElementById('navLinks').classList.toggle('active');
-        }
-
-        // Close menu when clicking a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.getElementById('navLinks').classList.remove('active');
-            });
-        });
-
-        // FAQ toggle
-        function toggleFaq(element) {
-            const faqItem = element.parentElement;
-            const isActive = faqItem.classList.contains('active');
-            
-            // Close all FAQ items
-            document.querySelectorAll('.faq-item').forEach(item => {
-                item.classList.remove('active');
-            });
-            
-            // Open clicked item if it wasn't active
-            if (!isActive) {
-                faqItem.classList.add('active');
-            }
-        }
-
-        // Counter animation
-        function animateCounters() {
-            const counters = document.querySelectorAll('[data-count]');
-            
-            counters.forEach(counter => {
-                const target = parseInt(counter.getAttribute('data-count'));
-                const duration = 2000;
-                const step = target / (duration / 16);
-                let current = 0;
-                
-                const updateCounter = () => {
-                    current += step;
-                    if (current < target) {
-                        counter.textContent = Math.floor(current);
-                        requestAnimationFrame(updateCounter);
-                    } else {
-                        counter.textContent = target;
-                    }
-                };
-                
-                updateCounter();
-            });
-        }
-
-        // Intersection Observer for counter animation
-        const statsBar = document.querySelector('.stats-bar');
-        let counterAnimated = false;
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting && !counterAnimated) {
-                    animateCounters();
-                    counterAnimated = true;
-                }
-            });
-        }, { threshold: 0.5 });
-
-        if (statsBar) {
-            observer.observe(statsBar);
-        }
-
-        // Form submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const name = document.getElementById('name').value;
-            const phone = document.getElementById('phone').value;
-            const service = document.getElementById('service').value;
-            const message = document.getElementById('message').value;
-            
-            // Create WhatsApp message
-            const whatsappMessage = `مرحباً، أنا ${name}%0A%0Aأود الاستفسار عن: ${service}%0A%0Aالتفاصيل: ${message}%0A%0Aرقم التواصل: ${phone}`;
-            
-            // Open WhatsApp
-            window.open(`https://wa.me/9710542190900?text=${whatsappMessage}`, '_blank');
-            
-            // Reset form
-            this.reset();
-            
-            alert('شكراً لتواصلك معنا! سيتم تحويلك إلى الواتساب لإكمال المحادثة.');
-        });
-
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-    </script>
+  // Scrollspy
+  const sections = ["services","process","knowledge","faq","contact"].map(id=>document.getElementById(id));
+  const navLinks = Array.from($$(".navlinks a"));
+  const obs = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        navLinks.forEach(a=>a.classList.remove("active"));
+        const id = e.target.id;
+        const link = navLinks.find(a=>a.getAttribute("href")==="#"+id);
+        if(link) link.classList.add("active");
+      }
+    });
+  },{rootMargin:"-45% 0px -50% 0px", threshold:0.1});
+  sections.forEach(s=>s && obs.observe(s));
+</script>
 </body>
 </html>
