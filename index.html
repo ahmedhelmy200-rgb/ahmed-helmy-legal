@@ -3,11 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="أحمد حلمي للاستشارات القانونية – خدمات استشارية احترافية داخل دولة الإمارات." />
+  <meta name="description" content="أحمد حلمي للاستشارات القانونية – خدمات استشارية قانونية داخل دولة الإمارات." />
   <meta name="theme-color" content="#0b0f17" />
   <title>أحمد حلمي للاستشارات القانونية</title>
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
@@ -27,7 +26,6 @@
       --radius2: 24px;
       --container: 1120px;
     }
-
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
@@ -41,9 +39,9 @@
       color:var(--text);
       overflow-x:hidden;
     }
-
     a{color:inherit; text-decoration:none}
     .container{max-width:var(--container); margin:0 auto; padding:0 18px}
+
     .topbar{
       position:sticky; top:0; z-index:50;
       backdrop-filter: blur(12px);
@@ -52,13 +50,9 @@
     }
     .nav{
       display:flex; align-items:center; justify-content:space-between;
-      padding:12px 0;
-      gap:10px;
+      padding:12px 0; gap:10px;
     }
-    .brand{
-      display:flex; align-items:center; gap:10px;
-      min-width:220px;
-    }
+    .brand{display:flex; align-items:center; gap:10px; min-width:220px}
     .logo{
       width:42px; height:42px; border-radius:14px;
       background: linear-gradient(135deg, rgba(212,175,55,.95), rgba(241,210,119,.55));
@@ -68,18 +62,15 @@
     }
     .brand h1{margin:0; font-size:16px; line-height:1.2}
     .brand small{display:block; color:var(--muted); font-size:12px; margin-top:2px}
-    .navlinks{
-      display:flex; align-items:center; gap:14px;
-      flex-wrap:wrap;
-      justify-content:center;
-    }
+
+    .navlinks{display:flex; align-items:center; gap:14px; flex-wrap:wrap; justify-content:center}
     .navlinks a{
       padding:10px 10px; border-radius:14px;
-      color:var(--muted);
-      transition:.2s;
+      color:var(--muted); transition:.2s;
     }
     .navlinks a:hover{background:var(--panel); color:var(--text)}
     .navlinks a.active{background:var(--panel2); color:var(--text); border:1px solid var(--line)}
+
     .actions{display:flex; align-items:center; gap:10px; min-width:220px; justify-content:flex-end}
     .btn{
       border:1px solid var(--line);
@@ -91,7 +82,6 @@
       cursor:pointer;
       transition:.2s;
       display:inline-flex; align-items:center; gap:8px;
-      box-shadow:none;
     }
     .btn:hover{transform: translateY(-1px); background:rgba(255,255,255,.07)}
     .btn.primary{
@@ -100,6 +90,7 @@
     }
     .btn.primary:hover{border-color: rgba(212,175,55,.7)}
     .btn.ghost{background:transparent}
+
     .pill{
       border:1px solid var(--line);
       background: rgba(255,255,255,.03);
@@ -110,14 +101,8 @@
       display:inline-flex; gap:8px; align-items:center;
     }
 
-    /* Hero */
     header.hero{padding:56px 0 22px}
-    .heroGrid{
-      display:grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap:22px;
-      align-items:stretch;
-    }
+    .heroGrid{display:grid; grid-template-columns: 1.15fr .85fr; gap:22px; align-items:stretch}
     .heroCard{
       border:1px solid var(--line);
       background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
@@ -139,9 +124,7 @@
     .heroTitle{margin:10px 0 10px; font-size:34px; line-height:1.25}
     .heroSub{margin:0 0 16px; color:var(--muted); font-size:15px; line-height:1.8}
     .heroCtas{display:flex; flex-wrap:wrap; gap:10px; margin-top:14px}
-    .heroNotes{
-      margin-top:16px; display:flex; gap:10px; flex-wrap:wrap;
-    }
+    .heroNotes{margin-top:16px; display:flex; gap:10px; flex-wrap:wrap}
 
     .sideCard{
       border:1px solid var(--line);
@@ -149,9 +132,7 @@
       border-radius: var(--radius2);
       padding:18px;
       box-shadow: var(--shadow);
-      display:flex;
-      flex-direction:column;
-      gap:12px;
+      display:flex; flex-direction:column; gap:12px;
     }
     .sideCard h3{margin:0; font-size:16px}
     .kv{display:grid; gap:10px}
@@ -164,7 +145,6 @@
     .kvRow b{font-size:13px}
     .kvRow span{color:var(--muted); font-size:13px; direction:ltr; text-align:left}
 
-    /* Sections */
     section{padding:34px 0}
     .sectionHead{
       display:flex; align-items:flex-end; justify-content:space-between; gap:14px;
@@ -172,6 +152,7 @@
     }
     .sectionHead h2{margin:0; font-size:22px}
     .sectionHead p{margin:0; color:var(--muted); font-size:13px; max-width:560px; line-height:1.8}
+
     .grid3{display:grid; grid-template-columns:repeat(3,1fr); gap:12px}
     .grid2{display:grid; grid-template-columns:repeat(2,1fr); gap:12px}
     .card{
@@ -188,11 +169,7 @@
     ul.clean{margin:10px 0 0; padding:0 18px 0 0; color:var(--muted); line-height:1.9; font-size:13px}
     ul.clean li{margin:4px 0}
 
-    /* Services */
-    .serviceCard{
-      padding:0;
-      overflow:hidden;
-    }
+    .serviceCard{padding:0; overflow:hidden}
     .serviceHead{
       display:flex; gap:10px; align-items:flex-start;
       padding:16px;
@@ -207,11 +184,9 @@
       font-weight:800; color:var(--gold2);
     }
     .serviceBody{padding:14px 16px}
-    .serviceBody .btn{margin-top:10px}
     .collapse{display:none}
     .collapse.open{display:block}
 
-    /* Timeline */
     .timeline{display:grid; gap:10px}
     .step{
       display:flex; gap:12px; align-items:flex-start;
@@ -228,11 +203,7 @@
       font-weight:900;
     }
 
-    /* Knowledge */
-    .kbTools{
-      display:flex; gap:10px; flex-wrap:wrap; align-items:center;
-      margin-bottom:12px;
-    }
+    .kbTools{display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-bottom:12px}
     .chips{display:flex; gap:8px; flex-wrap:wrap}
     .chip{
       border:1px solid var(--line);
@@ -247,8 +218,7 @@
     }
     .chip.active{border-color:rgba(212,175,55,.5); color:var(--text); background:rgba(212,175,55,.10)}
     .search{
-      flex:1;
-      min-width:200px;
+      flex:1; min-width:200px;
       display:flex; align-items:center; gap:8px;
       border:1px solid var(--line);
       background: rgba(255,255,255,.03);
@@ -257,8 +227,7 @@
     }
     .search input{
       width:100%;
-      border:0;
-      outline:0;
+      border:0; outline:0;
       background:transparent;
       color:var(--text);
       font-family:inherit;
@@ -267,7 +236,6 @@
     .kbList{display:grid; grid-template-columns:repeat(2,1fr); gap:12px}
     .kbItem h4{margin:0 0 8px; font-size:14px}
     .kbMeta{display:flex; gap:10px; flex-wrap:wrap; color:var(--muted); font-size:12px}
-    .kbItem .btn{margin-top:10px}
     .note{
       border:1px dashed rgba(255,255,255,.22);
       background: rgba(255,255,255,.03);
@@ -278,7 +246,6 @@
       line-height:1.8;
     }
 
-    /* FAQ */
     .faq{display:grid; gap:10px}
     details{
       border:1px solid var(--line);
@@ -295,7 +262,6 @@
     summary::-webkit-details-marker{display:none}
     details p{margin:10px 0 0; color:var(--muted); line-height:1.9; font-size:13px}
 
-    /* Footer + Floating CTA */
     footer{
       padding:22px 0 40px;
       border-top:1px solid var(--line);
@@ -306,26 +272,19 @@
     .fine{color:var(--muted); font-size:12px; line-height:1.9}
     .copy{display:flex; gap:8px; flex-wrap:wrap; margin-top:10px}
     .floatCta{
-      position:fixed;
-      left:14px;
-      bottom:14px;
-      z-index:60;
-      display:flex;
-      gap:10px;
-      align-items:center;
+      position:fixed; left:14px; bottom:14px; z-index:60;
+      display:flex; gap:10px; align-items:center;
     }
     .floatCta .btn{border-radius:999px; padding:12px 14px}
 
-    /* Responsive */
     @media (max-width: 980px){
       .heroGrid{grid-template-columns:1fr}
-      .actions{min-width:auto}
-      .brand{min-width:auto}
-      .grid3{grid-template-columns:1fr}
-      .grid2{grid-template-columns:1fr}
+      .grid3,.grid2{grid-template-columns:1fr}
       .kbList{grid-template-columns:1fr}
       .footGrid{grid-template-columns:1fr}
       .navlinks{display:none}
+      .actions{min-width:auto}
+      .brand{min-width:auto}
     }
   </style>
 </head>
@@ -364,8 +323,8 @@
       <div class="heroGrid">
         <div class="heroCard">
           <span class="pill">سرّية • وضوح • متابعة</span>
-          <h2 class="heroTitle" id="heroTitle">استشارة قانونية دقيقة—بأسلوب عملي، دون وعود وهمية</h2>
-          <p class="heroSub" id="heroSub">
+          <h2 class="heroTitle">استشارة قانونية دقيقة—بأسلوب عملي دون ادّعاءات</h2>
+          <p class="heroSub">
             نساعدك على فهم موقفك القانوني وتحديد الخيارات المتاحة وخطوات التنفيذ، مع الحفاظ على الخصوصية والالتزام بالنطاق المهني.
           </p>
 
@@ -376,9 +335,9 @@
           </div>
 
           <div class="heroNotes">
-            <span class="pill">رد خلال ساعات العمل</span>
-            <span class="pill">متابعة مكتوبة عند الطلب</span>
-            <span class="pill">مواد معرفية مجانية</span>
+            <span class="pill">متابعة واضحة</span>
+            <span class="pill">استشارات مكتوبة عند الطلب</span>
+            <span class="pill">مواد توعوية مجانية</span>
           </div>
         </div>
 
@@ -399,12 +358,11 @@
   </header>
 
   <main>
-    <!-- Benefits -->
     <section>
       <div class="container">
         <div class="sectionHead">
           <h2>ما الذي نلتزم به معك؟</h2>
-          <p>معايير عملية تُحافظ على ثقة العميل: وضوح في الخطوات، سرية، وتوثيق لما يلزم دون تضخيم.</p>
+          <p>معايير عملية تحفظ الثقة: وضوح الخطوات، سرية، وتوثيق لما يلزم دون تضخيم أو وعود بنتائج.</p>
         </div>
 
         <div class="grid3">
@@ -414,46 +372,41 @@
           </div>
           <div class="card">
             <div class="badge"><span class="dot"></span>خطة خطوات واضحة</div>
-            <p>نحوّل المشكلة إلى خطوات: ما المطلوب؟ ما الخيارات؟ ما المخاطر؟ وما الإجراء الأقرب للنتيجة.</p>
+            <p>نحوّل المشكلة إلى خطوات: المطلوب، الخيارات، المخاطر، والإجراء الأقرب للنتيجة وفق الملف.</p>
           </div>
           <div class="card">
             <div class="badge"><span class="dot"></span>صياغات منضبطة</div>
-            <p>نستخدم عبارات مهنية دقيقة دون وعود بنتائج، ودون نسبة نجاح أو ادّعاءات غير قابلة للإثبات.</p>
+            <p>لا نسب نجاح، ولا ادّعاءات. كل حالة تُقيَّم وفق وقائعها ومواعيدها وإجراءاتها ومستنداتها.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Services -->
     <section id="services">
       <div class="container">
         <div class="sectionHead">
           <h2>الخدمات</h2>
           <p>اختر الخدمة الأقرب لاحتياجك. التفاصيل تُفتح داخل البطاقة لتقليل الإطالة وتحسين القراءة.</p>
         </div>
-
         <div class="grid2" id="servicesGrid"></div>
       </div>
     </section>
 
-    <!-- Process -->
     <section id="process">
       <div class="container">
         <div class="sectionHead">
           <h2>آلية العمل</h2>
           <p>طريقة عمل ثابتة تُقلل العشوائية وتُظهر لك المسار الإجرائي المتوقع من البداية.</p>
         </div>
-
         <div class="timeline" id="timeline"></div>
       </div>
     </section>
 
-    <!-- Knowledge -->
     <section id="knowledge">
       <div class="container">
         <div class="sectionHead">
           <h2>قاعدة المعرفة</h2>
-          <p>مواد توعوية قابلة للبحث والتصنيف. الغرض: فهم عام وتمهيد للاستشارة، لا إصدار رأي مكتوب دون مستندات.</p>
+          <p>مواد توعوية قابلة للبحث والتصنيف. الغرض: فهم عام وتمهيد للاستشارة، لا رأي مكتوب دون مستندات.</p>
         </div>
 
         <div class="kbTools">
@@ -467,24 +420,21 @@
         <div class="kbList" id="kbList"></div>
 
         <div class="note" style="margin-top:12px">
-          ملاحظة قانونية: المحتوى المنشور هنا معلومات عامة وقد تختلف النتيجة باختلاف الوقائع والمستندات والإجراءات والمواعيد.
+          ملاحظة: المحتوى معلومات عامة وقد تختلف النتائج باختلاف الوقائع والمستندات والإجراءات والمواعيد.
         </div>
       </div>
     </section>
 
-    <!-- FAQ -->
     <section id="faq">
       <div class="container">
         <div class="sectionHead">
           <h2>الأسئلة الشائعة</h2>
-          <p>إجابات مباشرة على أكثر ما يُسأل. عند وجود مستندات أو مواعيد إجرائية، الأفضل إرسالها لتقييم أدق.</p>
+          <p>إجابات مباشرة. عند وجود مستندات أو مواعيد إجرائية، الأفضل إرسالها لتقييم أدق.</p>
         </div>
-
         <div class="faq" id="faqList"></div>
       </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact">
       <div class="container">
         <div class="sectionHead">
@@ -494,8 +444,8 @@
 
         <div class="grid2">
           <div class="card">
-            <h3>أرسل رسالة واتساب جاهزة</h3>
-            <p>سيتم فتح واتساب برسالة منظّمة تُسهل علينا الرد بسرعة.</p>
+            <h3>واتساب برسالة منظّمة</h3>
+            <p>سيتم فتح واتساب برسالة تُسهّل الرد والمتابعة.</p>
             <a class="btn primary" id="whatsBtnContact" href="#" rel="noopener">فتح واتساب</a>
             <div class="copy">
               <button class="btn" id="copyPhone">نسخ رقم الهاتف</button>
@@ -505,9 +455,7 @@
 
           <div class="card">
             <h3>بيانات الترخيص والتنبيه المهني</h3>
-            <p class="fine" id="licenseText">
-              ضع هنا بيانات الترخيص (الجهة – الرقم – تاريخ الإصدار – نطاق النشاط). يُفضّل ذكرها بصياغة دقيقة دون توسّع.
-            </p>
+            <p class="fine" id="licenseText"></p>
             <p class="fine" style="margin-top:10px">
               لا يوجد التزام بنتيجة، ولا تُبنى الاستشارة على معلومات مبتورة. تُحدَّد الخطوات بعد الاطلاع على الوقائع والمستندات.
             </p>
@@ -526,7 +474,6 @@
             خدمات استشارية قانونية داخل دولة الإمارات وفق الأنظمة المعمول بها ونطاق الترخيص.
           </div>
         </div>
-
         <div>
           <div class="fine"><b>الهاتف:</b> <span id="footPhone">—</span></div>
           <div class="fine"><b>واتساب:</b> <span id="footWA">—</span></div>
@@ -541,81 +488,64 @@
     </div>
   </footer>
 
-  <!-- Floating CTA -->
   <div class="floatCta">
     <a class="btn primary" id="whatsBtnFloat" href="#" rel="noopener">واتساب</a>
     <a class="btn" id="callBtnFloat" href="#">اتصال</a>
   </div>
 
 <script>
-  // =========================
-  // 1) عدّل بياناتك هنا فقط
-  // =========================
+  // عدّل بياناتك هنا فقط
   const SITE = {
     name: "أحمد حلمي للاستشارات القانونية",
     tagline: "استشارات قانونية داخل دولة الإمارات",
-    phone: "0542190900",        // <-- وحّد الرقم هنا
-    whatsapp: "0542190900",     // <-- نفس الرقم أو رقم واتساب منفصل
-    email: "info@example.com",
+    phone: "0542190900",
+    whatsapp: "0542190900",
+    email: "ahmedhelmy200@gmail.com",
     city: "الإمارات العربية المتحدة",
     licenseLine: "مكتب استشارات قانونية مرخّص — (الجهة / رقم الترخيص / تاريخ الإصدار / نطاق النشاط).",
   };
 
-  // =========================
-  // 2) محتوى الخدمات/المعرفة
-  // =========================
   const SERVICES = [
-    {
-      icon:"§",
-      title:"استشارات قانونية عامة",
+    { icon:"§", title:"استشارات قانونية عامة",
       bullets:["تقييم الموقف القانوني","تحديد الخيارات والمخاطر","خطة خطوات مكتوبة عند الطلب"],
       details:"تقديم تصور قانوني عملي بناءً على الوقائع والمستندات المتاحة، مع تحديد المسار الإجرائي الأقرب."
     },
-    {
-      icon:"⌁",
-      title:"صياغة ومراجعة العقود",
+    { icon:"⌁", title:"صياغة ومراجعة العقود",
       bullets:["صياغة عقود واضحة","مراجعة الشروط والجزاءات","ضبط البنود الحساسة"],
-      details:"صياغة/مراجعة عقود الشركات، الخدمات، الإيجارات، والملاحق؛ مع التركيز على المخاطر، الإنهاء، والالتزامات."
+      details:"صياغة/مراجعة العقود والملاحق مع التركيز على المخاطر والإنهاء والالتزامات والاختصاص."
     },
-    {
-      icon:"⚖",
-      title:"منازعات مدنية وتجارية",
-      bullets:["تحليل المستندات","صياغة مذكرات/إنذارات","استراتيجية تفاوض"],
-      details:"تحضير المذكرات والردود والإنذارات والتسويات، وتقييم احتمالات النزاع دون ادعاءات بنتائج."
+    { icon:"⚖", title:"منازعات مدنية وتجارية",
+      bullets:["تحليل مستندات","صياغة إنذارات ومذكرات","استراتيجية تفاوض وتسوية"],
+      details:"تحضير المذكرات والردود والإنذارات والتسويات وتقييم السيناريوهات دون ادعاءات بنتائج."
     },
-    {
-      icon:"↯",
-      title:"عمالي (إرشاد وإجراءات)",
-      bullets:["تقييم مطالبة/رد","مواعيد وإجراءات","صياغة شكوى/رد"],
-      details:"إرشاد قانوني بشأن المنازعات العمالية، المستحقات، الإنهاء، الإجازات، وتسوية النزاع ضمن الأطر النظامية."
+    { icon:"↯", title:"عمالي (إرشاد وإجراءات)",
+      bullets:["تقييم مطالبة/رد","ضبط المواعيد الإجرائية","صياغة شكوى/رد"],
+      details:"إرشاد بشأن المنازعات العمالية والمستحقات والإنهاء ضمن الأطر النظامية."
     }
   ];
 
   const PROCESS = [
-    {title:"استلام ملخص الوقائع", text:"رسالة مختصرة + ما تريد تحقيقه + ما لديك من مستندات."},
-    {title:"أسئلة تدقيقية", text:"نحدد نقاط الغموض والوقائع المؤثرة قانونيًا قبل أي رأي."},
-    {title:"تقييم وخيارات", text:"نقدم بدائل واضحة: أفضل/أسرع/أقل مخاطرة، مع تنبيه للمواعيد الإجرائية."},
-    {title:"خطة تنفيذ", text:"خطوات عملية، وصياغات/نماذج عند الحاجة، والمتابعة حسب الاتفاق."}
+    {title:"استلام ملخص الوقائع", text:"رسالة مختصرة + الهدف + ما لديك من مستندات."},
+    {title:"أسئلة تدقيقية", text:"نحدد نقاط الغموض والوقائع المؤثرة قبل أي رأي."},
+    {title:"تقييم وخيارات", text:"بدائل واضحة مع تنبيه للمواعيد الإجرائية والمخاطر."},
+    {title:"خطة تنفيذ", text:"خطوات عملية وصياغات عند الحاجة والمتابعة حسب الاتفاق."}
   ];
 
   const KB_CATS = ["الكل","شركات","عقود","عمالي","مدني/تجاري"];
   const KNOWLEDGE = [
-    {cat:"عقود", title:"كيف تراجع عقد خدمات قبل التوقيع؟", text:"أهم البنود: نطاق الخدمة، المقابل، الإنهاء، المسؤولية، السرية، الاختصاص القضائي.", tag:"دليل", link:""},
+    {cat:"عقود", title:"كيف تراجع عقد خدمات قبل التوقيع؟", text:"أهم البنود: نطاق الخدمة، المقابل، الإنهاء، المسؤولية، السرية، الاختصاص.", tag:"دليل", link:""},
     {cat:"شركات", title:"فروق الشريك والمدير وصلاحيات التوقيع", text:"تمييز المسؤوليات والصلاحيات يقلل النزاعات ويمنع بطلان التصرفات.", tag:"معلومة", link:""},
-    {cat:"عمالي", title:"متى تُحسب مكافأة نهاية الخدمة؟", text:"تعتمد على سبب انتهاء العلاقة ومدتها والأجر… لا تُحسم بدقة دون عقد وكشوف.", tag:"مختصر", link:""},
-    {cat:"مدني/تجاري", title:"إنذار قانوني أم تفاوض؟", text:"الإنذار مفيد لحفظ الحقوق وإثبات المطالبة—لكن توقيته وصياغته يحددان أثره.", tag:"إجراء", link:""},
+    {cat:"عمالي", title:"متى تُحسب مكافأة نهاية الخدمة؟", text:"تتغير بحسب سبب انتهاء العلاقة ومدتها والأجر. لا تُحسم دون عقد وكشوف.", tag:"مختصر", link:""},
+    {cat:"مدني/تجاري", title:"إنذار قانوني أم تفاوض؟", text:"الإنذار يحفظ الحقوق ويثبت المطالبة—لكن توقيته وصياغته يحددان أثره.", tag:"إجراء", link:""},
   ];
 
   const FAQ = [
-    {q:"هل تضمنون نتيجة؟", a:"لا. أي عمل قانوني مرتبط بالوقائع والمستندات والإجراءات والمواعيد. دورنا تقديم تقييم مهني وخيارات وخطة تنفيذ."},
-    {q:"هل يمكن إعطاء رأي كامل من غير مستندات؟", a:"يمكن إعطاء توجيه عام، لكن الرأي الدقيق يحتاج مستندات ووقائع مكتملة حتى لا يكون مضللًا."},
-    {q:"ما أفضل طريقة لإرسال الطلب؟", a:"واتساب برسالة منظمة: نوع الخدمة + المدينة + ملخص الوقائع + صور المستندات الأساسية إن لزم."},
-    {q:"هل المحتوى في قاعدة المعرفة يُعد فتوى قانونية؟", a:"لا. هو محتوى توعوي عام، ولا يغني عن استشارة مكتوبة بعد الاطلاع على الملف."}
+    {q:"هل تضمنون نتيجة؟", a:"لا. كل ملف مرتبط بالوقائع والمستندات والإجراءات والمواعيد. دورنا تقييم مهني وخيارات وخطة تنفيذ."},
+    {q:"هل يمكن إعطاء رأي كامل دون مستندات؟", a:"يمكن توجيه عام فقط. الرأي الدقيق يحتاج مستندات ووقائع مكتملة حتى لا يكون مضللًا."},
+    {q:"أفضل طريقة لإرسال الطلب؟", a:"واتساب برسالة منظمة: نوع الخدمة + المدينة + ملخص الوقائع + صور المستندات الأساسية إن لزم."},
+    {q:"هل محتوى قاعدة المعرفة رأي قانوني مكتوب؟", a:"لا. هو محتوى توعوي عام ولا يغني عن استشارة مكتوبة بعد الاطلاع على الملف."}
   ];
 
-  // =========================
-  // 3) Rendering + Behaviors
-  // =========================
   const $ = (s)=>document.querySelector(s);
   const $$ = (s)=>document.querySelectorAll(s);
 
@@ -624,12 +554,8 @@
     const msg = encodeURIComponent(message);
     return `https://wa.me/971${n.startsWith("0")?n.slice(1):n}?text=${msg}`;
   }
-  function telLink(){
-    const n = (SITE.phone||"").replace(/\s/g,"");
-    return `tel:${n}`;
-  }
+  function telLink(){ return `tel:${(SITE.phone||"").replace(/\s/g,"")}`; }
 
-  // Fill top texts
   $("#brandName").textContent = SITE.name;
   $("#brandTag").textContent = SITE.tagline;
   $("#phoneText").textContent = SITE.phone;
@@ -643,17 +569,19 @@
   $("#licenseText").textContent = SITE.licenseLine;
   $("#year").textContent = new Date().getFullYear();
 
-  // Buttons
-  const msgTemplate = `مرحبًا، أود الحصول على استشارة.\nنوع الخدمة: \nالمدينة: ${SITE.city}\nملخص الوقائع: \nالمستندات المتاحة: `;
+  const msgTemplate =
+`مرحبًا، أود الحصول على استشارة.
+نوع الخدمة:
+المدينة: ${SITE.city}
+ملخص الوقائع:
+المستندات المتاحة:`;
+
   ["#whatsBtnTop","#whatsBtnHero","#whatsBtnContact","#whatsBtnFloat"].forEach(id=>{
     $(id).href = waLink(msgTemplate);
     $(id).target = "_blank";
   });
-  ["#callBtnHero","#callBtnFloat"].forEach(id=>{
-    $(id).href = telLink();
-  });
+  ["#callBtnHero","#callBtnFloat"].forEach(id=> $(id).href = telLink());
 
-  // Copy
   $("#copyPhone").addEventListener("click", async ()=>{
     await navigator.clipboard.writeText(SITE.phone);
     $("#copyPhone").textContent = "تم النسخ";
@@ -665,7 +593,6 @@
     setTimeout(()=>$("#copyEmail").textContent="نسخ البريد",1200);
   });
 
-  // Services render
   const servicesGrid = $("#servicesGrid");
   SERVICES.forEach((s,i)=>{
     const el = document.createElement("div");
@@ -682,14 +609,11 @@
         <p>${s.details}</p>
         <button class="btn" data-toggle="${i}">تفاصيل أكثر</button>
         <div class="collapse" id="svc-${i}">
-          <ul class="clean">
-            ${(s.bullets||[]).map(x=>`<li>${x}</li>`).join("")}
-          </ul>
+          <ul class="clean">${(s.bullets||[]).map(x=>`<li>${x}</li>`).join("")}</ul>
           <a class="btn primary" style="margin-top:10px" target="_blank" rel="noopener"
              href="${waLink(`مرحبًا، أود خدمة: ${s.title}\nالمدينة: ${SITE.city}\nملخص: `)}">اطلب هذه الخدمة عبر واتساب</a>
         </div>
-      </div>
-    `;
+      </div>`;
     servicesGrid.appendChild(el);
   });
   $$("[data-toggle]").forEach(btn=>{
@@ -701,7 +625,6 @@
     });
   });
 
-  // Timeline render
   const tl = $("#timeline");
   PROCESS.forEach((s,idx)=>{
     const el = document.createElement("div");
@@ -711,12 +634,10 @@
       <div>
         <b style="display:block; margin-bottom:4px">${s.title}</b>
         <div style="color:var(--muted); line-height:1.9; font-size:13px">${s.text}</div>
-      </div>
-    `;
+      </div>`;
     tl.appendChild(el);
   });
 
-  // Knowledge chips + list
   let activeCat = "الكل";
   let q = "";
   const chips = $("#chips");
@@ -732,7 +653,6 @@
     });
     chips.appendChild(b);
   });
-
   $("#kbSearch").addEventListener("input",(e)=>{
     q = (e.target.value||"").trim().toLowerCase();
     renderKB();
@@ -747,7 +667,6 @@
       const okQ = q ? blob.includes(q) : true;
       return okCat && okQ;
     });
-
     items.forEach(it=>{
       const el = document.createElement("div");
       el.className = "card kbItem";
@@ -758,11 +677,9 @@
         </div>
         <h4>${it.title}</h4>
         <p>${it.text}</p>
-        ${it.link ? `<a class="btn" href="${it.link}" target="_blank" rel="noopener">فتح المرجع</a>` : ""}
-      `;
+        ${it.link ? `<a class="btn" href="${it.link}" target="_blank" rel="noopener">فتح المرجع</a>` : ""}`;
       list.appendChild(el);
     });
-
     if(!items.length){
       const empty = document.createElement("div");
       empty.className = "note";
@@ -772,7 +689,6 @@
   }
   renderKB();
 
-  // FAQ render
   const faqList = $("#faqList");
   FAQ.forEach(it=>{
     const d = document.createElement("details");
@@ -780,7 +696,6 @@
     faqList.appendChild(d);
   });
 
-  // Scrollspy
   const sections = ["services","process","knowledge","faq","contact"].map(id=>document.getElementById(id));
   const navLinks = Array.from($$(".navlinks a"));
   const obs = new IntersectionObserver((entries)=>{
