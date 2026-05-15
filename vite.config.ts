@@ -20,14 +20,15 @@ export default defineConfig(({ mode }) => {
       VitePWA({
         registerType: "autoUpdate",
         injectRegister: false,
-        includeAssets: ["favicon.ico", "apple-touch-icon.png"],
+        includeAssets: ["favicon.ico", "apple-touch-icon.png", "portal-icon.svg"],
         manifest: {
-          name: "HELM Legal Office",
-          short_name: "HELM",
-          description: "HELM Legal Office – إدارة الموكلين والقضايا والحسابات والتذكيرات",
-          theme_color: env.VITE_THEME_COLOR || "#0f172a",
-          background_color: "#ffffff",
+          name: "حلم بروتال | HELM Portal",
+          short_name: "HELM Portal",
+          description: "بوابة توجيه رسمية إلى المنصة الإلكترونية حلم بروتال لمتابعة الخدمات والطلبات والملفات القانونية.",
+          theme_color: env.VITE_THEME_COLOR || "#111827",
+          background_color: "#020617",
           display: "standalone",
+          orientation: "portrait-primary",
           scope: "./",
           start_url: "./",
           icons: [
