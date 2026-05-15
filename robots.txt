@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://ahmedhelmy200-rgb.github.io/ahmed-helmy-legal/sitemap.xml
+Sitemap: ./sitemap.xml
