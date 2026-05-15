@@ -8,7 +8,9 @@ export default defineConfig(({ mode }) => {
   const isDev = mode === "development";
 
   return {
-    base: "./",
+    // GitHub Pages repository path:
+    // https://ahmedhelmy200-rgb.github.io/ahmed-helmy-legal/
+    base: "/ahmed-helmy-legal/",
 
     server: {
       port: 3000,
@@ -22,28 +24,28 @@ export default defineConfig(({ mode }) => {
         injectRegister: false,
         includeAssets: ["favicon.ico", "apple-touch-icon.png", "portal-icon.svg"],
         manifest: {
-          name: "حلم بروتال | HELM Portal",
-          short_name: "HELM Portal",
-          description: "بوابة توجيه رسمية إلى المنصة الإلكترونية حلم بروتال لمتابعة الخدمات والطلبات والملفات القانونية.",
+          name: "المستشار أحمد حلمي | Ahmed Helmy Legal",
+          short_name: "Ahmed Helmy Legal",
+          description: "الموقع الرسمي المستقل للمستشار أحمد حلمي للخدمات والاستشارات القانونية.",
           theme_color: env.VITE_THEME_COLOR || "#111827",
           background_color: "#020617",
           display: "standalone",
           orientation: "portrait-primary",
-          scope: "./",
-          start_url: "./",
+          scope: "/ahmed-helmy-legal/",
+          start_url: "/ahmed-helmy-legal/",
           icons: [
             {
-              src: "./icons/icon-192.png",
+              src: "/ahmed-helmy-legal/icons/icon-192.png",
               sizes: "192x192",
               type: "image/png",
             },
             {
-              src: "./icons/icon-512.png",
+              src: "/ahmed-helmy-legal/icons/icon-512.png",
               sizes: "512x512",
               type: "image/png",
             },
             {
-              src: "./icons/icon-512-maskable.png",
+              src: "/ahmed-helmy-legal/icons/icon-512-maskable.png",
               sizes: "512x512",
               type: "image/png",
               purpose: "maskable",
@@ -51,14 +53,10 @@ export default defineConfig(({ mode }) => {
           ],
         },
         workbox: {
-          navigateFallback: "./index.html",
-          // In dev (`vite`), Vite doesn't emit bundled assets to disk, so Workbox glob
-          // patterns won't match anything under `dev-dist`. Keep dev clean and rely on
-          // runtimeCaching. In production build, precache the real output.
+          navigateFallback: "/ahmed-helmy-legal/index.html",
           globPatterns: isDev ? [] : ["**/*.{js,css,html,ico,png,svg,woff2}", "assets/**/*"],
           runtimeCaching: [
             {
-              // Avoid caching API calls (Supabase, etc.)
               urlPattern: ({ url }) => url.pathname.includes("/rest/v1/") || url.hostname.includes("supabase"),
               handler: "NetworkOnly",
             },
@@ -95,7 +93,6 @@ export default defineConfig(({ mode }) => {
     },
 
     build: {
-      // Faster initial load + smaller main bundle (especially inside Electron)
       chunkSizeWarningLimit: 900,
       rollupOptions: {
         output: {
