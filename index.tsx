@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 
@@ -15,6 +15,14 @@ if ("serviceWorker" in navigator && window.location.protocol !== "file:" && !isE
 
 const LegalWebsiteLanding: React.FC = () => {
   const currentYear = useMemo(() => new Date().getFullYear(), []);
+
+  useEffect(() => {
+    if (window.location.hash === "#faq") {
+      window.setTimeout(() => {
+        document.getElementById("faq")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 150);
+    }
+  }, []);
 
   return (
     <main className="min-h-screen overflow-hidden bg-slate-950 text-white" dir="rtl">
@@ -35,12 +43,20 @@ const LegalWebsiteLanding: React.FC = () => {
               </div>
             </div>
 
-            <a
-              href={PORTAL_URL}
-              className="hidden rounded-2xl border border-amber-300/25 bg-amber-300/10 px-5 py-3 text-sm font-black text-amber-100 transition hover:bg-amber-300/20 md:inline-flex"
-            >
-              حلم بروتال
-            </a>
+            <div className="hidden items-center gap-3 md:flex">
+              <a
+                href="#faq"
+                className="rounded-2xl border border-white/10 bg-white/[0.06] px-5 py-3 text-sm font-bold text-slate-100 transition hover:bg-white/[0.12]"
+              >
+                الأسئلة الشائعة
+              </a>
+              <a
+                href={PORTAL_URL}
+                className="rounded-2xl border border-amber-300/25 bg-amber-300/10 px-5 py-3 text-sm font-black text-amber-100 transition hover:bg-amber-300/20"
+              >
+                حلم بروتال
+              </a>
+            </div>
           </header>
 
           <div className="grid flex-1 items-center gap-10 py-10 md:grid-cols-[1.05fr_0.95fr]">
@@ -128,6 +144,50 @@ const LegalWebsiteLanding: React.FC = () => {
               </div>
             </aside>
           </div>
+
+          <section id="faq" className="scroll-mt-8 pb-12">
+            <div className="rounded-[2rem] border border-white/10 bg-white/[0.06] p-5 shadow-2xl backdrop-blur md:p-8">
+              <div className="mb-6 text-right">
+                <div className="inline-flex rounded-full border border-amber-300/20 bg-amber-300/10 px-4 py-2 text-sm font-bold text-amber-100">
+                  الأسئلة الشائعة
+                </div>
+                <h2 className="mt-4 text-3xl font-black text-white md:text-4xl">معلومات سريعة قبل التواصل</h2>
+                <p className="mt-3 max-w-3xl text-base leading-8 text-slate-300">
+                  هذا القسم مخصص لتوضيح طريقة استخدام الموقع المستقل والانتقال إلى منصة حلم بروتال عند الحاجة إلى متابعة إلكترونية للطلبات والملفات.
+                </p>
+              </div>
+
+              <div className="grid gap-4 md:grid-cols-2">
+                <article className="rounded-3xl border border-white/10 bg-slate-950/45 p-5 text-right">
+                  <h3 className="text-lg font-black text-amber-100">هل هذا الموقع هو منصة حلم بروتال؟</h3>
+                  <p className="mt-3 leading-8 text-slate-300">
+                    لا. هذا موقع مستقل للتعريف بالخدمات والتواصل. منصة حلم بروتال لها رابط مستقل ويتم الدخول إليها من الأزرار الظاهرة في الصفحة.
+                  </p>
+                </article>
+
+                <article className="rounded-3xl border border-white/10 bg-slate-950/45 p-5 text-right">
+                  <h3 className="text-lg font-black text-amber-100">أين أتابع الطلبات والملفات؟</h3>
+                  <p className="mt-3 leading-8 text-slate-300">
+                    تتم المتابعة الإلكترونية من خلال منصة حلم بروتال عبر زر دخول المنصة الموجود أعلى الصفحة وداخل بطاقة التطبيق.
+                  </p>
+                </article>
+
+                <article className="rounded-3xl border border-white/10 bg-slate-950/45 p-5 text-right">
+                  <h3 className="text-lg font-black text-amber-100">هل رابط GitHub Pages يعرض نفس نسخة Vercel؟</h3>
+                  <p className="mt-3 leading-8 text-slate-300">
+                    نعم. هذه النسخة مبنية من نفس ملفات المستودع، وتعرض نفس صفحة الموقع المستقل الموجودة على Vercel بعد اكتمال النشر.
+                  </p>
+                </article>
+
+                <article className="rounded-3xl border border-white/10 bg-slate-950/45 p-5 text-right">
+                  <h3 className="text-lg font-black text-amber-100">كيف أتواصل بسرعة؟</h3>
+                  <p className="mt-3 leading-8 text-slate-300">
+                    يمكن استخدام زر واتساب أو البريد الإلكتروني الظاهرين في الصفحة لإرسال بيانات الطلب والمستندات المتاحة.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </section>
         </div>
       </section>
     </main>
