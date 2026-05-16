@@ -1,0 +1,13 @@
+{
+  "name": "أحمد حلمي للاستشارات القانونية",
+  "short_name": "أحمد حلمي",
+  "lang": "ar-AE",
+  "dir": "rtl",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0d1423",
+  "theme_color": "#0d1423",
+  "icons": [
+    {"src": "assets/icon-helm-app.png", "sizes": "1024x1536", "type": "image/png", "purpose": "any maskable"}
+  ]
+}

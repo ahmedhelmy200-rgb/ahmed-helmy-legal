@@ -1,40 +1,535 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#111827" />
-    <meta name="robots" content="index,follow" />
-    <meta
-      name="description"
-      content="موقع خدمات مكتب حلم للاستشارات القانونية: معلومات قانونية، مكتبة كتب وصفحات، مقالات، تعليقات للزوار، وتوجيه إلى حلم بروتال للاستشارة المجانية والعاجلة وتسجيل الدخول."
-    />
-    <meta property="og:title" content="مكتب حلم للاستشارات القانونية | Helm Legal" />
-    <meta
-      property="og:description"
-      content="معلومات قانونية ومكتبة صفحات وكتب مختصرة مع مدخل مباشر إلى حلم بروتال للاستشارة المجانية والعاجلة."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://ahmedhelmy200-rgb.github.io/ahmed-helmy-legal/" />
-    <meta property="og:image" content="./portal-icon.svg" />
-    <link rel="canonical" href="https://ahmedhelmy200-rgb.github.io/ahmed-helmy-legal/" />
-    <title>مكتب حلم للاستشارات القانونية | Helm Legal</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أحمد حلمي | مكتب الاستشارات القانونية - الإمارات</title>
+  <meta name="description" content="مكتب أحمد حلمي للاستشارات القانونية في دولة الإمارات. استشارات قانونية، صياغة عقود، متابعة القضايا التجارية والعمالية والعقارية والجنائية والأحوال الشخصية.">
+  <meta name="keywords" content="أحمد حلمي, استشارات قانونية الإمارات, مستشار قانوني, صياغة عقود, قضايا تجارية, قضايا عمالية, قضايا عقارية, قانون الإمارات">
+  <meta name="author" content="أحمد حلمي للاستشارات القانونية">
+  <meta name="theme-color" content="#0d1423">
+  <meta property="og:title" content="أحمد حلمي | مكتب الاستشارات القانونية - الإمارات">
+  <meta property="og:description" content="استشارات قانونية مهنية داخل دولة الإمارات مع متابعة منظمة للملفات القانونية.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="./index.html">
+  <meta property="og:locale" content="ar_AE">
+  <meta property="og:image" content="assets/icon-helm-app.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="أحمد حلمي | مكتب الاستشارات القانونية - الإمارات">
+  <meta name="twitter:description" content="استشارات قانونية مهنية داخل دولة الإمارات مع متابعة منظمة للملفات القانونية.">
+  <meta name="twitter:image" content="assets/icon-helm-app.png">
+  <link rel="icon" type="image/png" href="assets/icon-helm-app.png">
+  <link rel="apple-touch-icon" href="assets/icon-helm-app.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config={theme:{extend:{fontFamily:{sans:['Cairo','Arial','sans-serif'],serif:['Cairo','Arial','sans-serif']},colors:{gold:{50:'#fdf8ef',100:'#f9ecd4',200:'#f2d5a4',300:'#e9b96e',400:'#d4a54e',500:'#c8a46e',600:'#b8873a',700:'#9a6c30',800:'#7d572c',900:'#674828'},navy:{50:'#f0f3f9',100:'#d9e0ef',200:'#b3c1df',300:'#8da2cf',400:'#6783bf',500:'#4164af',600:'#34508c',700:'#273c69',800:'#1a2846',900:'#0d1423'}}}}}
+  </script>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body,button,input,textarea,select,a,h1,h2,h3,h4,h5,h6,p,span,div{font-family:'Cairo','Arial',sans-serif;letter-spacing:normal}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes scaleIn{from{opacity:0;transform:scale(0.9)}to{opacity:1;transform:scale(1)}}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+    @keyframes pulse-gold{0%,100%{box-shadow:0 0 0 0 rgba(200,164,110,0.4)}50%{box-shadow:0 0 0 15px rgba(200,164,110,0)}}
+    @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+    @keyframes slideDown{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes logoShimmer{0%{background-position:-200% center}100%{background-position:200% center}}
+    @keyframes glassShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
 
-    <link rel="manifest" href="./manifest.webmanifest" />
-    <link rel="icon" type="image/svg+xml" href="./portal-icon.svg" />
-    <link rel="icon" href="./favicon.ico" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png" />
-    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+    .animate-on-scroll{opacity:0;transform:translateY(30px);transition:all 0.8s cubic-bezier(0.4,0,0.2,1)}
+    .animate-on-scroll.visible{opacity:1;transform:translateY(0)}
+    .animate-on-scroll.visible.delay-1{transition-delay:.1s}
+    .animate-on-scroll.visible.delay-2{transition-delay:.2s}
+    .animate-on-scroll.visible.delay-3{transition-delay:.3s}
+    .animate-on-scroll.visible.delay-4{transition-delay:.4s}
+    .animate-on-scroll.visible.delay-5{transition-delay:.5s}
+
+    .hero-gradient{background:linear-gradient(135deg,#0d1423 0%,#1a2846 40%,#273c69 70%,#1a2846 100%)}
+    .text-gradient{background:linear-gradient(135deg,#c8a46e,#e9b96e,#c8a46e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .card-hover{transition:all .4s cubic-bezier(.4,0,.2,1)}
+    .card-hover:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,.15)}
+    .service-card{position:relative}
+    .service-card::before{content:'';position:absolute;top:0;right:0;width:100%;height:3px;background:linear-gradient(90deg,#c8a46e,#e9b96e);transform:scaleX(0);transform-origin:right;transition:transform .4s ease}
+    .service-card:hover::before{transform:scaleX(1)}
+    .nav-blur{backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+    .marquee-track{animation:marquee 30s linear infinite}
+    .stat-number{background:linear-gradient(135deg,#c8a46e,#e9b96e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .btn-gold{background:linear-gradient(135deg,#c8a46e,#b8873a);transition:all .3s ease}
+    .btn-gold:hover{background:linear-gradient(135deg,#e9b96e,#c8a46e);transform:translateY(-2px);box-shadow:0 8px 25px rgba(200,164,110,.4)}
+    .practice-img{transition:transform .6s ease}
+    .practice-card:hover .practice-img{transform:scale(1.08)}
+    .scroll-indicator{animation:float 2s ease-in-out infinite}
+    .mobile-menu{transform:translateX(100%);transition:transform .4s cubic-bezier(.4,0,.2,1)}
+    .mobile-menu.open{transform:translateX(0)}
+    .toast{animation:slideDown .4s ease forwards}
+    .law-tab.active{background:linear-gradient(135deg,#c8a46e,#b8873a);color:#fff}
+    .law-tab:not(.active){background:white;color:#1a2846}
+    .law-content{display:none}
+    .law-content.active{display:block;animation:fadeInUp .5s ease}
+    .faq-answer{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s ease}
+    .faq-item.open .faq-answer{max-height:500px;padding-top:12px}
+    .faq-item.open .faq-chevron{transform:rotate(180deg)}
+    .faq-chevron{transition:transform .3s ease}
+    .lib-card{position:relative;overflow:hidden}
+    .lib-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#c8a46e,#e9b96e);transform:scaleX(0);transition:transform .4s ease}
+    .lib-card:hover::after{transform:scaleX(1)}
+
+    .glass-logo{
+      position:relative;
+      background:linear-gradient(135deg,rgba(200,164,110,0.15),rgba(255,255,255,0.05),rgba(200,164,110,0.1));
+      backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+      border:1.5px solid rgba(200,164,110,0.35);
+      box-shadow:0 0 20px rgba(200,164,110,0.15),inset 0 1px 0 rgba(255,255,255,0.2),inset 0 -1px 0 rgba(200,164,110,0.1),0 8px 32px rgba(0,0,0,0.3);
+      overflow:hidden;
+    }
+    .glass-logo::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:conic-gradient(from 0deg,transparent,rgba(200,164,110,0.1),transparent,rgba(255,255,255,0.05),transparent);animation:glassShift 6s ease infinite}
+    .glass-logo::after{content:'';position:absolute;top:0;left:0;right:0;height:40%;background:linear-gradient(180deg,rgba(255,255,255,0.15),transparent);border-radius:inherit;pointer-events:none}
+    .glass-logo-sm{
+      background:linear-gradient(135deg,rgba(200,164,110,0.2),rgba(255,255,255,0.08),rgba(200,164,110,0.15));
+      backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+      border:1px solid rgba(200,164,110,0.3);
+      box-shadow:0 0 15px rgba(200,164,110,0.1),inset 0 1px 0 rgba(255,255,255,0.15),0 4px 16px rgba(0,0,0,0.2);
+    }
+    .shimmer-text{
+      background:linear-gradient(90deg,#c8a46e,#e9b96e,#fff,#e9b96e,#c8a46e);
+      background-size:200% auto;
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+      animation:logoShimmer 4s linear infinite;
+    }
+
+
+    .portal-image-link{display:block;position:relative;cursor:pointer}
+    .portal-image-link::after{content:'فتح حلمي بروتال';position:absolute;top:1rem;left:1rem;z-index:5;background:rgba(13,20,35,.82);color:#e9b96e;border:1px solid rgba(200,164,110,.45);border-radius:999px;padding:.45rem .9rem;font-size:.82rem;font-weight:700;backdrop-filter:blur(10px);opacity:.96;transition:all .3s ease}
+    .portal-image-link:hover::after{transform:translateY(-2px);background:rgba(26,40,70,.92)}
+    .portal-image-link img{transition:transform .45s ease,filter .45s ease}
+    .portal-image-link:hover img{transform:scale(1.025);filter:brightness(1.04)}
+    .force-cairo{font-family:'Cairo','Arial',sans-serif!important}
+
+    #network-canvas{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0}
+    .hero-pattern{background-image:radial-gradient(rgba(200,164,110,.12) 1px,transparent 1px);background-size:28px 28px;opacity:.35}
+    @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.001ms!important}.marquee-track{animation:none!important}}
+    @media print{nav,#mobile-menu,#whatsapp-btn,#back-to-top,#network-canvas,.scroll-indicator{display:none!important}body{background:#fff!important;color:#111!important}.hero-gradient,footer{background:#fff!important;color:#111!important}.text-white,.text-white\/60,.text-white\/40,.text-white\/30{color:#111!important}}
+
+    ::-webkit-scrollbar{width:8px}
+    ::-webkit-scrollbar-track{background:#0d1423}
+    ::-webkit-scrollbar-thumb{background:#c8a46e;border-radius:4px}
+  </style>
+</head>
+<body class="bg-white text-slate-800 overflow-x-hidden">
+
+  <div id="toast-container" class="fixed top-6 left-1/2 -translate-x-1/2 z-[100] flex flex-col gap-3"></div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3 group relative z-10">
+          <div class="glass-logo-sm w-12 h-12 rounded-xl flex items-center justify-center relative overflow-hidden">
+            <img src="assets/icon-helm-app.png" alt="أيقونة الموقع" class="w-full h-full object-cover rounded-xl relative z-10">
+          </div>
+          <div>
+            <span class="text-lg font-bold text-white leading-none block">أحمد حلمي</span>
+            <span class="text-[10px] text-gold-400 tracking-wider font-medium">مكتب الاستشارات القانونية</span>
+          </div>
+        </a>
+
+        <div class="hidden lg:flex items-center gap-1">
+          <a href="index.html" class="nav-link px-4 py-2 text-sm text-white/80 hover:text-gold-400 transition-colors rounded-lg hover:bg-white/5">الرئيسية</a>
+          <a href="about.html" class="nav-link px-4 py-2 text-sm text-white/80 hover:text-gold-400 transition-colors rounded-lg hover:bg-white/5">من نحن</a>
+          <a href="services.html" class="nav-link px-4 py-2 text-sm text-white/80 hover:text-gold-400 transition-colors rounded-lg hover:bg-white/5">خدماتنا</a>
+          <a href="library.html" class="nav-link px-4 py-2 text-sm text-white/80 hover:text-gold-400 transition-colors rounded-lg hover:bg-white/5">المكتبة القانونية</a>
+          <a href="uae-law.html" class="nav-link px-4 py-2 text-sm text-white/80 hover:text-gold-400 transition-colors rounded-lg hover:bg-white/5">قانون الإمارات</a>
+          <a href="contact.html" class="nav-link px-4 py-2 text-sm text-white/80 hover:text-gold-400 transition-colors rounded-lg hover:bg-white/5">تواصل معنا</a>
+          <a href="https://helm-protal.vercel.app/" target="_blank" rel="noopener noreferrer" class="px-5 py-2 text-sm font-semibold text-gold-500 border border-gold-500/40 rounded-lg hover:bg-gold-500/20 hover:border-gold-400 transition-all mr-2 inline-flex items-center gap-2 glass-logo-sm">
+            <i data-lucide="log-in" class="w-4 h-4"></i>دخول العملاء
+          </a>
+        </div>
+
+        <button id="mobile-toggle" class="lg:hidden text-white p-2 hover:bg-white/10 rounded-lg"><i data-lucide="menu" class="w-6 h-6"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu fixed inset-0 z-[60] bg-navy-900/98 nav-blur">
+    <div class="flex flex-col h-full p-6">
+      <div class="flex items-center justify-between mb-10">
+        <div class="flex items-center gap-3">
+          <div class="glass-logo-sm w-11 h-11 rounded-lg flex items-center justify-center overflow-hidden">
+            <img src="assets/icon-helm-app.png" alt="أيقونة الموقع" class="w-full h-full object-cover rounded-lg">
+          </div>
+          <span class="text-lg font-bold text-white">أحمد حلمي</span>
+        </div>
+        <button id="mobile-close" class="text-white p-2 hover:bg-white/10 rounded-lg"><i data-lucide="x" class="w-6 h-6"></i></button>
+      </div>
+      <div class="flex flex-col gap-2">
+        <a href="index.html" class="mobile-link text-xl text-white/90 hover:text-gold-400 py-3 px-4 rounded-lg hover:bg-white/5 transition-all">الرئيسية</a>
+        <a href="about.html" class="mobile-link text-xl text-white/90 hover:text-gold-400 py-3 px-4 rounded-lg hover:bg-white/5 transition-all">من نحن</a>
+        <a href="services.html" class="mobile-link text-xl text-white/90 hover:text-gold-400 py-3 px-4 rounded-lg hover:bg-white/5 transition-all">خدماتنا</a>
+        <a href="library.html" class="mobile-link text-xl text-white/90 hover:text-gold-400 py-3 px-4 rounded-lg hover:bg-white/5 transition-all">المكتبة القانونية</a>
+        <a href="uae-law.html" class="mobile-link text-xl text-white/90 hover:text-gold-400 py-3 px-4 rounded-lg hover:bg-white/5 transition-all">قانون الإمارات</a>
+        <a href="contact.html" class="mobile-link text-xl text-white/90 hover:text-gold-400 py-3 px-4 rounded-lg hover:bg-white/5 transition-all">تواصل معنا</a>
+        <a href="https://helm-protal.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-gold text-center text-lg font-semibold text-white py-3 px-6 rounded-lg mt-4 inline-flex items-center justify-center gap-2"><i data-lucide="log-in" class="w-5 h-5"></i>دخول العملاء</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero" class="hero-gradient relative min-h-screen flex items-center overflow-hidden">
+    <canvas id="network-canvas"></canvas>
+    <div class="relative max-w-7xl mx-auto px-6 py-32 w-full z-10">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1">
+          <div class="inline-flex items-center gap-2 bg-gold-500/10 border border-gold-500/20 rounded-full px-4 py-2 mb-8 backdrop-blur-sm" style="animation:fadeInUp .8s ease forwards">
+            <div class="w-2 h-2 bg-gold-500 rounded-full animate-pulse"></div>
+            <span class="text-gold-400 text-sm font-medium">مكتب استشارات قانونية - جميع إمارات الدولة</span>
+          </div>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6" style="animation:fadeInUp .8s ease .2s both">
+            نحمي حقوقك<br>
+            <span class="shimmer-text font-semibold">بقانون الإمارات</span>
+          </h1>
+          <p class="text-lg text-white/60 leading-relaxed mb-10 max-w-lg" style="animation:fadeInUp .8s ease .4s both">
+            مكتب أحمد حلمي للاستشارات القانونية. نعمل في جميع مناطق دولة الإمارات العربية المتحدة بخبرة عملية في القانون الاتحادي والتشريعات المحلية ذات الصلة.
+          </p>
+          <div class="flex flex-wrap gap-4 mb-14" style="animation:fadeInUp .8s ease .6s both">
+            <a href="contact.html" class="btn-gold px-8 py-3.5 text-base font-semibold text-white rounded-lg inline-flex items-center gap-2"><span>احجز استشارة</span><i data-lucide="arrow-left" class="w-4 h-4"></i></a>
+            <a href="https://helm-protal.vercel.app/" target="_blank" rel="noopener noreferrer" class="glass-logo-sm px-8 py-3.5 text-base font-medium text-white rounded-lg hover:bg-gold-500/20 transition-all inline-flex items-center gap-2 border border-gold-500/30"><i data-lucide="log-in" class="w-4 h-4"></i><span>بوابة العملاء</span></a>
+          </div>
+          <div class="grid grid-cols-3 gap-6" style="animation:fadeInUp .8s ease .8s both">
+            <div class="text-center lg:text-right"><div class="stat-number text-3xl font-bold" data-target="500" data-suffix="+">0</div><div class="text-white/40 text-xs mt-1">ملف واستشارة</div></div>
+            <div class="text-center lg:text-right border-r border-white/10 pr-6"><div class="stat-number text-3xl font-bold" data-target="15" data-suffix="+">0</div><div class="text-white/40 text-xs mt-1">سنة خبرة</div></div>
+            <div class="text-center lg:text-right border-r border-white/10 pr-6"><div class="stat-number text-3xl font-bold" data-target="7" data-suffix="">0</div><div class="text-white/40 text-xs mt-1">إمارات الدولة</div></div>
+          </div>
+        </div>
+
+        <div class="order-1 lg:order-2 flex justify-center" style="animation:scaleIn 1s ease .3s both">
+          <div class="relative">
+            <a href="https://helm-protal.vercel.app/" target="_blank" rel="noopener noreferrer" title="فتح حلمي بروتال" aria-label="فتح حلمي بروتال" class="glass-logo w-72 h-72 md:w-96 md:h-96 rounded-3xl flex items-center justify-center overflow-hidden block">
+              <img src="assets/icon-helm-app.png" alt="أيقونة الموقع - رابط حلمي بروتال" class="relative z-10 w-full h-full object-cover">
+            </a>
+            <div class="absolute -top-3 -right-3 glass-logo-sm rounded-xl px-4 py-2 shadow-xl" style="animation:float 3s ease-in-out infinite">
+              <div class="flex items-center gap-2"><i data-lucide="shield-check" class="w-5 h-5 text-gold-400"></i><span class="text-white text-sm font-medium">مرخص</span></div>
+            </div>
+            <div class="absolute -bottom-3 -left-4 glass-logo-sm rounded-xl px-4 py-2 shadow-xl" style="animation:float 3s ease-in-out 1.5s infinite">
+              <div class="flex items-center gap-2"><i data-lucide="map" class="w-5 h-5 text-gold-400"></i><span class="text-white text-sm font-medium">جميع الإمارات</span></div>
+            </div>
+            <div class="absolute top-1/2 -left-10 glass-logo-sm rounded-xl px-4 py-2 shadow-xl" style="animation:float 3s ease-in-out .8s infinite">
+              <div class="flex items-center gap-2"><i data-lucide="book-open" class="w-5 h-5 text-gold-400"></i><span class="text-white text-sm font-medium">قانون إماراتي</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 scroll-indicator z-10">
+      <div class="flex flex-col items-center gap-2"><span class="text-white/30 text-xs">اكتشف المزيد</span><div class="w-6 h-10 border-2 border-white/20 rounded-full flex justify-center pt-2"><div class="w-1.5 h-1.5 bg-gold-500 rounded-full animate-bounce"></div></div></div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <section class="bg-slate-50 border-y border-slate-200 py-6 overflow-hidden">
+    <div class="flex items-center"><div class="whitespace-nowrap marquee-track flex items-center gap-12">
+      <span class="text-slate-400 text-sm font-medium px-4">محاكم جميع الإمارات</span>
+      <div class="flex items-center gap-2 text-slate-300"><i data-lucide="landmark" class="w-6 h-6"></i><span class="text-sm">محاكم أبوظبي</span></div>
+      <div class="flex items-center gap-2 text-slate-300"><i data-lucide="building-2" class="w-6 h-6"></i><span class="text-sm">محاكم دبي</span></div>
+      <div class="flex items-center gap-2 text-slate-300"><i data-lucide="shield" class="w-6 h-6"></i><span class="text-sm">محاكم الشارقة</span></div>
+      <div class="flex items-center gap-2 text-slate-300"><i data-lucide="gavel" class="w-6 h-6"></i><span class="text-sm">محاكم العين</span></div>
+      <div class="flex items-center gap-2 text-slate-300"><i data-lucide="file-check" class="w-6 h-6"></i><span class="text-sm">محاكم عجمان</span></div>
+      <div class="flex items-center gap-2 text-slate-300"><i data-lucide="scale" class="w-6 h-6"></i><span class="text-sm">المحكمة الاتحادية العليا</span></div>
+      <span class="text-slate-400 text-sm font-medium px-4">محاكم جميع الإمارات</span>
+      <div class="flex items-center gap-2 text-slate-300"><i data-lucide="landmark" class="w-6 h-6"></i><span class="text-sm">محاكم أبوظبي</span></div>
+      <div class="flex items-center gap-2 text-slate-300"><i data-lucide="building-2" class="w-6 h-6"></i><span class="text-sm">محاكم دبي</span></div>
+      <div class="flex items-center gap-2 text-slate-300"><i data-lucide="shield" class="w-6 h-6"></i><span class="text-sm">محاكم الشارقة</span></div>
+      <div class="flex items-center gap-2 text-slate-300"><i data-lucide="gavel" class="w-6 h-6"></i><span class="text-sm">محاكم العين</span></div>
+      <div class="flex items-center gap-2 text-slate-300"><i data-lucide="file-check" class="w-6 h-6"></i><span class="text-sm">محاكم عجمان</span></div>
+      <div class="flex items-center gap-2 text-slate-300"><i data-lucide="scale" class="w-6 h-6"></i><span class="text-sm">المحكمة الاتحادية العليا</span></div>
+    </div></div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="animate-on-scroll relative">
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+            <a href="https://helm-protal.vercel.app/" target="_blank" rel="noopener noreferrer" title="فتح حلمي بروتال" aria-label="فتح حلمي بروتال من الصورة الشخصية" class="portal-image-link"><img src="assets/profile-ahmed-helmy.png" alt="الصورة الشخصية للأستاذ أحمد حلمي - رابط حلمي بروتال" class="w-full h-[500px] object-cover object-top bg-white"></a>
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-900/70 to-transparent pointer-events-none"></div>
+            <div class="absolute bottom-6 right-6 glass-logo-sm rounded-xl px-6 py-4 shadow-lg backdrop-blur-xl pointer-events-none">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-gold-400 to-gold-700 flex items-center justify-center"><i data-lucide="award" class="w-6 h-6 text-white"></i></div>
+                <div><div class="text-lg font-bold text-navy-900">الأستاذ أحمد حلمي</div><div class="text-xs text-slate-500">الصورة الشخصية بالموقع</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="absolute -z-10 -bottom-4 -right-4 w-full h-full border-2 border-gold-500/20 rounded-2xl"></div>
+        </div>
+        <div>
+          <div class="animate-on-scroll"><span class="inline-block text-gold-600 text-sm font-semibold tracking-wider mb-4">من نحن</span><h2 class="text-3xl md:text-4xl font-bold text-navy-900 mb-2 leading-tight">خبرة قانونية <span class="text-gradient font-semibold">في قضاء الإمارات</span></h2><div class="w-16 h-1 bg-gold-500 rounded-full mb-6"></div></div>
+          <p class="animate-on-scroll delay-1 text-slate-600 leading-relaxed mb-6 text-lg">مكتب أحمد حلمي للاستشارات القانونية يقدم خدمات قانونية متخصصة داخل دولة الإمارات العربية المتحدة، مع متابعة منظمة للملفات ومقر رئيسي في مدينة العين بإمارة أبوظبي.</p>
+          <p class="animate-on-scroll delay-2 text-slate-500 leading-relaxed mb-8">نقدم استشارات قانونية مبنية على فهم عملي للتشريعات الاتحادية واللوائح المحلية، مع مراعاة اختلاف الاختصاصات والإجراءات بين إمارات الدولة.</p>
+          <div class="grid grid-cols-2 gap-4 mb-8">
+            <div class="animate-on-scroll delay-3 flex items-center gap-3 bg-slate-50 rounded-xl p-4"><div class="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center flex-shrink-0"><i data-lucide="check-circle" class="w-5 h-5 text-gold-600"></i></div><span class="text-sm font-medium text-navy-900">التزام بالأنظمة المهنية</span></div>
+            <div class="animate-on-scroll delay-3 flex items-center gap-3 bg-slate-50 rounded-xl p-4"><div class="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center flex-shrink-0"><i data-lucide="check-circle" class="w-5 h-5 text-gold-600"></i></div><span class="text-sm font-medium text-navy-900">جميع مناطق الدولة</span></div>
+            <div class="animate-on-scroll delay-4 flex items-center gap-3 bg-slate-50 rounded-xl p-4"><div class="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center flex-shrink-0"><i data-lucide="check-circle" class="w-5 h-5 text-gold-600"></i></div><span class="text-sm font-medium text-navy-900">متابعة ملفات المحاكم</span></div>
+            <div class="animate-on-scroll delay-4 flex items-center gap-3 bg-slate-50 rounded-xl p-4"><div class="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center flex-shrink-0"><i data-lucide="check-circle" class="w-5 h-5 text-gold-600"></i></div><span class="text-sm font-medium text-navy-900">تحكيم ووساطة</span></div>
+          </div>
+          <a href="contact.html" class="animate-on-scroll delay-5 btn-gold inline-flex items-center gap-2 px-8 py-3.5 text-base font-semibold text-white rounded-lg"><span>تعرف علينا أكثر</span><i data-lucide="arrow-left" class="w-4 h-4"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section id="services" class="py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16"><span class="animate-on-scroll inline-block text-gold-600 text-sm font-semibold tracking-wider mb-4">خدماتنا القانونية</span><h2 class="animate-on-scroll delay-1 text-3xl md:text-4xl font-bold text-navy-900 mb-4">حلول قانونية <span class="text-gradient font-semibold">بقانون الإمارات</span></h2><div class="animate-on-scroll delay-2 w-16 h-1 bg-gold-500 rounded-full mx-auto mb-6"></div></div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="animate-on-scroll service-card bg-white rounded-xl p-8 shadow-sm card-hover border border-slate-100 group cursor-pointer"><div class="w-14 h-14 rounded-xl bg-gold-500/10 flex items-center justify-center mb-6 group-hover:bg-gold-500 transition-colors"><i data-lucide="gavel" class="w-7 h-7 text-gold-600 group-hover:text-white transition-colors"></i></div><h3 class="text-lg font-bold text-navy-900 mb-3">القضايا التجارية</h3><p class="text-slate-500 text-sm leading-relaxed mb-4">وفقاً لمرسوم بقانون اتحادي رقم 50 لسنة 2022 بشأن المعاملات التجارية ومرسوم بقانون اتحادي رقم 32 لسنة 2021 بشأن الشركات التجارية.</p><div class="flex items-center gap-2 text-gold-600 text-sm font-medium group-hover:gap-3 transition-all"><span>اعرف المزيد</span><i data-lucide="arrow-left" class="w-4 h-4"></i></div></div>
+        <div class="animate-on-scroll delay-1 service-card bg-white rounded-xl p-8 shadow-sm card-hover border border-slate-100 group cursor-pointer"><div class="w-14 h-14 rounded-xl bg-gold-500/10 flex items-center justify-center mb-6 group-hover:bg-gold-500 transition-colors"><i data-lucide="file-text" class="w-7 h-7 text-gold-600 group-hover:text-white transition-colors"></i></div><h3 class="text-lg font-bold text-navy-900 mb-3">صياغة العقود</h3><p class="text-slate-500 text-sm leading-relaxed mb-4">وفقاً للقانون المدني رقم 5 لسنة 1985 وقانون المعاملات المدنية لدولة الإمارات.</p><div class="flex items-center gap-2 text-gold-600 text-sm font-medium group-hover:gap-3 transition-all"><span>اعرف المزيد</span><i data-lucide="arrow-left" class="w-4 h-4"></i></div></div>
+        <div class="animate-on-scroll delay-2 service-card bg-white rounded-xl p-8 shadow-sm card-hover border border-slate-100 group cursor-pointer"><div class="w-14 h-14 rounded-xl bg-gold-500/10 flex items-center justify-center mb-6 group-hover:bg-gold-500 transition-colors"><i data-lucide="users" class="w-7 h-7 text-gold-600 group-hover:text-white transition-colors"></i></div><h3 class="text-lg font-bold text-navy-900 mb-3">الأحوال الشخصية</h3><p class="text-slate-500 text-sm leading-relaxed mb-4">وفقاً لمرسوم بقانون اتحادي رقم 41 لسنة 2024 في شأن إصدار قانون الأحوال الشخصية، مع مراعاة تشريعات الأحوال المدنية لغير المسلمين.</p><div class="flex items-center gap-2 text-gold-600 text-sm font-medium group-hover:gap-3 transition-all"><span>اعرف المزيد</span><i data-lucide="arrow-left" class="w-4 h-4"></i></div></div>
+        <div class="animate-on-scroll delay-3 service-card bg-white rounded-xl p-8 shadow-sm card-hover border border-slate-100 group cursor-pointer"><div class="w-14 h-14 rounded-xl bg-gold-500/10 flex items-center justify-center mb-6 group-hover:bg-gold-500 transition-colors"><i data-lucide="building" class="w-7 h-7 text-gold-600 group-hover:text-white transition-colors"></i></div><h3 class="text-lg font-bold text-navy-900 mb-3">تأسيس الشركات</h3><p class="text-slate-500 text-sm leading-relaxed mb-4">وفقاً لمرسوم بقانون اتحادي رقم 32 لسنة 2021 بشأن الشركات التجارية.</p><div class="flex items-center gap-2 text-gold-600 text-sm font-medium group-hover:gap-3 transition-all"><span>اعرف المزيد</span><i data-lucide="arrow-left" class="w-4 h-4"></i></div></div>
+        <div class="animate-on-scroll delay-4 service-card bg-white rounded-xl p-8 shadow-sm card-hover border border-slate-100 group cursor-pointer"><div class="w-14 h-14 rounded-xl bg-gold-500/10 flex items-center justify-center mb-6 group-hover:bg-gold-500 transition-colors"><i data-lucide="home" class="w-7 h-7 text-gold-600 group-hover:text-white transition-colors"></i></div><h3 class="text-lg font-bold text-navy-900 mb-3">القضايا العقارية</h3><p class="text-slate-500 text-sm leading-relaxed mb-4">وفقاً لقوانين الملكية العقارية في جميع إمارات الدولة والقانون الاتحادي.</p><div class="flex items-center gap-2 text-gold-600 text-sm font-medium group-hover:gap-3 transition-all"><span>اعرف المزيد</span><i data-lucide="arrow-left" class="w-4 h-4"></i></div></div>
+        <div class="animate-on-scroll delay-5 service-card bg-white rounded-xl p-8 shadow-sm card-hover border border-slate-100 group cursor-pointer"><div class="w-14 h-14 rounded-xl bg-gold-500/10 flex items-center justify-center mb-6 group-hover:bg-gold-500 transition-colors"><i data-lucide="shield-alert" class="w-7 h-7 text-gold-600 group-hover:text-white transition-colors"></i></div><h3 class="text-lg font-bold text-navy-900 mb-3">القضايا الجنائية</h3><p class="text-slate-500 text-sm leading-relaxed mb-4">وفقاً لمرسوم بقانون اتحادي رقم 31 لسنة 2021 بشأن الجرائم والعقوبات، ومرسوم بقانون اتحادي رقم 34 لسنة 2021 بشأن مكافحة الشائعات والجرائم الإلكترونية.</p><div class="flex items-center gap-2 text-gold-600 text-sm font-medium group-hover:gap-3 transition-all"><span>اعرف المزيد</span><i data-lucide="arrow-left" class="w-4 h-4"></i></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LEGAL LIBRARY ========== -->
+  <section id="library" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16"><span class="animate-on-scroll inline-block text-gold-600 text-sm font-semibold tracking-wider mb-4">المكتبة القانونية</span><h2 class="animate-on-scroll delay-1 text-3xl md:text-4xl font-bold text-navy-900 mb-4">مرجعك القانوني <span class="text-gradient font-semibold">الشامل</span></h2><div class="animate-on-scroll delay-2 w-16 h-1 bg-gold-500 rounded-full mx-auto mb-6"></div></div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div class="animate-on-scroll lib-card bg-gradient-to-br from-navy-900 to-navy-800 rounded-xl p-6 card-hover cursor-pointer"><div class="w-12 h-12 rounded-xl bg-gold-500/20 flex items-center justify-center mb-4"><i data-lucide="book-open" class="w-6 h-6 text-gold-400"></i></div><h3 class="text-white font-bold text-lg mb-2">القوانين الاتحادية</h3><p class="text-white/50 text-sm mb-3">جميع القوانين الصادرة عن الدولة</p><span class="text-gold-400 text-sm font-medium">+45 قانون</span></div>
+        <div class="animate-on-scroll delay-1 lib-card bg-gradient-to-br from-navy-900 to-navy-800 rounded-xl p-6 card-hover cursor-pointer"><div class="w-12 h-12 rounded-xl bg-gold-500/20 flex items-center justify-center mb-4"><i data-lucide="scroll-text" class="w-6 h-6 text-gold-400"></i></div><h3 class="text-white font-bold text-lg mb-2">المراسيم والقرارات</h3><p class="text-white/50 text-sm mb-3">المراسيم والقرارات الوزارية</p><span class="text-gold-400 text-sm font-medium">+120 قرار</span></div>
+        <div class="animate-on-scroll delay-2 lib-card bg-gradient-to-br from-navy-900 to-navy-800 rounded-xl p-6 card-hover cursor-pointer"><div class="w-12 h-12 rounded-xl bg-gold-500/20 flex items-center justify-center mb-4"><i data-lucide="file-search" class="w-6 h-6 text-gold-400"></i></div><h3 class="text-white font-bold text-lg mb-2">أحكام القضاء</h3><p class="text-white/50 text-sm mb-3">السوابق القانونية وأحكام المحاكم</p><span class="text-gold-400 text-sm font-medium">+300 حكم</span></div>
+        <div class="animate-on-scroll delay-3 lib-card bg-gradient-to-br from-navy-900 to-navy-800 rounded-xl p-6 card-hover cursor-pointer"><div class="w-12 h-12 rounded-xl bg-gold-500/20 flex items-center justify-center mb-4"><i data-lucide="pen-tool" class="w-6 h-6 text-gold-400"></i></div><h3 class="text-white font-bold text-lg mb-2">مقالات قانونية</h3><p class="text-white/50 text-sm mb-3">شروحات وتحليلات متخصصة</p><span class="text-gold-400 text-sm font-medium">+80 مقال</span></div>
+      </div>
+      <div class="animate-on-scroll bg-slate-50 rounded-2xl p-8 md:p-10 border border-slate-100">
+        <h3 class="text-xl font-bold text-navy-900 mb-6 flex items-center gap-3"><i data-lucide="library" class="w-6 h-6 text-gold-500"></i>أهم القوانين الإماراتية</h3>
+        <div class="flex flex-wrap gap-2 mb-8" id="law-tabs">
+          <button class="law-tab active px-4 py-2 rounded-lg text-sm font-medium transition-all" data-tab="civil">القانون المدني</button>
+          <button class="law-tab px-4 py-2 rounded-lg text-sm font-medium transition-all border border-slate-200" data-tab="commercial">القانون التجاري</button>
+          <button class="law-tab px-4 py-2 rounded-lg text-sm font-medium transition-all border border-slate-200" data-tab="penal">قانون العقوبات</button>
+          <button class="law-tab px-4 py-2 rounded-lg text-sm font-medium transition-all border border-slate-200" data-tab="family">الأحوال الشخصية</button>
+          <button class="law-tab px-4 py-2 rounded-lg text-sm font-medium transition-all border border-slate-200" data-tab="labor">قانون العمل</button>
+          <button class="law-tab px-4 py-2 rounded-lg text-sm font-medium transition-all border border-slate-200" data-tab="companies">قانون الشركات</button>
+          <button class="law-tab px-4 py-2 rounded-lg text-sm font-medium transition-all border border-slate-200" data-tab="cyber">الجرائم الإلكترونية</button>
+          <button class="law-tab px-4 py-2 rounded-lg text-sm font-medium transition-all border border-slate-200" data-tab="realestate">القانون العقاري</button>
+        </div>
+        <div id="law-contents">
+          <div class="law-content active" id="tab-civil"><div class="bg-white rounded-xl p-6 border border-slate-200"><div class="flex items-start gap-4 mb-6"><div class="w-12 h-12 rounded-xl bg-gold-500/10 flex items-center justify-center flex-shrink-0"><i data-lucide="scale" class="w-6 h-6 text-gold-600"></i></div><div><h4 class="font-bold text-navy-900 text-lg">القانون المدني - رقم 5 لسنة 1985</h4><p class="text-slate-500 text-sm mt-1">بشأن المعاملات المدنية وتعديلاته</p></div></div><div class="grid md:grid-cols-2 gap-4"><div class="bg-slate-50 rounded-lg p-4"><h5 class="font-semibold text-navy-900 text-sm mb-2">الموضوعات</h5><ul class="space-y-2 text-sm text-slate-600"><li class="flex items-start gap-2"><i data-lucide="chevron-left" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>أحكام الالتزام والعقود</li><li class="flex items-start gap-2"><i data-lucide="chevron-left" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>عقود التأمين والوكالة</li><li class="flex items-start gap-2"><i data-lucide="chevron-left" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>المسؤولية التقصيرية والضرر</li></ul></div><div class="bg-slate-50 rounded-lg p-4"><h5 class="font-semibold text-navy-900 text-sm mb-2">معلومات</h5><ul class="space-y-2 text-sm text-slate-600"><li class="flex items-start gap-2"><i data-lucide="info" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>1528 مادة</li><li class="flex items-start gap-2"><i data-lucide="info" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>آخر تعديل: 2020</li></ul></div></div></div></div>
+          <div class="law-content" id="tab-commercial"><div class="bg-white rounded-xl p-6 border border-slate-200"><div class="flex items-start gap-4 mb-6"><div class="w-12 h-12 rounded-xl bg-gold-500/10 flex items-center justify-center flex-shrink-0"><i data-lucide="briefcase" class="w-6 h-6 text-gold-600"></i></div><div><h4 class="font-bold text-navy-900 text-lg">قانون المعاملات التجارية - مرسوم بقانون اتحادي رقم 50 لسنة 2022</h4></div></div><div class="grid md:grid-cols-2 gap-4"><div class="bg-slate-50 rounded-lg p-4"><ul class="space-y-2 text-sm text-slate-600"><li class="flex items-start gap-2"><i data-lucide="chevron-left" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>الأعمال التجارية والتاجر</li><li class="flex items-start gap-2"><i data-lucide="chevron-left" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>السفاتج والأوراق التجارية</li><li class="flex items-start gap-2"><i data-lucide="chevron-left" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>الإفلاس والصلح الواقي</li></ul></div><div class="bg-slate-50 rounded-lg p-4"><ul class="space-y-2 text-sm text-slate-600"><li class="flex items-start gap-2"><i data-lucide="info" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>تنظيم حديث للمعاملات التجارية</li><li class="flex items-start gap-2"><i data-lucide="info" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>يرتبط بالتجارة والأوراق التجارية والإفلاس</li></ul></div></div></div></div>
+          <div class="law-content" id="tab-penal"><div class="bg-white rounded-xl p-6 border border-slate-200"><div class="flex items-start gap-4 mb-6"><div class="w-12 h-12 rounded-xl bg-gold-500/10 flex items-center justify-center flex-shrink-0"><i data-lucide="shield-alert" class="w-6 h-6 text-gold-600"></i></div><div><h4 class="font-bold text-navy-900 text-lg">قانون الجرائم والعقوبات - مرسوم بقانون اتحادي رقم 31 لسنة 2021</h4></div></div><div class="grid md:grid-cols-2 gap-4"><div class="bg-slate-50 rounded-lg p-4"><ul class="space-y-2 text-sm text-slate-600"><li class="flex items-start gap-2"><i data-lucide="chevron-left" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>القسم العام</li><li class="flex items-start gap-2"><i data-lucide="chevron-left" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>جرائم الاعتداء على الأشخاص</li><li class="flex items-start gap-2"><i data-lucide="chevron-left" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>جرائم الأموال</li></ul></div><div class="bg-slate-50 rounded-lg p-4"><ul class="space-y-2 text-sm text-slate-600"><li class="flex items-start gap-2"><i data-lucide="info" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>يشمل القواعد العامة والجرائم والعقوبات</li><li class="flex items-start gap-2"><i data-lucide="info" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>تُراجع كل واقعة بحسب نصوص التجريم والإجراءات</li></ul></div></div></div></div>
+          <div class="law-content" id="tab-family"><div class="bg-white rounded-xl p-6 border border-slate-200"><div class="flex items-start gap-4 mb-6"><div class="w-12 h-12 rounded-xl bg-gold-500/10 flex items-center justify-center flex-shrink-0"><i data-lucide="heart" class="w-6 h-6 text-gold-600"></i></div><div><h4 class="font-bold text-navy-900 text-lg">قانون الأحوال الشخصية - مرسوم بقانون اتحادي رقم 41 لسنة 2024</h4></div></div><div class="grid md:grid-cols-2 gap-4"><div class="bg-slate-50 rounded-lg p-4"><ul class="space-y-2 text-sm text-slate-600"><li class="flex items-start gap-2"><i data-lucide="chevron-left" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>الزواج والطلاق والخلع</li><li class="flex items-start gap-2"><i data-lucide="chevron-left" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>الحضانة والنفقة</li></ul></div><div class="bg-slate-50 rounded-lg p-4"><ul class="space-y-2 text-sm text-slate-600"><li class="flex items-start gap-2"><i data-lucide="info" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>تختلف بعض الأحكام بحسب الديانة والجنسية والقانون واجب التطبيق</li></ul></div></div></div></div>
+          <div class="law-content" id="tab-labor"><div class="bg-white rounded-xl p-6 border border-slate-200"><div class="flex items-start gap-4 mb-6"><div class="w-12 h-12 rounded-xl bg-gold-500/10 flex items-center justify-center flex-shrink-0"><i data-lucide="hard-hat" class="w-6 h-6 text-gold-600"></i></div><div><h4 class="font-bold text-navy-900 text-lg">قانون العمل - رقم 33 لسنة 2021</h4></div></div><div class="grid md:grid-cols-2 gap-4"><div class="bg-slate-50 rounded-lg p-4"><ul class="space-y-2 text-sm text-slate-600"><li class="flex items-start gap-2"><i data-lucide="chevron-left" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>ينظم أنماط العمل وعقود العمل وحقوق الطرفين</li><li class="flex items-start gap-2"><i data-lucide="chevron-left" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>تطبق أحكامه مع اللوائح التنفيذية والقرارات المنظمة</li></ul></div><div class="bg-slate-50 rounded-lg p-4"><ul class="space-y-2 text-sm text-slate-600"><li class="flex items-start gap-2"><i data-lucide="info" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>تقدّر المستحقات وفق مدة الخدمة وسبب انتهاء العلاقة ونوع العقد</li></ul></div></div></div></div>
+          <div class="law-content" id="tab-companies"><div class="bg-white rounded-xl p-6 border border-slate-200"><div class="flex items-start gap-4 mb-6"><div class="w-12 h-12 rounded-xl bg-gold-500/10 flex items-center justify-center flex-shrink-0"><i data-lucide="building" class="w-6 h-6 text-gold-600"></i></div><div><h4 class="font-bold text-navy-900 text-lg">قانون الشركات - رقم 32 لسنة 2021</h4></div></div><div class="bg-slate-50 rounded-lg p-4"><ul class="space-y-2 text-sm text-slate-600"><li class="flex items-start gap-2"><i data-lucide="chevron-left" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>يسمح بتملك أجنبي وفق النشاط والسلطة المختصة واللوائح المنظمة</li><li class="flex items-start gap-2"><i data-lucide="chevron-left" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>المناطق الحرة: قوانين خاصة</li></ul></div></div></div>
+          <div class="law-content" id="tab-cyber"><div class="bg-white rounded-xl p-6 border border-slate-200"><div class="flex items-start gap-4 mb-6"><div class="w-12 h-12 rounded-xl bg-gold-500/10 flex items-center justify-center flex-shrink-0"><i data-lucide="globe-lock" class="w-6 h-6 text-gold-600"></i></div><div><h4 class="font-bold text-navy-900 text-lg">مكافحة الشائعات والجرائم الإلكترونية - مرسوم بقانون اتحادي رقم 34 لسنة 2021</h4></div></div><div class="grid md:grid-cols-2 gap-4"><div class="bg-slate-50 rounded-lg p-4"><ul class="space-y-2 text-sm text-slate-600"><li class="flex items-start gap-2"><i data-lucide="chevron-left" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>الاختراق والاحتيال</li><li class="flex items-start gap-2"><i data-lucide="chevron-left" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>التحرش والابتزاز</li></ul></div><div class="bg-slate-50 rounded-lg p-4"><ul class="space-y-2 text-sm text-slate-600"><li class="flex items-start gap-2"><i data-lucide="alert-triangle" class="w-4 h-4 text-red-500 mt-0.5 flex-shrink-0"></i>تختلف العقوبة بحسب نوع الفعل والوسيلة والضرر والظروف المشددة</li></ul></div></div></div></div>
+          <div class="law-content" id="tab-realestate"><div class="bg-white rounded-xl p-6 border border-slate-200"><div class="flex items-start gap-4 mb-6"><div class="w-12 h-12 rounded-xl bg-gold-500/10 flex items-center justify-center flex-shrink-0"><i data-lucide="building-2" class="w-6 h-6 text-gold-600"></i></div><div><h4 class="font-bold text-navy-900 text-lg">التشريعات العقارية</h4></div></div><div class="grid md:grid-cols-2 gap-4"><div class="bg-slate-50 rounded-lg p-4"><h5 class="font-semibold text-navy-900 text-sm mb-2">دبي</h5><ul class="space-y-2 text-sm text-slate-600"><li class="flex items-start gap-2"><i data-lucide="chevron-left" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>قانون الملكية رقم 7/2006</li></ul></div><div class="bg-slate-50 rounded-lg p-4"><h5 class="font-semibold text-navy-900 text-sm mb-2">أبوظبي</h5><ul class="space-y-2 text-sm text-slate-600"><li class="flex items-start gap-2"><i data-lucide="chevron-left" class="w-4 h-4 text-gold-500 mt-0.5 flex-shrink-0"></i>قانون التنظيم رقم 3/2015</li></ul></div></div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== UAE LAW FAQ ========== -->
+  <section id="uae-law" class="py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16"><span class="animate-on-scroll inline-block text-gold-600 text-sm font-semibold tracking-wider mb-4">قانون الإمارات</span><h2 class="animate-on-scroll delay-1 text-3xl md:text-4xl font-bold text-navy-900 mb-4">أسئلة قانونية <span class="text-gradient font-semibold">شائعة</span></h2><div class="animate-on-scroll delay-2 w-16 h-1 bg-gold-500 rounded-full mx-auto"></div></div>
+      <div class="grid lg:grid-cols-2 gap-8">
+        <div class="space-y-4">
+          <div class="animate-on-scroll faq-item bg-white rounded-xl border border-slate-200 overflow-hidden"><button class="faq-toggle w-full text-right p-6 flex items-center justify-between gap-4"><span class="font-bold text-navy-900">هل يمكن للأجانب امتلاك عقارات في الإمارات؟</span><i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-gold-500 flex-shrink-0"></i></button><div class="faq-answer px-6 pb-6"><p class="text-slate-600 text-sm leading-relaxed">نعم، يُسمح بتملك الأجانب في مناطق وأنظمة محددة بحسب الإمارة ونوع العقار واللوائح المعمول بها لدى دائرة التسجيل العقاري المختصة.</p></div></div>
+          <div class="animate-on-scroll delay-1 faq-item bg-white rounded-xl border border-slate-200 overflow-hidden"><button class="faq-toggle w-full text-right p-6 flex items-center justify-between gap-4"><span class="font-bold text-navy-900">ما حقوق العامل عند إنهاء عقد العمل؟</span><i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-gold-500 flex-shrink-0"></i></button><div class="faq-answer px-6 pb-6"><p class="text-slate-600 text-sm leading-relaxed">تُراجع الحقوق العمالية وفق قانون العمل ولائحته التنفيذية وسبب انتهاء العلاقة ومدة الخدمة والأجر الأساسي وما إذا وُجد إخلال تعاقدي.</p></div></div>
+          <div class="animate-on-scroll delay-2 faq-item bg-white rounded-xl border border-slate-200 overflow-hidden"><button class="faq-toggle w-full text-right p-6 flex items-center justify-between gap-4"><span class="font-bold text-navy-900">ما عقوبة الشيك بدون رصيد؟</span><i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-gold-500 flex-shrink-0"></i></button><div class="faq-answer px-6 pb-6"><p class="text-slate-600 text-sm leading-relaxed">الشيكات تخضع لتنظيم خاص بعد تعديلات المعاملات التجارية، وقد تكون المطالبة تنفيذية أو مدنية، وتبقى المسؤولية الجزائية في صور مثل التزوير أو الاحتيال أو الأفعال المجرّمة صراحة.</p></div></div>
+          <div class="animate-on-scroll delay-3 faq-item bg-white rounded-xl border border-slate-200 overflow-hidden"><button class="faq-toggle w-full text-right p-6 flex items-center justify-between gap-4"><span class="font-bold text-navy-900">هل يمكن تأسيس شركة بملكية أجنبية 100%؟</span><i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-gold-500 flex-shrink-0"></i></button><div class="faq-answer px-6 pb-6"><p class="text-slate-600 text-sm leading-relaxed">نعم، يمكن في كثير من الأنشطة تأسيس شركة بملكية أجنبية كاملة، مع ضرورة مراجعة النشاط والسلطة المرخصة ومتطلبات الموافقات الخاصة إن وجدت.</p></div></div>
+        </div>
+        <div class="space-y-4">
+          <div class="animate-on-scroll faq-item bg-white rounded-xl border border-slate-200 overflow-hidden"><button class="faq-toggle w-full text-right p-6 flex items-center justify-between gap-4"><span class="font-bold text-navy-900">ما إجراءات الطلاق في الإمارات؟</span><i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-gold-500 flex-shrink-0"></i></button><div class="faq-answer px-6 pb-6"><p class="text-slate-600 text-sm leading-relaxed">تختلف إجراءات الطلاق بحسب الديانة والجنسية والقانون واجب التطبيق، وتشمل غالباً التوجيه الأسري ثم القيد أمام المحكمة المختصة عند تعذر التسوية.</p></div></div>
+          <div class="animate-on-scroll delay-1 faq-item bg-white rounded-xl border border-slate-200 overflow-hidden"><button class="faq-toggle w-full text-right p-6 flex items-center justify-between gap-4"><span class="font-bold text-navy-900">ما عقوبة السرقة في الإمارات؟</span><i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-gold-500 flex-shrink-0"></i></button><div class="faq-answer px-6 pb-6"><p class="text-slate-600 text-sm leading-relaxed">تختلف عقوبة السرقة بحسب قيمة المال وظروف الواقعة ووسيلة ارتكابها وتوافر ظرف مشدد من عدمه، ولا يصح تقديرها دون فحص أوراق البلاغ.</p></div></div>
+          <div class="animate-on-scroll delay-2 faq-item bg-white rounded-xl border border-slate-200 overflow-hidden"><button class="faq-toggle w-full text-right p-6 flex items-center justify-between gap-4"><span class="font-bold text-navy-900">كيف تسجيل الوصية لغير المسلمين؟</span><i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-gold-500 flex-shrink-0"></i></button><div class="faq-answer px-6 pb-6"><p class="text-slate-600 text-sm leading-relaxed">يجوز لغير المسلمين تنظيم وصية وفق القنوات المختصة، وتختلف جهة التسجيل والإجراءات بحسب الإمارة ومحل الأموال والبيانات المطلوبة.</p></div></div>
+          <div class="animate-on-scroll delay-3 faq-item bg-white rounded-xl border border-slate-200 overflow-hidden"><button class="faq-toggle w-full text-right p-6 flex items-center justify-between gap-4"><span class="font-bold text-navy-900">ما أحكام التحكيم التجاري؟</span><i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-gold-500 flex-shrink-0"></i></button><div class="faq-answer px-6 pb-6"><p class="text-slate-600 text-sm leading-relaxed">ينظم التحكيم التجاري القانون الاتحادي رقم 6 لسنة 2018، وتختلف إجراءات الاعتراف والتنفيذ بحسب شرط التحكيم ومقره وحكم التحكيم والجهة المختصة.</p></div></div>
+        </div>
+      </div>
+      <div class="animate-on-scroll mt-16 bg-gradient-to-br from-navy-900 to-navy-800 rounded-2xl p-8 md:p-10">
+        <h3 class="text-xl font-bold text-white mb-8 flex items-center gap-3"><i data-lucide="info" class="w-6 h-6 text-gold-400"></i>حقائق قانونية - الإمارات</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="bg-white/5 border border-white/10 rounded-xl p-5"><div class="stat-number text-2xl font-bold mb-1">7</div><p class="text-white/60 text-sm">إمارات تتحد تحت دستور واحد</p></div>
+          <div class="bg-white/5 border border-white/10 rounded-xl p-5"><div class="stat-number text-2xl font-bold mb-1">2</div><p class="text-white/60 text-sm">نظام قضائي اتحادي ومحلي</p></div>
+          <div class="bg-white/5 border border-white/10 rounded-xl p-5"><div class="stat-number text-2xl font-bold mb-1">2</div><p class="text-white/60 text-sm">نظامان: اتحادي ومحلي</p></div>
+          <div class="bg-white/5 border border-white/10 rounded-xl p-5"><div class="stat-number text-2xl font-bold mb-1">2026</div><p class="text-white/60 text-sm">تحديث مستمر للتشريعات</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRACTICE AREAS ========== -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16"><span class="animate-on-scroll inline-block text-gold-600 text-sm font-semibold tracking-wider mb-4">مجالات الممارسة</span><h2 class="animate-on-scroll delay-1 text-3xl md:text-4xl font-bold text-navy-900 mb-4">نغطي <span class="text-gradient font-semibold">جميع التخصصات</span></h2><div class="animate-on-scroll delay-2 w-16 h-1 bg-gold-500 rounded-full mx-auto"></div></div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="animate-on-scroll practice-card group relative rounded-2xl overflow-hidden h-80 cursor-pointer card-hover"><img src="assets/practice-commercial.svg" alt="صورة تعبيرية عن القانون التجاري" class="practice-img w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/50 to-transparent"></div><div class="absolute bottom-0 left-0 right-0 p-6"><div class="w-10 h-10 rounded-lg bg-gold-500/20 flex items-center justify-center mb-3"><i data-lucide="briefcase" class="w-5 h-5 text-gold-400"></i></div><h3 class="text-white font-bold text-lg mb-1">القانون التجاري</h3><p class="text-white/60 text-sm">الشركات والاستثمار والإفلاس</p></div></div>
+        <div class="animate-on-scroll delay-1 practice-card group relative rounded-2xl overflow-hidden h-80 cursor-pointer card-hover"><img src="assets/practice-family.svg" alt="صورة تعبيرية عن قانون الأسرة" class="practice-img w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/50 to-transparent"></div><div class="absolute bottom-0 left-0 right-0 p-6"><div class="w-10 h-10 rounded-lg bg-gold-500/20 flex items-center justify-center mb-3"><i data-lucide="heart" class="w-5 h-5 text-gold-400"></i></div><h3 class="text-white font-bold text-lg mb-1">قانون الأسرة</h3><p class="text-white/60 text-sm">الأحوال الشخصية والميراث</p></div></div>
+        <div class="animate-on-scroll delay-2 practice-card group relative rounded-2xl overflow-hidden h-80 cursor-pointer card-hover"><img src="assets/practice-realestate.svg" alt="صورة تعبيرية عن القانون العقاري" class="practice-img w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/50 to-transparent"></div><div class="absolute bottom-0 left-0 right-0 p-6"><div class="w-10 h-10 rounded-lg bg-gold-500/20 flex items-center justify-center mb-3"><i data-lucide="building-2" class="w-5 h-5 text-gold-400"></i></div><h3 class="text-white font-bold text-lg mb-1">القانون العقاري</h3><p class="text-white/60 text-sm">الملكية والتأجير والتسجيل</p></div></div>
+        <div class="animate-on-scroll delay-3 practice-card group relative rounded-2xl overflow-hidden h-80 cursor-pointer card-hover"><img src="assets/practice-criminal.svg" alt="صورة تعبيرية عن القانون الجنائي" class="practice-img w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/50 to-transparent"></div><div class="absolute bottom-0 left-0 right-0 p-6"><div class="w-10 h-10 rounded-lg bg-gold-500/20 flex items-center justify-center mb-3"><i data-lucide="shield-alert" class="w-5 h-5 text-gold-400"></i></div><h3 class="text-white font-bold text-lg mb-1">القانون الجنائي</h3><p class="text-white/60 text-sm">الدفاع الجنائي والحقوق</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="py-20 bg-navy-900 relative overflow-hidden">
+    <div class="absolute inset-0 hero-pattern"></div>
+    <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+      <div class="animate-on-scroll">
+        <i data-lucide="phone-call" class="w-12 h-12 text-gold-500 mx-auto mb-6"></i>
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">تحتاج استشارة قانونية؟</h2>
+        <p class="text-white/60 text-lg mb-8 max-w-xl mx-auto">اتصل بنا الآن أو احجز استشارة أولية. نعمل في جميع مناطق الدولة طوال الأسبوع لخدمتك.</p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="contact.html" class="btn-gold px-8 py-3.5 text-base font-semibold text-white rounded-lg inline-flex items-center gap-2"><i data-lucide="message-circle" class="w-5 h-5"></i><span>احجز استشارة أولية</span></a>
+          <a href="tel:+971544144149" class="glass-logo-sm px-8 py-3.5 text-base font-medium text-white rounded-lg hover:bg-gold-500/20 transition-all inline-flex items-center gap-2 border border-gold-500/30"><i data-lucide="phone" class="w-5 h-5"></i><span dir="ltr">+971 54 414 4149</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== LEGAL DISCLAIMER ========== -->
+  <section class="py-10 bg-white border-y border-slate-100">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="bg-gold-50 border border-gold-200 rounded-2xl p-6 text-center">
+        <h3 class="text-navy-900 font-bold mb-2">تنبيه مهني</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">المعلومات المنشورة في هذا الموقع للتعريف العام ولا تُعد رأياً قانونياً نهائياً أو بديلاً عن فحص المستندات والوقائع. يتم تحديد الرأي القانوني بعد مراجعة الأوراق والاختصاص والأنظمة السارية وقت الطلب.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16">
+        <div>
+          <span class="animate-on-scroll inline-block text-gold-600 text-sm font-semibold tracking-wider mb-4">تواصل معنا</span>
+          <h2 class="animate-on-scroll delay-1 text-3xl md:text-4xl font-bold text-navy-900 mb-4">نحن هنا <span class="text-gradient font-semibold">لمساعدتك</span></h2>
+          <div class="animate-on-scroll delay-2 w-16 h-1 bg-gold-500 rounded-full mb-6"></div>
+          <p class="animate-on-scroll delay-2 text-slate-500 leading-relaxed mb-10">تواصل معنا للحصول على استشارة قانونية متخصصة. فريقنا جاهز للإجابة على جميع استفساراتك في جميع مناطق الدولة.</p>
+          <div class="space-y-6">
+            <div class="animate-on-scroll delay-3 flex items-start gap-4"><div class="w-12 h-12 rounded-xl bg-gold-500/10 flex items-center justify-center flex-shrink-0"><i data-lucide="map-pin" class="w-5 h-5 text-gold-600"></i></div><div><h4 class="font-bold text-navy-900 mb-1">المقر الرئيسي</h4><p class="text-slate-500 text-sm">مدينة العين - إمارة أبوظبي</p><p class="text-gold-600 text-xs font-medium">نعمل في جميع مناطق الدولة</p></div></div>
+            <div class="animate-on-scroll delay-4 flex items-start gap-4"><div class="w-12 h-12 rounded-xl bg-gold-500/10 flex items-center justify-center flex-shrink-0"><i data-lucide="phone" class="w-5 h-5 text-gold-600"></i></div><div><h4 class="font-bold text-navy-900 mb-1">الهاتف</h4><p class="text-slate-500 text-sm" dir="ltr">+971 544 144 149</p><p class="text-slate-500 text-sm" dir="ltr">+971 542 190 900</p></div></div>
+            <div class="animate-on-scroll delay-5 flex items-start gap-4"><div class="w-12 h-12 rounded-xl bg-gold-500/10 flex items-center justify-center flex-shrink-0"><i data-lucide="mail" class="w-5 h-5 text-gold-600"></i></div><div><h4 class="font-bold text-navy-900 mb-1">البريد الإلكتروني</h4><p class="text-slate-500 text-sm" dir="ltr">ahmedhelmy200@gmail.com</p></div></div>
+            <div class="animate-on-scroll delay-5 flex items-start gap-4"><div class="w-12 h-12 rounded-xl bg-gold-500/10 flex items-center justify-center flex-shrink-0"><i data-lucide="clock" class="w-5 h-5 text-gold-600"></i></div><div><h4 class="font-bold text-navy-900 mb-1">ساعات العمل</h4><p class="text-slate-500 text-sm">السبت - الخميس: 9 صباحاً - 9 مساءً</p><p class="text-slate-500 text-sm">الجمعة: 4 مساءً - 9 مساءً</p></div></div>
+          </div>
+          <div class="animate-on-scroll delay-5 flex items-center gap-3 mt-10">
+            <a href="tel:+971544144149" class="w-11 h-11 rounded-xl bg-navy-900 flex items-center justify-center text-white hover:bg-gold-600 transition-colors"><i data-lucide="phone" class="w-5 h-5"></i></a>
+            <a href="mailto:ahmedhelmy200@gmail.com" class="w-11 h-11 rounded-xl bg-navy-900 flex items-center justify-center text-white hover:bg-gold-600 transition-colors"><i data-lucide="mail" class="w-5 h-5"></i></a>
+            <a href="https://wa.me/971544144149" target="_blank" rel="noopener noreferrer" class="w-11 h-11 rounded-xl bg-navy-900 flex items-center justify-center text-white hover:bg-green-600 transition-colors"><i data-lucide="message-circle" class="w-5 h-5"></i></a>
+          </div>
+        </div>
+        <div class="animate-on-scroll">
+          <form id="contact-form" class="bg-white rounded-2xl p-8 md:p-10 shadow-lg border border-slate-100">
+            <h3 class="text-xl font-bold text-navy-900 mb-6">أرسل استفسارك</h3>
+            <div class="space-y-5">
+              <div class="grid md:grid-cols-2 gap-5">
+                <div><label class="block text-sm font-medium text-navy-900 mb-2">الاسم</label><input type="text" name="name" required class="w-full px-4 py-3 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-gold-500/30 focus:border-gold-500 outline-none" placeholder="أدخل اسمك"></div>
+                <div><label class="block text-sm font-medium text-navy-900 mb-2">الهاتف</label><input type="tel" name="phone" required class="w-full px-4 py-3 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-gold-500/30 focus:border-gold-500 outline-none" placeholder="+971 54X XXX XXXX" dir="ltr"></div>
+              </div>
+              <div><label class="block text-sm font-medium text-navy-900 mb-2">البريد الإلكتروني</label><input type="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-gold-500/30 focus:border-gold-500 outline-none" placeholder="بريدك الإلكتروني" dir="ltr"></div>
+              <div><label class="block text-sm font-medium text-navy-900 mb-2">نوع الاستشارة</label><select name="type" class="w-full px-4 py-3 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-gold-500/30 focus:border-gold-500 outline-none text-slate-600"><option value="">اختر النوع</option><option>قضية تجارية</option><option>أحوال شخصية</option><option>قضية عقارية</option><option>قضية جنائية</option><option>تأسيس شركات</option><option>قضية عمالية</option><option>أخرى</option></select></div>
+              <div><label class="block text-sm font-medium text-navy-900 mb-2">التفاصيل</label><textarea name="message" rows="4" required class="w-full px-4 py-3 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-gold-500/30 focus:border-gold-500 outline-none resize-none" placeholder="اكتب تفاصيل استفسارك..."></textarea></div>
+              <button type="submit" class="btn-gold w-full py-3.5 text-base font-semibold text-white rounded-lg inline-flex items-center justify-center gap-2"><span>إرسال عبر واتساب</span><i data-lucide="send" class="w-4 h-4"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-navy-900 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-3 mb-5">
+            <div class="glass-logo-sm w-10 h-10 rounded-lg flex items-center justify-center">
+              <svg viewBox="0 0 40 40" class="w-5 h-5" fill="none"><path d="M20 6L8 12v2h24v-2L20 6z" fill="url(#fGrad1)"/><rect x="10" y="16" width="3" height="12" fill="url(#fGrad2)" rx="0.5"/><rect x="15" y="16" width="3" height="12" fill="url(#fGrad2)" rx="0.5"/><rect x="22" y="16" width="3" height="12" fill="url(#fGrad2)" rx="0.5"/><rect x="27" y="16" width="3" height="12" fill="url(#fGrad2)" rx="0.5"/><rect x="7" y="29" width="26" height="3" fill="url(#fGrad1)" rx="0.5"/><circle cx="20" cy="10" r="1.5" fill="#e9b96e"/><defs><linearGradient id="fGrad1" x1="8" y1="6" x2="32" y2="32"><stop stop-color="#e9b96e"/><stop offset="1" stop-color="#9a6c30"/></linearGradient><linearGradient id="fGrad2" x1="10" y1="16" x2="10" y2="28"><stop stop-color="#c8a46e"/><stop offset="1" stop-color="#b8873a"/></linearGradient></defs></svg>
+            </div>
+            <div><span class="text-base font-bold text-white block leading-none">أحمد حلمي</span><span class="text-[10px] text-gold-400">مكتب الاستشارات القانونية</span></div>
+          </div>
+          <p class="text-white/40 text-sm leading-relaxed mb-5">مكتب استشارات قانونية في دولة الإمارات العربية المتحدة. نعمل في جميع مناطق الدولة - المقر الرئيسي: مدينة العين، أبوظبي.</p>
+          <div class="flex items-center gap-2">
+            <a href="tel:+971544144149" class="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center text-white/50 hover:bg-gold-500 hover:text-white transition-colors"><i data-lucide="phone" class="w-4 h-4"></i></a>
+            <a href="mailto:ahmedhelmy200@gmail.com" class="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center text-white/50 hover:bg-gold-500 hover:text-white transition-colors"><i data-lucide="mail" class="w-4 h-4"></i></a>
+            <a href="https://wa.me/971544144149" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center text-white/50 hover:bg-green-600 hover:text-white transition-colors"><i data-lucide="message-circle" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+        <div><h4 class="text-white font-bold mb-5">روابط سريعة</h4><ul class="space-y-3"><li><a href="index.html" class="text-white/40 text-sm hover:text-gold-400 transition-colors">الرئيسية</a></li><li><a href="about.html" class="text-white/40 text-sm hover:text-gold-400 transition-colors">من نحن</a></li><li><a href="services.html" class="text-white/40 text-sm hover:text-gold-400 transition-colors">خدماتنا</a></li><li><a href="library.html" class="text-white/40 text-sm hover:text-gold-400 transition-colors">المكتبة القانونية</a></li><li><a href="https://helm-protal.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-gold-400 text-sm hover:text-gold-300 transition-colors flex items-center gap-1"><i data-lucide="log-in" class="w-3 h-3"></i>بوابة العملاء</a></li></ul></div>
+        <div><h4 class="text-white font-bold mb-5">القوانين</h4><ul class="space-y-3"><li><a href="library.html" class="text-white/40 text-sm hover:text-gold-400 transition-colors">القانون المدني</a></li><li><a href="library.html" class="text-white/40 text-sm hover:text-gold-400 transition-colors">قانون العقوبات</a></li><li><a href="library.html" class="text-white/40 text-sm hover:text-gold-400 transition-colors">قانون العمل</a></li><li><a href="library.html" class="text-white/40 text-sm hover:text-gold-400 transition-colors">قانون الشركات</a></li></ul></div>
+        <div><h4 class="text-white font-bold mb-5">تواصل معنا</h4><ul class="space-y-3">
+          <li class="flex items-center gap-2 text-white/40 text-sm"><i data-lucide="map-pin" class="w-4 h-4 text-gold-500 flex-shrink-0"></i>العين - أبوظبي (جميع مناطق الدولة)</li>
+          <li class="flex items-center gap-2 text-white/40 text-sm" dir="ltr"><i data-lucide="phone" class="w-4 h-4 text-gold-500 flex-shrink-0"></i>+971 544 144 149</li>
+          <li class="flex items-center gap-2 text-white/40 text-sm" dir="ltr"><i data-lucide="phone" class="w-4 h-4 text-gold-500 flex-shrink-0"></i>+971 542 190 900</li>
+          <li class="flex items-center gap-2 text-white/40 text-sm"><i data-lucide="mail" class="w-4 h-4 text-gold-500 flex-shrink-0"></i><span dir="ltr">ahmedhelmy200@gmail.com</span></li>
+          <li class="flex items-center gap-2 text-white/40 text-sm"><i data-lucide="clock" class="w-4 h-4 text-gold-500 flex-shrink-0"></i>سبت - خميس: 9ص - 9م</li>
+          <li class="flex items-center gap-2 text-white/40 text-sm"><i data-lucide="clock" class="w-4 h-4 text-gold-500/50 flex-shrink-0"></i>الجمعة: 4م - 9م</li>
+        </ul></div>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-white/30 text-sm">© 2026 مكتب أحمد حلمي للاستشارات القانونية. جميع الحقوق محفوظة.</p>
+        <div class="flex items-center gap-6"><a href="#" class="text-white/30 text-sm hover:text-gold-400 transition-colors">سياسة الخصوصية</a><a href="#" class="text-white/30 text-sm hover:text-gold-400 transition-colors">الشروط والأحكام</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/971544144149" target="_blank" rel="noopener noreferrer" id="whatsapp-btn" class="fixed bottom-6 left-6 z-50 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-all hover:scale-110 opacity-0 translate-y-4" style="transition:opacity .5s,transform .5s"><i data-lucide="message-circle" class="w-7 h-7 text-white"></i></a>
+  <button id="back-to-top" class="fixed bottom-6 right-6 z-50 w-12 h-12 bg-navy-900 border border-gold-500/30 rounded-full flex items-center justify-center shadow-lg hover:bg-gold-600 transition-all opacity-0 translate-y-4" style="transition:opacity .5s,transform .5s"><i data-lucide="chevron-up" class="w-5 h-5 text-white"></i></button>
+
+  <script>
+    lucide.createIcons();
+
+    // ===== NETWORK CANVAS =====
+    const canvas=document.getElementById('network-canvas');const ctx=canvas.getContext('2d');let particles=[],mouse={x:-1000,y:-1000},W,H;const heroSection=document.getElementById('hero');
+    function resize(){W=canvas.width=heroSection.offsetWidth;H=canvas.height=heroSection.offsetHeight}resize();window.addEventListener('resize',resize);
+    class Particle{constructor(){this.x=Math.random()*W;this.y=Math.random()*H;this.vx=(Math.random()-.5)*.4;this.vy=(Math.random()-.5)*.4;this.r=Math.random()*1.8+.5;this.baseAlpha=Math.random()*.4+.1;this.alpha=this.baseAlpha}update(){this.x+=this.vx;this.y+=this.vy;if(this.x<0||this.x>W)this.vx*=-1;if(this.y<0||this.y>H)this.vy*=-1;const dx=this.x-mouse.x,dy=this.y-mouse.y,dist=Math.sqrt(dx*dx+dy*dy);if(dist<200){const f=(200-dist)/200*.8;this.vx+=dx/dist*f*.15;this.vy+=dy/dist*f*.15;this.alpha=Math.min(1,this.baseAlpha+f)}else{this.alpha+=(this.baseAlpha-this.alpha)*.05}const sp=Math.sqrt(this.vx*this.vx+this.vy*this.vy);if(sp>2){this.vx=(this.vx/sp)*2;this.vy=(this.vy/sp)*2}}draw(){ctx.beginPath();ctx.arc(this.x,this.y,this.r,0,Math.PI*2);ctx.fillStyle=`rgba(200,164,110,${this.alpha})`;ctx.fill()}}
+    const pCount=Math.min(80,Math.floor(W*H/12000));for(let i=0;i<pCount;i++)particles.push(new Particle());let arcs=[],arcTimer=0;
+    function createArc(){if(particles.length<2)return;const i=Math.floor(Math.random()*particles.length);let j=Math.floor(Math.random()*particles.length);if(i===j)j=(j+1)%particles.length;const a=particles[i],b=particles[j];const dx=b.x-a.x,dy=b.y-a.y,dist=Math.sqrt(dx*dx+dy*dy);if(dist<350)arcs.push({x1:a.x,y1:a.y,x2:b.x,y2:b.y,life:1,decay:Math.random()*.06+.03,intensity:Math.random()*.6+.4,segments:Math.floor(Math.random()*4)+3,offset:Math.random()*100})}
+    function drawArc(arc){const{x1,y1,x2,y2,life,intensity,segments,offset}=arc;const dx=x2-x1,dy=y2-y1;const len=Math.sqrt(dx*dx+dy*dy)||1;const perpX=-dy/len;const perpY=dx/len;ctx.beginPath();ctx.moveTo(x1,y1);for(let i=1;i<segments;i++){const t=i/segments;const px=x1+dx*t;const py=y1+dy*t;const displacement=Math.sin(t*Math.PI)*30*intensity*life;const jitter=(Math.random()-.5)*15*intensity*life;const wave=Math.sin(Date.now()*.01+offset+i*2)*8*life;ctx.lineTo(px+perpX*(displacement+jitter+wave),py+perpY*(displacement+jitter+wave))}ctx.lineTo(x2,y2);const alpha=life*intensity;ctx.strokeStyle=`rgba(200,164,110,${alpha*.3})`;ctx.lineWidth=4*life;ctx.stroke();ctx.strokeStyle=`rgba(233,185,110,${alpha*.8})`;ctx.lineWidth=1.5*life;ctx.stroke();ctx.strokeStyle=`rgba(255,240,200,${alpha*.5})`;ctx.lineWidth=.5*life;ctx.stroke();if(Math.random()<.3*life){const sx=Math.random()>.5?x1:x2;const sy=Math.random()>.5?y1:y2;const sLen=10+Math.random()*20*life;const sAngle=Math.random()*Math.PI*2;ctx.beginPath();ctx.moveTo(sx,sy);ctx.lineTo(sx+Math.cos(sAngle)*sLen,sy+Math.sin(sAngle)*sLen);ctx.strokeStyle=`rgba(233,185,110,${alpha*.6})`;ctx.lineWidth=1;ctx.stroke()}}
+    function animate(){ctx.clearRect(0,0,W,H);particles.forEach(p=>{p.update();p.draw()});for(let i=0;i<particles.length;i++){for(let j=i+1;j<particles.length;j++){const dx=particles[i].x-particles[j].x,dy=particles[i].y-particles[j].y,dist=Math.sqrt(dx*dx+dy*dy);if(dist<150){const alpha=(1-dist/150)*.15;ctx.beginPath();ctx.moveTo(particles[i].x,particles[i].y);ctx.lineTo(particles[j].x,particles[j].y);ctx.strokeStyle=`rgba(200,164,110,${alpha})`;ctx.lineWidth=.5;ctx.stroke()}}}arcTimer++;if(arcTimer>Math.random()*40+15){createArc();arcTimer=0}arcs.forEach(a=>{a.life-=a.decay;if(Math.random()<.1){a.x1+=(Math.random()-.5)*3;a.y1+=(Math.random()-.5)*3;a.x2+=(Math.random()-.5)*3;a.y2+=(Math.random()-.5)*3}drawArc(a)});arcs=arcs.filter(a=>a.life>0);requestAnimationFrame(animate)}
+    animate();heroSection.addEventListener('mousemove',e=>{const r=heroSection.getBoundingClientRect();mouse.x=e.clientX-r.left;mouse.y=e.clientY-r.top});heroSection.addEventListener('mouseleave',()=>{mouse.x=-1000;mouse.y=-1000});heroSection.addEventListener('touchmove',e=>{const r=heroSection.getBoundingClientRect();mouse.x=e.touches[0].clientX-r.left;mouse.y=e.touches[0].clientY-r.top},{passive:true});heroSection.addEventListener('touchend',()=>{mouse.x=-1000;mouse.y=-1000});
+
+    // ===== MOBILE MENU =====
+    const mobileToggle=document.getElementById('mobile-toggle'),mobileClose=document.getElementById('mobile-close'),mobileMenu=document.getElementById('mobile-menu');
+    function openMenu(){mobileMenu.classList.add('open');document.body.style.overflow='hidden'}function closeMenu(){mobileMenu.classList.remove('open');document.body.style.overflow=''}
+    mobileToggle.addEventListener('click',openMenu);mobileClose.addEventListener('click',closeMenu);document.querySelectorAll('.mobile-link').forEach(l=>l.addEventListener('click',closeMenu));
+
+    // ===== NAVBAR =====
+    const navbar=document.getElementById('navbar');window.addEventListener('scroll',()=>{const s=window.pageYOffset;if(s>80){navbar.classList.add('nav-blur');navbar.style.background='rgba(13,20,35,0.95)';navbar.style.borderBottom='1px solid rgba(200,164,110,0.1)';navbar.style.boxShadow='0 4px 20px rgba(0,0,0,0.2)'}else{navbar.classList.remove('nav-blur');navbar.style.background='transparent';navbar.style.borderBottom='none';navbar.style.boxShadow='none'}const btt=document.getElementById('back-to-top'),wa=document.getElementById('whatsapp-btn');if(s>500){btt.style.opacity='1';btt.style.transform='translateY(0)';wa.style.opacity='1';wa.style.transform='translateY(0)'}else{btt.style.opacity='0';btt.style.transform='translateY(1rem)';wa.style.opacity='0';wa.style.transform='translateY(1rem)'}});
+    document.getElementById('back-to-top').addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+    // ===== SCROLL ANIMATIONS =====
+    const obs=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting){en.target.classList.add('visible');obs.unobserve(en.target)}})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});document.querySelectorAll('.animate-on-scroll').forEach(el=>obs.observe(el));
+
+    // ===== COUNTER =====
+    function animateCounters(){document.querySelectorAll('[data-target]').forEach(c=>{const t=parseInt(c.dataset.target),suffix=c.dataset.suffix||'',dur=2000,start=performance.now();function update(now){const p=Math.min((now-start)/dur,1),e=1-Math.pow(1-p,3);c.textContent=Math.round(t*e)+suffix;if(p<1)requestAnimationFrame(update)}requestAnimationFrame(update)})}
+    const heroObs=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting){setTimeout(animateCounters,800);heroObs.unobserve(en.target)}})},{threshold:.3});if(heroSection)heroObs.observe(heroSection);
+
+    // ===== LAW TABS =====
+    document.querySelectorAll('.law-tab').forEach(tab=>{tab.addEventListener('click',()=>{document.querySelectorAll('.law-tab').forEach(t=>{t.classList.remove('active');t.classList.add('border','border-slate-200')});tab.classList.add('active');tab.classList.remove('border','border-slate-200');document.querySelectorAll('.law-content').forEach(c=>c.classList.remove('active'));document.getElementById('tab-'+tab.dataset.tab).classList.add('active')})});
+
+    // ===== FAQ =====
+    document.querySelectorAll('.faq-toggle').forEach(btn=>{btn.addEventListener('click',()=>{const item=btn.closest('.faq-item');const wasOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));if(!wasOpen)item.classList.add('open')})});
+
+    // ===== CONTACT FORM =====
+    document.getElementById('contact-form').addEventListener('submit',function(e){e.preventDefault();const data=new FormData(this);const name=(data.get('name')||'').trim();const phone=(data.get('phone')||'').trim();const email=(data.get('email')||'').trim();const type=(data.get('type')||'غير محدد').trim();const message=(data.get('message')||'').trim();const text=`طلب استشارة من الموقع%0Aالاسم: ${encodeURIComponent(name)}%0Aالهاتف: ${encodeURIComponent(phone)}%0Aالبريد: ${encodeURIComponent(email)}%0Aنوع الاستشارة: ${encodeURIComponent(type)}%0Aالتفاصيل: ${encodeURIComponent(message)}`;window.open(`https://wa.me/971544144149?text=${text}`,'_blank','noopener');showToast('تم تجهيز رسالتك على واتساب. اضغط إرسال داخل واتساب لإتمام الطلب.');this.reset();});
+
+    function showToast(msg){const c=document.getElementById('toast-container'),t=document.createElement('div');t.className='toast bg-green-600 text-white px-6 py-4 rounded-xl shadow-2xl flex items-center gap-3 min-w-[300px]';t.innerHTML=`<i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0"></i><span class="text-sm font-medium">${msg}</span>`;c.appendChild(t);lucide.createIcons();setTimeout(()=>{t.style.opacity='0';t.style.transition='all .3s';setTimeout(()=>t.remove(),300)},4000)}
+
+    // ===== SMOOTH SCROLL =====
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){const id=this.getAttribute('href');if(id==='#')return;const t=document.querySelector(id);if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-80,behavior:'smooth'})}})});
+
+    // ===== ACTIVE NAV =====
+    const sections=document.querySelectorAll('section[id]'),navLinks=document.querySelectorAll('.nav-link');window.addEventListener('scroll',()=>{let cur='';sections.forEach(s=>{if(pageYOffset>=s.offsetTop-100)cur=s.id});navLinks.forEach(l=>{l.classList.remove('text-gold-400');l.classList.add('text-white/80');if(l.getAttribute('href')===`#${cur}`){l.classList.add('text-gold-400');l.classList.remove('text-white/80')}})});
+  </script>
+</body>
 </html>
