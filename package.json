@@ -1,0 +1,10 @@
+{
+  "name": "ahmed-helmy-legal-static",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-static.mjs",
+    "start": "node scripts/build-static.mjs"
+  }
+}
