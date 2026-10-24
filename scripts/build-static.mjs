@@ -10,7 +10,8 @@ for (const path of ['index.html', 'assets', 'ads.txt']) {
 }
 const staticPaths = [
   ...publicPages.slice(0, 8),
-  'guides', 'robots.txt', 'sitemap.xml', 'site.webmanifest', 'ads.txt', 'assets'
+  'guides', 'robots.txt', 'sitemap.xml', 'site.webmanifest', 'ads.txt',
+  'googleaf55dd9893af2a58.html', 'assets'
 ];
 mkdirSync('dist', { recursive: true });
 for (const path of staticPaths) {
